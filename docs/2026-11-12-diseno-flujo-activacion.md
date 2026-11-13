@@ -270,7 +270,9 @@ corra a «cómo sabrías si funcionó» ni control de calidad de la IA.
 
 - Panel con Streamlit.
 - IA por variante (paso, actividad, tramo) y no por persona.
-- Reparto 50/50 en la primera ola, con hash puro por id.
+- Reparto 50/50 en la primera ola, con hash puro por id. Durante la construcción, la prueba A/A mostró que
+  la primera semilla dejaba los grupos desbalanceados por azar (p = 0,01); la semilla se eligió entonces
+  con una regla fija: la primera candidata con p > 0,2. Los grupos quedan en 457 y 455.
 - El canal no entra en la variante del mensaje; solo en la lectura del experimento.
 - Una sola ola como caso de demostración; el uso diario queda como opción.
 - Sin clave y sin caché, la variante va a revisión en vez de detener el flujo.
