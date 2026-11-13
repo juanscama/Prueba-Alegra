@@ -109,7 +109,8 @@ def _panel(args) -> int:
             "--server.headless", "true",
             "--server.port", str(PUERTO_PANEL),
             "--browser.gatherUsageStats", "false",
-        ]
+        ],
+        cwd=RAIZ,
     )
 
 
