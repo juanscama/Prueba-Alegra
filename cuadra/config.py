@@ -18,7 +18,12 @@ FECHA_CORRIDA = date(2026, 10, 31)
 DIAS_ATASCADO = 3
 DIAS_RECIENTE_MAX = 14
 
-SEMILLA = "cuadra-2026-10"
+# La semilla del reparto se eligió con una regla fija, antes de enviar nada: la primera candidata cuya
+# prueba A/A (el mismo reparto aplicado a julio y agosto, donde nadie recibió correo) da p > UMBRAL_AA.
+# Las dos primeras dejaban, por azar, menos autónomos de canal orgánico en un grupo que en el otro.
+SEMILLAS_CANDIDATAS = ["cuadra-2026-10", "cuadra-2026-10-a", "cuadra-2026-10-b", "cuadra-2026-10-c"]
+UMBRAL_AA = 0.2
+SEMILLA = "cuadra-2026-10-b"
 PROPORCION_TRATAMIENTO = 0.5
 VENTANA_DIAS = 14
 

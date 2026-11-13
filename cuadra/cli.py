@@ -2,12 +2,14 @@
 
 import argparse
 import json
+import subprocess
+import sys
 from datetime import date
 
 import pandas as pd
 
 from cuadra import flujo
-from cuadra.config import FECHA_CORRIDA
+from cuadra.config import FECHA_CORRIDA, RAIZ
 from cuadra.medicion import medir
 from cuadra.simulador import simular_eventos
 
@@ -81,6 +83,10 @@ def _medir(args) -> int:
     return 0
 
 
+def _panel(args) -> int:
+    return subprocess.call([sys.executable, "-m", "streamlit", "run", str(RAIZ / "panel" / "app.py")])
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="cuadra", description="Flujo de activación: de registrarse a facturar")
     sub = parser.add_subparsers(dest="comando", required=True)
@@ -102,6 +108,9 @@ def main(argv: list[str] | None = None) -> int:
     medicion = sub.add_parser("medir", help="Compara tratamiento y control con una exportación posterior de eventos")
     medicion.add_argument("--eventos", required=True, help="CSV con columnas id_contacto, evento, fecha")
     medicion.set_defaults(funcion=_medir)
+
+    panel = sub.add_parser("panel", help="Abre el panel web local con los resultados de salida/")
+    panel.set_defaults(funcion=_panel)
 
     args = parser.parse_args(argv)
     return args.funcion(args)

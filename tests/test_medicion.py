@@ -110,3 +110,13 @@ def test_cli_simular_y_medir(datos, tmp_path, monkeypatch, capsys):
     assert "SIMULADO" in impreso and "extender" in impreso
     assert (tmp_path / "SIMULADO_resultado_experimento.json").is_file()
     assert not (tmp_path / "resultado_experimento.json").exists()
+
+
+def test_la_semilla_configurada_pasa_la_prueba_aa(datos):
+    """Regla fijada antes de enviar nada: se usa la primera semilla candidata cuya prueba A/A da p > 0,2."""
+    from cuadra.config import SEMILLA, SEMILLAS_CANDIDATAS, UMBRAL_AA
+
+    valores_p = {s: prueba_aa(datos, s).valor_p for s in SEMILLAS_CANDIDATAS}
+    primera_que_pasa = next(s for s in SEMILLAS_CANDIDATAS if valores_p[s] > UMBRAL_AA)
+    assert SEMILLA == primera_que_pasa
+    assert prueba_aa(datos).valor_p > UMBRAL_AA

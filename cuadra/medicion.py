@@ -7,7 +7,7 @@ from statistics import NormalDist
 
 import pandas as pd
 
-from cuadra.config import VENTANA_DIAS
+from cuadra.config import SEMILLA, VENTANA_DIAS
 from cuadra.experimento import grupo
 from cuadra.ingesta import Datos
 
@@ -94,13 +94,13 @@ def medir(
     return _comparar_grupos(tabla, simulado), pd.DataFrame(filas)
 
 
-def prueba_aa(datos: Datos) -> ResultadoExperimento:
+def prueba_aa(datos: Datos, semilla: str = SEMILLA) -> ResultadoExperimento:
     """Mismo reparto por hash sobre julio y agosto, donde nadie recibió nada: no debería haber diferencia."""
     cohorte = datos.contactos[datos.contactos.fecha_registro.map(lambda f: f.month in (7, 8))]
     facturaron = set(datos.eventos[datos.eventos.evento == "emitio_primera_factura"].id_contacto)
     tabla = pd.DataFrame(
         {
-            "grupo": cohorte.id_contacto.map(grupo),
+            "grupo": cohorte.id_contacto.map(lambda i: grupo(i, semilla)),
             "convirtio": cohorte.id_contacto.isin(facturaron),
         }
     )
