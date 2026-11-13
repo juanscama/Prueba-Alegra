@@ -14,6 +14,7 @@ from cuadra.diagnostico import embudo, embudo_por, escribir_diagnostico, tiempos
 from cuadra.estado import calcular_estado, pagadores_sin_factura
 from cuadra.experimento import asignar, efecto_minimo_detectable, equilibrio
 from cuadra.ingesta import cargar
+from cuadra.medicion import prueba_aa
 from cuadra.modelo import ErrorModelo, Modelo, Rechazo, SinCache
 from cuadra.redaccion import Variante, segmento_de, variantes_posibles
 from cuadra.verificacion import en_revision, procesar
@@ -71,6 +72,7 @@ def correr(
         parte.insert(0, "dimension", dimension)
         partes.append(parte)
     _csv(pd.concat(partes), dir_salida / "equilibrio.csv")
+    _json(prueba_aa(datos).como_dict(), dir_salida / "prueba_aa.json")
     n_t = int((asignacion.grupo == "tratamiento").sum())
     n_c = int((asignacion.grupo == "control").sum())
 

@@ -1,10 +1,15 @@
 """Línea de comandos: `cuadra correr` ejecuta el flujo completo."""
 
 import argparse
+import json
 from datetime import date
+
+import pandas as pd
 
 from cuadra import flujo
 from cuadra.config import FECHA_CORRIDA
+from cuadra.medicion import medir
+from cuadra.simulador import simular_eventos
 
 ETIQUETAS = [
     ("fecha", "Fecha de corrida"),
@@ -43,6 +48,39 @@ def _correr(args) -> int:
     return 0
 
 
+def _simular(args) -> int:
+    asignacion = pd.read_csv(flujo.DIR_SALIDA / "asignacion_experimento.csv")
+    eventos = simular_eventos(asignacion, efecto=args.efecto, semilla=args.semilla)
+    ruta = flujo.DIR_SALIDA / "SIMULADO_eventos_posteriores.csv"
+    eventos.to_csv(ruta, index=False, lineterminator="\n", encoding="utf-8")
+    print(f"SIMULADO: {len(eventos)} primeras facturas inventadas con un efecto de {args.efecto:+.0%}.")
+    print(f"No son resultados reales. Archivo: {ruta}")
+    return 0
+
+
+def _medir(args) -> int:
+    asignacion = pd.read_csv(flujo.DIR_SALIDA / "asignacion_experimento.csv")
+    resultado, por_estrato = medir(asignacion, pd.read_csv(args.eventos))
+    prefijo = "SIMULADO_" if resultado.simulado else ""
+    (flujo.DIR_SALIDA / f"{prefijo}resultado_experimento.json").write_text(
+        json.dumps(resultado.como_dict(), ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    por_estrato.to_csv(
+        flujo.DIR_SALIDA / f"{prefijo}resultado_por_estrato.csv", index=False, lineterminator="\n", encoding="utf-8"
+    )
+    if resultado.simulado:
+        print("SIMULADO: los eventos medidos son inventados; esto demuestra el cálculo, no un resultado.\n")
+    print(f"Tratamiento  {resultado.conv_t:>4} de {resultado.n_t:<4} emitieron su primera factura ({resultado.tasa_t:.1%})")
+    print(f"Control      {resultado.conv_c:>4} de {resultado.n_c:<4} emitieron su primera factura ({resultado.tasa_c:.1%})")
+    print(
+        f"Diferencia   {resultado.diferencia * 100:+.1f} puntos "
+        f"(IC 95%: {resultado.ic95[0] * 100:+.1f} a {resultado.ic95[1] * 100:+.1f}; p = {resultado.valor_p:.4f})"
+    )
+    regla = "el intervalo queda entero por encima de cero" if resultado.decision == "extender" else "el intervalo incluye el cero"
+    print(f"Decisión     {resultado.decision}: {regla}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="cuadra", description="Flujo de activación: de registrarse a facturar")
     sub = parser.add_subparsers(dest="comando", required=True)
@@ -55,6 +93,15 @@ def main(argv: list[str] | None = None) -> int:
     correr.add_argument("--limite-variantes", type=int, default=None, help="Procesa solo las N variantes con más destinatarios")
     correr.add_argument("--respetar-enviados", action="store_true", help="No vuelve a escribir a quien ya está en salida/enviados.csv")
     correr.set_defaults(funcion=_correr)
+
+    simular = sub.add_parser("simular", help="Inventa una exportación futura de eventos para probar la medición")
+    simular.add_argument("--efecto", type=float, default=0.08, help="Puntos de conversión que se le suman al tratamiento (0.08 = 8 puntos)")
+    simular.add_argument("--semilla", type=int, default=7)
+    simular.set_defaults(funcion=_simular)
+
+    medicion = sub.add_parser("medir", help="Compara tratamiento y control con una exportación posterior de eventos")
+    medicion.add_argument("--eventos", required=True, help="CSV con columnas id_contacto, evento, fecha")
+    medicion.set_defaults(funcion=_medir)
 
     args = parser.parse_args(argv)
     return args.funcion(args)
