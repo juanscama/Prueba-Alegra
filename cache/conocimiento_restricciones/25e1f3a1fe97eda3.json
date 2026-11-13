@@ -1,0 +1,35 @@
+{
+  "peticion": {
+    "modelo": "claude-opus-5-5",
+    "tarea": "conocimiento_restricciones",
+    "sistema": "Lees las notas de cambios de esta semana de Cuadra, un software de facturación para autónomos y pymes de\nEspaña. Otro equipo escribirá correos a personas que acaban de registrarse y que todavía no tienen ningún\nplan de pago.\n\nDevuelve las funciones mencionadas en las notas que no están disponibles en todos los planes. Para cada\nuna: su nombre, el plan que la incluye, los límites que la nota declara y unas pocas palabras clave en\nminúsculas (singular y plural) con las que se detectaría que un correo habla de ella. Si una función está\nen todos los planes, no la incluyas.\n",
+    "usuario": "<nota archivo=\"nota-1-inicio-de-sesion-con-google.md\">\n# Nota de cambios · Inicio de sesión con Google\n\n**Fecha:** lunes de esta semana · **Equipo:** Plataforma · **Planes:** todos\n\nAhora se puede entrar en Cuadra con una cuenta de Google, además de con correo y contraseña.\n\n- En la pantalla de entrada aparece el botón **Continuar con Google**.\n- Si el correo de Google coincide con el de un usuario existente, entra en esa cuenta.\n- Si no coincide, Cuadra pide crear una cuenta nueva.\n- Los usuarios que ya usaban correo y contraseña pueden seguir haciéndolo.\n\nSin cambios en facturación, inventario, pagos ni informes.\n</nota>\n\n<nota archivo=\"nota-2-nuevo-envio-de-facturas.md\">\n# Nota de cambios · Nuevo envío de facturas\n\n**Fecha:** miércoles de esta semana · **Equipo:** Ventas · **Planes:** todos\n\nRediseñamos el envío de facturas por correo.\n\n- El botón **Enviar** sale ahora arriba a la derecha, al abrir la factura. Ya no está en **Más acciones**.\n- Se puede **editar el asunto** del correo. Por defecto sigue siendo «Factura [número] de [tu empresa]».\n- Nuevo campo **CC** para enviar copia. El campo de destinatario ahora admite un solo correo: los demás van en\n  CC.\n- Casilla **Adjuntar XML** (desmarcada por defecto).\n- Sin cambios en el historial de envíos.\n</nota>\n\n<nota archivo=\"nota-3-facturas-recurrentes.md\">\n# Nota de cambios · Facturas recurrentes\n\n**Fecha:** viernes de esta semana · **Equipo:** Ventas · **Planes:** solo **Pro**\n\nNueva función: facturas que se emiten solas cada cierto tiempo, para clientes con cuotas fijas.\n\n- Se crea en **Ventas > Facturas recurrentes > Nueva recurrente**.\n- Se elige el cliente, las líneas (como en una factura normal), la **frecuencia** (mensual, trimestral o\n  anual) y la **fecha de la primera emisión**.\n- Cada factura se emite sola a las 8:00 de su fecha, con la numeración normal.\n- Opción **Enviar por correo al emitir** (desmarcada por defecto).\n- Para dejar de emitir, se pulsa **Finalizar**. Una recurrente finalizada no se puede reactivar.\n\n**Todavía no disponible:** pausar una recurrente, ni cambiar el importe de las que ya se emitieron.\n</nota>"
+  },
+  "respuesta": {
+    "funciones": [
+      {
+        "nombre": "Facturas recurrentes",
+        "plan": "Pro",
+        "limites": [
+          "No se puede pausar una factura recurrente",
+          "No se puede cambiar el importe de las facturas recurrentes que ya se emitieron",
+          "Una recurrente finalizada no se puede reactivar"
+        ],
+        "palabras_clave": [
+          "recurrente",
+          "recurrentes",
+          "factura recurrente",
+          "facturas recurrentes",
+          "cuota fija",
+          "cuotas fijas",
+          "emisión automática",
+          "emisiones automáticas"
+        ]
+      }
+    ]
+  },
+  "uso": {
+    "tokens_entrada": 1773,
+    "tokens_salida": 172
+  }
+}
