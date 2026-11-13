@@ -79,3 +79,27 @@ class ModeloFalsoConocimiento:
 @pytest.fixture
 def modelo_falso_conocimiento():
     return ModeloFalsoConocimiento()
+
+
+class ModeloEspia:
+    """Guarda lo último que se le pidió y devuelve siempre el mismo correo."""
+
+    def __init__(self):
+        self.ultimo_usuario = self.ultimo_sistema = self.ultima_tarea = None
+
+    def pedir(self, *, tarea, sistema, usuario, esquema):
+        from cuadra.redaccion import Correo
+
+        self.ultima_tarea, self.ultimo_sistema, self.ultimo_usuario = tarea, sistema, usuario
+        return Correo(
+            asunto="Tu primer cliente en Cuadra",
+            cuerpo="Hola, {nombre}. Entra en **Ventas > Facturas** y pulsa **Nueva factura**.",
+            paso_siguiente="Crear cliente",
+            ruta_menu="Ventas > Facturas",
+            articulo_fuente="01-crear-tu-primera-factura.md",
+        )
+
+
+@pytest.fixture
+def modelo_espia():
+    return ModeloEspia()
