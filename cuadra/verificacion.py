@@ -43,6 +43,8 @@ def verificar_reglas(correo: Correo, base: BaseVigente) -> list[str]:
     otras = sorted({llave for llave in _LLAVES.findall(texto) if llave != "{nombre}"})
     if otras:
         motivos.append(f"R2: hay campos entre llaves que el sistema no rellena: {', '.join(otras)}")
+    elif "{" in texto.replace("{nombre}", "") or "}" in texto.replace("{nombre}", ""):
+        motivos.append("R2: hay llaves sueltas; el campo del nombre se escribe {nombre}, con una sola llave")
 
     validas = set(base.rutas_validas)
     rutas = extraer_rutas(correo.cuerpo) | {normalizar_ruta(correo.ruta_menu)}
@@ -52,10 +54,14 @@ def verificar_reglas(correo: Correo, base: BaseVigente) -> list[str]:
     if len(_FLECHA.findall(correo.cuerpo)) > flechas_en_negrita:
         motivos.append("R3: hay una ruta de menú fuera de negrita; no se puede comprobar")
 
-    obsoletas = [f for a in base.articulos for f in a.frases_obsoletas] + list(base.rutas_obsoletas)
-    for frase in obsoletas:
+    for frase in (f for a in base.articulos for f in a.frases_obsoletas):
         if normalizar_ruta(frase) in plano:
             motivos.append(f"R4: usa una instrucción obsoleta: «{frase}»")
+    for ruta in base.rutas_obsoletas:
+        # Los tramos de una ruta obsoleta no pueden aparecer seguidos, los una el separador que los una.
+        tramos = [re.escape(tramo) for tramo in ruta.split(" > ")]
+        if re.search(r"[^.\n]{1,25}?".join(tramos), plano):
+            motivos.append(f"R4: manda a una ruta de menú obsoleta: «{ruta}»")
 
     for funcion in base.funciones_restringidas:
         for palabra in funcion.palabras_clave:

@@ -32,7 +32,7 @@ uv run cuadra simular --efecto 0.08
 uv run cuadra medir --eventos salida/SIMULADO_eventos_posteriores.csv
 ```
 
-Pruebas: `uv run pytest` (107, sin red ni clave).
+Pruebas: `uv run pytest` (sin red ni clave).
 
 ## Qué encontré
 
@@ -42,8 +42,8 @@ De 1500 personas registradas entre julio y octubre, 548 (37%) emitieron su prime
    personas. Solo el 42% pasa de configurar su empresa a crear un cliente; en los otros siete cruces de canal
    y segmento lo hace entre el 72% y el 84%. Solo el 15% de ese grupo llega a facturar.
 2. **Quien avanza, avanza rápido; quien se para, no vuelve solo.** Nadie emitió su primera factura más de 8
-   días después de registrarse. De quienes llevaban 3 días o más sin dar un paso, entre el 0% y el 3% facturó
-   en los 14 días siguientes. Hay 912 personas en esa situación.
+   días después de registrarse. De quienes llevaban 3 días o más sin dar un paso, solo 5 de 3249 (0,15%, sumando siete
+   fechas de corte pasadas) facturaron en los 14 días siguientes. Hoy hay 912 personas en esa situación.
 3. **Facturar predice pagar.** 197 de los 205 pagadores habían emitido una factura.
 4. **El Centro de Ayuda está desactualizado en un punto.** Una nota de cambios de esta semana contradice el
    artículo «Enviar una factura por correo». Un flujo que repitiera ese artículo mandaría a la gente a un
@@ -92,15 +92,19 @@ Archivos en `salida/`:
 - **De protección:** bajas y quejas. No existen en los datos del caso; habría que medirlas desde el primer envío.
 - **Regla de decisión, escrita antes de mirar:** si el intervalo de confianza del 95% de la diferencia queda
   entero por encima de cero, se extiende a todos. Si no, se itera el mensaje por paso y antigüedad.
-- **Qué se puede detectar:** con 457 y 455 personas y una conversión natural cercana al 2%, una mejora de 2,6
-  puntos o más. Una mejora menor no se distinguiría del azar.
+- **Qué se puede detectar:** con 457 y 455 personas y una conversión natural del 0,15%, una mejora de unos 2
+  puntos o más, con potencia del 80% (aproximación normal). Una mejora menor probablemente no se distinguiría
+  del azar.
 - **Comprobación del reparto (prueba A/A):** el mismo hash aplicado a julio y agosto, cuando nadie recibió
   nada, no debe mostrar diferencia. La primera semilla que usé sí la mostraba (p = 0,01): por azar dejaba
   menos autónomos de canal orgánico en un grupo. La cambié con una regla fija, la primera candidata con
-  p > 0,2, antes de generar ningún envío. Esa regla está en una prueba automática.
+  p > 0,2, cubierta por una prueba automática. No hubo ningún envío real con la semilla anterior; el
+  historial conserva la bandeja que se generó con ella. Límite de esta prueba: compara a todos los
+  registrados de esos meses, no solo a los atascados.
 
-`cuadra medir` hace este cálculo sobre una exportación posterior de eventos. Como no hay datos después del 31
-de octubre, `cuadra simular` inventa una para demostrar que el cálculo corre. **Ese resultado es simulado y
+`cuadra medir` calcula la métrica principal, total y por paso y antigüedad, sobre una exportación posterior
+de eventos. Las métricas secundarias y las de protección están definidas pero no implementadas. Como no hay
+datos después del 31 de octubre, `cuadra simular` inventa una para demostrar que el cálculo corre. **Ese resultado es simulado y
 no dice nada sobre el efecto real del flujo.**
 
 ## Qué decidí y por qué
@@ -133,8 +137,8 @@ El razonamiento completo está en [`docs/2026-11-12-diseno-flujo-activacion.md`]
 
 - Construido con Claude Code. El historial de commits sigue el plan de [`docs/2026-11-12-plan-construccion.md`](docs/2026-11-12-plan-construccion.md).
 - El flujo llama a Claude (`claude-opus-5-5`) con el SDK oficial de Anthropic y salidas estructuradas.
-- Generar el caché completo requirió 229 llamadas y costó aproximadamente 5 USD, una sola vez. Repetir la
-  corrida desde el caché no cuesta nada.
+- El caché guarda 228 respuestas de Claude. Generarlo costó aproximadamente 5 USD; durante el desarrollo se
+  gastaron unos 3,5 USD más en una corrida repetida por error. Repetir la corrida desde el caché no cuesta nada.
 
 ## Estructura
 

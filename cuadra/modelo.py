@@ -8,7 +8,7 @@ from pathlib import Path
 
 import anthropic
 from dotenv import load_dotenv
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 
 from cuadra.config import DIR_CACHE, MODELO, RAIZ
 
@@ -21,6 +21,10 @@ class SinCache(Exception):
 
 class Rechazo(Exception):
     """El modelo declinó responder o no devolvió una salida válida."""
+
+
+class SinClave(ValueError):
+    """Se pidió volver a llamar al modelo y no hay clave con la que hacerlo."""
 
 
 class ErrorModelo(Exception):
@@ -42,6 +46,11 @@ class Modelo:
             raise ValueError(f"modo debe ser uno de {MODOS}")
         if modo == "auto":
             modo = "vivo" if hay_clave() else "repeticion"
+        if forzar and cliente is None and not hay_clave():
+            raise SinClave(
+                "--forzar vuelve a llamar al modelo y necesita una clave: copia .env.example a .env y pon "
+                "tu ANTHROPIC_API_KEY. Sin --forzar, el flujo corre desde las respuestas guardadas."
+            )
         self.dir_cache = Path(dir_cache)
         self.modo = modo
         self.forzar = forzar
@@ -69,8 +78,8 @@ class Modelo:
         if ruta.is_file() and not self.forzar:
             guardado = json.loads(ruta.read_text(encoding="utf-8"))
             return esquema.model_validate(guardado["respuesta"])
-        if self.modo == "repeticion":
-            raise SinCache(f"No hay respuesta guardada para la tarea «{tarea}»")
+        if self.modo == "repeticion" or (self._cliente is None and not hay_clave()):
+            raise SinCache(f"No hay respuesta guardada para la tarea «{tarea}» ni clave para pedirla")
 
         respuesta = self._llamar(sistema, usuario, esquema)
         with self._candado:
@@ -109,3 +118,6 @@ class Modelo:
             )
         except anthropic.APIError as error:
             raise ErrorModelo(f"{type(error).__name__}: {error}") from error
+        except (ValidationError, json.JSONDecodeError) as error:
+            # Salida truncada o que no cumple el esquema: se trata igual que si el modelo hubiera declinado.
+            raise Rechazo(f"El modelo devolvió una salida que no cumple el esquema: {error}") from error

@@ -46,3 +46,18 @@ def test_cli_panel_lanza_streamlit(monkeypatch):
     monkeypatch.setattr(subprocess, "call", lambda orden: lanzado.update(orden=orden) or 0)
     assert main(["panel"]) == 0
     assert lanzado["orden"] == [sys.executable, "-m", "streamlit", "run", PANEL]
+
+
+def test_panel_no_afirma_que_la_aa_pasa_si_no_pasa(tmp_path, monkeypatch):
+    import shutil
+
+    shutil.copytree(DIR_SALIDA, tmp_path / "salida")
+    ruta = tmp_path / "salida" / "prueba_aa.json"
+    aa = json.loads(ruta.read_text(encoding="utf-8"))
+    ruta.write_text(json.dumps({**aa, "valor_p": 0.01, "diferencia": 0.09}), encoding="utf-8")
+    monkeypatch.setenv("CUADRA_DIR_SALIDA", str(tmp_path / "salida"))
+    at = AppTest.from_file(PANEL, default_timeout=60).run()
+    assert not at.exception
+    textos = " ".join(m.value for m in at.markdown)
+    assert "no la hay" not in textos
+    assert any("prueba A/A" in w.value for w in at.warning)

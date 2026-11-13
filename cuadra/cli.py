@@ -11,6 +11,7 @@ import pandas as pd
 from cuadra import flujo
 from cuadra.config import FECHA_CORRIDA, RAIZ
 from cuadra.medicion import medir
+from cuadra.modelo import SinClave
 from cuadra.simulador import simular_eventos
 
 ETIQUETAS = [
@@ -27,24 +28,33 @@ ETIQUETAS = [
     ("correos_en_bandeja", "Correos en la bandeja de salida"),
     ("personas_sin_correo_por_revision", "Personas sin correo por revisión"),
     ("llamadas_reales", "Llamadas reales al modelo"),
+    ("tasa_base_estimada", "Conversión natural de los atascados"),
     ("efecto_minimo_detectable", "Efecto mínimo detectable"),
 ]
 
 
 def _correr(args) -> int:
-    resumen = flujo.correr(
-        fecha=args.fecha,
-        modo=args.modo,
-        forzar=args.forzar,
-        limite_variantes=args.limite_variantes,
-        respetar_enviados=args.respetar_enviados,
-        avisar=print,
-    )
+    try:
+        resumen = flujo.correr(
+            fecha=args.fecha,
+            modo=args.modo,
+            forzar=args.forzar,
+            limite_variantes=args.limite_variantes,
+            respetar_enviados=args.respetar_enviados,
+            avisar=print,
+        )
+    except SinClave as error:
+        print(f"No se puede correr así: {error}", file=sys.stderr)
+        return 2
     print()
     for clave, etiqueta in ETIQUETAS:
         valor = resumen[clave]
         if clave == "efecto_minimo_detectable":
-            valor = f"{valor * 100:.1f} puntos porcentuales"
+            valor = "no calculable con estos datos" if valor is None else f"{valor * 100:.1f} puntos porcentuales"
+        if clave == "tasa_base_estimada":
+            valor = "sin historia suficiente" if valor is None else (
+                f"{valor:.1%} ({resumen['base_convertidos']} de {resumen['base_observaciones']})"
+            )
         print(f"{etiqueta:<40} {valor}")
     print(f"\nResultados en {flujo.DIR_SALIDA}")
     return 0

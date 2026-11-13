@@ -45,6 +45,12 @@ def test_bueno_pasa(base_de_prueba):
         ("Hola, {nombre}. Entra en Ventas > Facturas, sin negrita.", "R3"),
         ("Hola, {nombre}. " + "x" * 900, "R7"),
         ("Hola, {nombre}. Mira https://cuadra.example/ayuda.", "R8"),
+        ("Hola, {{nombre}}: entra en **Ventas > Facturas**.", "R2"),
+        ("Hola, {nombre}. Pulsa **Más acciones » Enviar por correo**.", "R4"),
+        ("Hola, {nombre}. Pulsa **Más acciones / Enviar por correo**.", "R4"),
+        ("Hola, {nombre}. Pulsa Más acciones y, dentro, Enviar por correo.", "R4"),
+        ("Hola, {nombre}. Entra en **Ventas » Presupuestos**.", "R3"),
+        ("Hola, {nombre}. Entra en **Ventas / Presupuestos**.", "R3"),
     ],
 )
 def test_defectos_sembrados(base_de_prueba, cuerpo, codigo):
@@ -98,3 +104,8 @@ def test_el_juez_tambien_rechaza(base_de_prueba):
 def test_fallos_del_modelo_van_a_revision(base_de_prueba, error, texto):
     r = procesar(VARIANTE, base_de_prueba, ModeloGuion([], error=error), "autonomo")
     assert r.estado == "revision" and r.correo is None and texto in r.motivos[0]
+
+
+def test_comillas_espanolas_no_son_rutas(base_de_prueba):
+    correo = con(cuerpo="Hola, {nombre}. Entra en **Ventas > Facturas** y pulsa «Nueva factura» o **«Nueva factura»**.")
+    assert verificar_reglas(correo, base_de_prueba) == []

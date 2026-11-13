@@ -36,7 +36,7 @@ Hallazgos que deciden el diseño:
 2. **Quien avanza, avanza rápido; quien no, no vuelve solo.** Registro a configuración: máximo 1 día.
    Configuración a cliente: máximo 3 días. Cliente a primera factura: máximo 4 días. Nadie emitió su
    primera factura más de 8 días después de registrarse. La conversión natural de alguien que lleva 3 o
-   más días quieto es de entre 0% y 3% en los 14 días siguientes (medida en cinco fechas de corte).
+   más días quieto es del 0,15% en los 14 días siguientes (5 de 3249 observaciones en siete fechas de corte).
 3. **Facturar predice pagar.** 197 de los 205 pagadores emitieron primera factura. El pago llega entre 3 y
    30 días después de la primera factura (mediana 15).
 4. **`etapa_crm` no aporta información nueva:** PQL = facturó y no pagó; cliente = pagó; registrado = resto.

@@ -57,6 +57,11 @@ def pct(valor: float) -> str:
     return f"{valor:.0%}"
 
 
+def decimal(texto: str) -> str:
+    """Coma decimal, como se escribe en español."""
+    return texto.replace(".", ",")
+
+
 def como_markdown(cuerpo: str) -> str:
     """Conserva los saltos de línea del correo al mostrarlo."""
     return cuerpo.replace("\n", "  \n")
@@ -313,15 +318,18 @@ with tab_experimento:
     cifras = st.columns(4)
     cifras[0].metric("Tratamiento", resumen["tratamiento"])
     cifras[1].metric("Control", resumen["control"])
-    cifras[2].metric("Conversión natural estimada", pct(resumen["tasa_base_estimada"]))
+    base, minimo = resumen.get("tasa_base_estimada"), resumen.get("efecto_minimo_detectable")
+    cifras[2].metric("Conversión natural de los atascados", "sin historia" if base is None else decimal(f"{base:.1%}"))
     cifras[3].metric(
-        "Efecto mínimo detectable", f"{resumen['efecto_minimo_detectable'] * 100:.1f} puntos".replace(".", ",")
+        "Efecto mínimo detectable", "no calculable" if minimo is None else decimal(f"{minimo * 100:.1f} puntos")
     )
-    st.caption(
-        "Conversión natural: entre quienes llevaban 3 días o más quietos, del 0% al 3% facturó en los 14 días "
-        "siguientes (cinco fechas de corte históricas). Con estos tamaños, una mejora menor que el efecto "
-        "mínimo detectable no se distinguiría del azar."
-    )
+    if base is not None:
+        st.caption(
+            f"Conversión natural: en {resumen['base_cortes']} fechas de corte pasadas, {resumen['base_convertidos']} "
+            f"de {resumen['base_observaciones']} personas que llevaban 3 días o más quietas facturaron en los 14 "
+            "días siguientes (una misma persona cuenta en varios cortes). Efecto mínimo detectable: la mejora más "
+            "pequeña que estos grupos distinguirían del azar 8 de cada 10 veces (aproximación normal)."
+        )
     st.markdown(
         "**Regla de decisión, escrita antes de mirar resultados:** si el intervalo de confianza del 95% de la "
         "diferencia queda entero por encima de cero, el flujo se extiende a todos. Si no, se itera el mensaje "
@@ -345,13 +353,20 @@ with tab_experimento:
         st.markdown(
             f"Grupo «tratamiento»: {aa['conv_t']} de {aa['n_t']} facturaron ({aa['tasa_t']:.1%}). "
             f"Grupo «control»: {aa['conv_c']} de {aa['n_c']} ({aa['tasa_c']:.1%}). "
-            f"Diferencia: {aa['diferencia'] * 100:+.1f} puntos, p = {aa['valor_p']:.2f}. "
-            "Sin intervención no debe haber diferencia, y no la hay."
+            f"Diferencia: {aa['diferencia'] * 100:+.1f} puntos, p = {aa['valor_p']:.2f}."
         )
+        if aa["valor_p"] > config.UMBRAL_AA:
+            st.markdown("Sin intervención no debería haber diferencia, y la que se ve es la esperable por azar.")
+        else:
+            st.warning(
+                "La prueba A/A muestra una diferencia que no debería existir entre dos grupos que no recibieron "
+                "nada. Antes de enviar, hay que cambiar la semilla del reparto con la regla de `cuadra/config.py`."
+            )
         st.caption(
-            "La primera semilla que probé sí daba diferencia aquí (p = 0,01): por azar había dejado menos "
-            "autónomos de canal orgánico en un grupo. La cambié con una regla fija antes de enviar nada: la "
-            f"primera candidata con p > {config.UMBRAL_AA}. Esa regla está en una prueba automática."
+            "Esta prueba ya sirvió una vez: la primera semilla daba aquí una diferencia de 8,8 puntos (p = 0,01) "
+            "porque, por azar, dejaba menos autónomos de canal orgánico en un grupo. Se cambió con una regla "
+            f"fija, la primera candidata con p > {decimal(str(config.UMBRAL_AA))}, cubierta por una prueba automática. "
+            "Límite: compara a todos los registrados de esos meses, no solo a los atascados."
         )
 
     simulado = leer_json("SIMULADO_resultado_experimento.json")

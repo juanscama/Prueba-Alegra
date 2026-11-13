@@ -17,7 +17,7 @@ def test_corrida_real_en_repeticion(corrida):
     r, salida = corrida
     assert r["llamadas_reales"] == 0 and r["modo"] == "repeticion"
     assert r["variantes_aprobadas"] + r["variantes_en_revision"] == 108
-    assert r["variantes_aprobadas"] >= 100
+    assert r["variantes_aprobadas"] == 108 and r["variantes_en_revision"] == 0
     assert r["correos_en_bandeja"] + r["personas_sin_correo_por_revision"] == r["tratamiento"]
 
 

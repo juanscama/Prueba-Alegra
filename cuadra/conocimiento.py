@@ -66,6 +66,7 @@ en todos los planes, no la incluyas.
 # Las comillas españolas «…» no son flechas: » queda fuera a propósito.
 _FLECHAS = re.compile(r"\s*(?:>|›|→)\s*")
 _NEGRITA = re.compile(r"\*\*([^*]+)\*\*")
+_SEPARADORES_EN_NEGRITA = re.compile(r"\s*[/»]\s*")
 
 
 def normalizar_ruta(texto: str) -> str:
@@ -74,12 +75,17 @@ def normalizar_ruta(texto: str) -> str:
     return re.sub(r"\s+", " ", texto).strip()
 
 
+def _es_ruta(fragmento: str) -> bool:
+    """Dentro de una negrita también cuentan como separador «/» y «»» (si no cierra unas comillas)."""
+    return bool(_FLECHAS.search(fragmento)) or "/" in fragmento or ("»" in fragmento and "«" not in fragmento)
+
+
 def extraer_rutas(texto: str) -> set[str]:
-    """Rutas de menú: fragmentos en negrita con una flecha, como **Ventas > Facturas**."""
+    """Rutas de menú: fragmentos en negrita con un separador, como **Ventas > Facturas**."""
     return {
-        normalizar_ruta(fragmento)
+        normalizar_ruta(_SEPARADORES_EN_NEGRITA.sub(" > ", fragmento))
         for fragmento in _NEGRITA.findall(texto)
-        if _FLECHAS.search(fragmento.strip())
+        if _es_ruta(fragmento.strip())
     }
 
 

@@ -76,3 +76,36 @@ def test_cli_correr_imprime_el_resumen(tmp_path, monkeypatch, capsys, flujo_con_
     assert main(["correr", "--fecha", "2026-10-31", "--limite-variantes", "3"]) == 0
     impreso = capsys.readouterr().out
     assert "912" in impreso and "bandeja" in impreso.lower()
+
+
+@pytest.mark.parametrize("fecha", ["2026-06-01", "2026-07-01", "2026-07-03"])
+def test_fechas_tempranas_no_rompen(tmp_path, fecha):
+    from datetime import date
+
+    r = flujo.correr(fecha=date.fromisoformat(fecha), modo="repeticion", dir_salida=tmp_path / "s",
+                     dir_cache=tmp_path / "cache_vacio")
+    assert r["correos_en_bandeja"] == 0
+    if r["tratamiento"] == 0 or r["control"] == 0:
+        assert r["efecto_minimo_detectable"] is None
+
+
+def test_uso_diario_conserva_la_fecha_de_entrada(tmp_path, flujo_con_modelo_falso):
+    from datetime import date
+
+    flujo.correr(dir_salida=tmp_path, respetar_enviados=True)
+    segunda = flujo.correr(fecha=date(2026, 11, 10), dir_salida=tmp_path, respetar_enviados=True)
+    asignacion = pd.read_csv(tmp_path / "asignacion_experimento.csv")
+    assert asignacion.fecha_entrada.value_counts().to_dict() == {"2026-10-31": 912, "2026-11-10": 32}
+    nuevos_en_tratamiento = ((asignacion.fecha_entrada == "2026-11-10") & (asignacion.grupo == "tratamiento")).sum()
+    assert segunda["correos_en_bandeja"] == nuevos_en_tratamiento > 0
+    bandeja = pd.read_csv(tmp_path / "bandeja_salida.csv")
+    assert (bandeja.fecha_entrada == "2026-11-10").all()
+
+
+def test_cli_explica_forzar_sin_clave(monkeypatch, capsys, tmp_path):
+    from cuadra import modelo
+
+    monkeypatch.setattr(flujo, "DIR_SALIDA", tmp_path)
+    monkeypatch.setattr(modelo, "hay_clave", lambda: False)
+    assert main(["correr", "--modo", "vivo", "--forzar"]) == 2
+    assert "clave" in capsys.readouterr().err.lower()

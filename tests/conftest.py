@@ -3,6 +3,19 @@ import pytest
 from cuadra.ingesta import cargar
 
 
+@pytest.fixture(autouse=True)
+def sin_api_real(monkeypatch):
+    """Ninguna prueba puede usar la clave ni la red: sin clave en el entorno y sin cliente real."""
+    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.delenv("ANTHROPIC_AUTH_TOKEN", raising=False)
+    monkeypatch.setattr("cuadra.modelo._cargar_env", lambda: None)
+
+    def prohibido(*args, **kwargs):
+        raise AssertionError("Una prueba intentó crear un cliente real de la API")
+
+    monkeypatch.setattr("cuadra.modelo.anthropic.Anthropic", prohibido)
+
+
 @pytest.fixture(scope="session")
 def datos():
     return cargar()

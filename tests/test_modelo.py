@@ -110,3 +110,26 @@ def test_hay_clave_lee_el_entorno(monkeypatch):
     assert hay_clave() is False
     monkeypatch.setenv("ANTHROPIC_API_KEY", "una-clave")
     assert hay_clave() is True
+
+
+def test_respuesta_invalida_es_rechazo(tmp_path):
+    cliente = ClienteFalso()
+
+    def parse_que_no_valida(**kwargs):
+        Saludo.model_validate({})  # así falla el SDK cuando la salida llega truncada o no es el JSON pedido
+
+    cliente.beta.messages.parse = parse_que_no_valida
+    with pytest.raises(Rechazo):
+        Modelo(tmp_path, modo="vivo", cliente=cliente).pedir(**PETICION)
+
+
+def test_vivo_sin_clave_y_sin_cache_es_sincache(tmp_path, monkeypatch):
+    monkeypatch.setattr(modulo, "hay_clave", lambda: False)
+    with pytest.raises(SinCache):
+        Modelo(tmp_path, modo="vivo").pedir(**PETICION)
+
+
+def test_forzar_sin_clave_avisa_al_crear(tmp_path, monkeypatch):
+    monkeypatch.setattr(modulo, "hay_clave", lambda: False)
+    with pytest.raises(modulo.SinClave, match="clave"):
+        Modelo(tmp_path, modo="vivo", forzar=True)

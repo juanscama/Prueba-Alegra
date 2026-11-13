@@ -12,15 +12,13 @@ from cuadra.config import DIR_CACHE, DIR_SALIDA, FECHA_CORRIDA, MODELO
 from cuadra.conocimiento import construir_base
 from cuadra.diagnostico import embudo, embudo_por, escribir_diagnostico, tiempos_entre_pasos
 from cuadra.estado import calcular_estado, pagadores_sin_factura
-from cuadra.experimento import asignar, efecto_minimo_detectable, equilibrio
+from cuadra.experimento import acumular, asignar, conversion_natural, efecto_minimo_detectable, equilibrio
 from cuadra.ingesta import cargar
 from cuadra.medicion import prueba_aa
 from cuadra.modelo import ErrorModelo, Modelo, Rechazo, SinCache
 from cuadra.redaccion import Variante, segmento_de, variantes_posibles
 from cuadra.verificacion import en_revision, procesar
 
-# Conversión natural en 14 días de quien lleva 3 o más días quieto: entre 0% y 3% en cinco cortes históricos.
-TASA_BASE_ESTIMADA = 0.02
 HILOS = 8
 
 
@@ -65,7 +63,14 @@ def correr(
 
     avisar("4/8 Reparto en tratamiento y control")
     asignacion = asignar(estado, fecha)
-    _csv(asignacion, dir_salida / "asignacion_experimento.csv")
+    registro = asignacion
+    ruta_asignacion = dir_salida / "asignacion_experimento.csv"
+    if respetar_enviados and ruta_asignacion.is_file():
+        # Uso diario: el registro del experimento se acumula; nadie sale y nadie cambia de fecha de entrada.
+        registro = acumular(pd.read_csv(ruta_asignacion, dtype={"id_contacto": str}), asignacion)
+        primera_fecha = registro.set_index("id_contacto").fecha_entrada
+        asignacion["fecha_entrada"] = asignacion.id_contacto.map(primera_fecha)
+    _csv(registro, ruta_asignacion)
     partes = []
     for dimension in ("paso", "tramo", "canal", "segmento"):
         parte = equilibrio(asignacion, datos.contactos, dimension).rename(columns={dimension: "valor"})
@@ -75,6 +80,9 @@ def correr(
     _json(prueba_aa(datos).como_dict(), dir_salida / "prueba_aa.json")
     n_t = int((asignacion.grupo == "tratamiento").sum())
     n_c = int((asignacion.grupo == "control").sum())
+    convertidos, observaciones, cortes = conversion_natural(datos, fecha)
+    tasa_base = convertidos / observaciones if observaciones else None
+    efecto_minimo = efecto_minimo_detectable(n_t, n_c, tasa_base) if tasa_base is not None else None
 
     avisar("5/8 Base de conocimiento vigente (ayudas contra notas de cambios)")
     modelo = Modelo(dir_cache=dir_cache or DIR_CACHE, modo=modo, forzar=forzar)
@@ -143,8 +151,11 @@ def correr(
         "correos_en_bandeja": int(len(bandeja)),
         "personas_sin_correo_por_revision": int(cola.personas_sin_correo.sum()),
         "llamadas_reales": int(modelo.llamadas_reales),
-        "tasa_base_estimada": TASA_BASE_ESTIMADA,
-        "efecto_minimo_detectable": round(efecto_minimo_detectable(n_t, n_c, TASA_BASE_ESTIMADA), 4),
+        "base_convertidos": convertidos,
+        "base_observaciones": observaciones,
+        "base_cortes": len(cortes),
+        "tasa_base_estimada": round(tasa_base, 4) if tasa_base is not None else None,
+        "efecto_minimo_detectable": round(efecto_minimo, 4) if efecto_minimo is not None else None,
     }
     _json(resumen, dir_salida / "resumen.json")
     return resumen
