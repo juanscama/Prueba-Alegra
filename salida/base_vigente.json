@@ -1,0 +1,89 @@
+{
+  "articulos": [
+    {
+      "archivo": "01-crear-tu-primera-factura.md",
+      "titulo": "Crear tu primera factura",
+      "vigente": true,
+      "frases_obsoletas": [],
+      "texto_vigente": "# Crear tu primera factura\n\nAntes de empezar, revisa que tu empresa tenga el **NIF** y la dirección fiscal completos en\n**Configuración > Empresa**. Sin esos datos, Cuadra no te deja emitir.\n\n## Pasos\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Si el cliente no existe, pulsa **Crear cliente** y completa\n   sus datos fiscales.\n4. Añade las líneas: elige un producto o servicio, la cantidad y el precio. El **IVA** se aplica según lo\n   que tenga configurado cada producto.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nLa factura queda con un número correlativo que Cuadra asigna solo. Una factura emitida ya no se puede\neditar: si hay un error, emite una **factura rectificativa** desde **Más acciones > Rectificar**.\n\n## Preguntas frecuentes\n\n**¿Puedo guardar una factura sin emitirla?** Sí: pulsa **Guardar como borrador**. Los borradores no tienen\nnúmero hasta que los emites.\n\n**¿Puedo cambiar la numeración?** Sí, en **Configuración > Numeración**, antes de emitir la primera factura\nde la serie.",
+      "notas_que_lo_cambian": []
+    },
+    {
+      "archivo": "02-configurar-el-iva-de-tus-productos.md",
+      "titulo": "Configurar el IVA de tus productos",
+      "vigente": true,
+      "frases_obsoletas": [],
+      "texto_vigente": "# Configurar el IVA de tus productos\n\nCada producto o servicio de Cuadra lleva su propio tipo de **IVA**. Así, al facturar, el impuesto se calcula\nsolo.\n\n## Pasos\n\n1. Entra en **Inventario > Productos y servicios**.\n2. Abre el producto o pulsa **Nuevo producto**.\n3. En **Impuesto**, elige el tipo de IVA: general, reducido, superreducido o exento.\n4. Si el producto está exento, elige el **motivo de exención** en la lista.\n5. Pulsa **Guardar**.\n\nEl cambio solo afecta a las facturas que emitas desde ese momento. Las facturas ya emitidas conservan el IVA\ncon el que se emitieron.\n\n## Preguntas frecuentes\n\n**¿Puedo poner un IVA distinto en una sola factura?** Sí: al crear la factura, cambia el impuesto de esa\nlínea. El producto mantiene su configuración.\n\n**¿Dónde veo cuánto IVA he repercutido?** En **Informes > Impuestos**.",
+      "notas_que_lo_cambian": []
+    },
+    {
+      "archivo": "03-registrar-un-pago-recibido.md",
+      "titulo": "Registrar un pago recibido",
+      "vigente": true,
+      "frases_obsoletas": [],
+      "texto_vigente": "# Registrar un pago recibido\n\nCuando un cliente te paga, registra el cobro para que la factura pase a **Pagada** y tus informes de\ntesorería estén al día.\n\n## Pasos\n\n1. Entra en **Ventas > Facturas** y abre la factura.\n2. Pulsa **Registrar pago**.\n3. Indica la fecha, el importe y el método (transferencia, tarjeta, efectivo o domiciliación).\n4. Elige la **cuenta bancaria** donde entró el dinero.\n5. Pulsa **Guardar**.\n\nSi el importe es menor que el total, la factura queda como **Pagada parcialmente** y puedes registrar el\nresto más adelante.\n\n## Preguntas frecuentes\n\n**¿Puedo registrar un pago de varias facturas a la vez?** Sí: en **Ventas > Pagos recibidos > Nuevo pago**,\nelige el cliente y marca las facturas que cubre.\n\n**Me equivoqué al registrar un pago. ¿Cómo lo borro?** Abre el pago en **Ventas > Pagos recibidos** y pulsa\n**Anular**. La factura vuelve a su estado anterior.",
+      "notas_que_lo_cambian": []
+    },
+    {
+      "archivo": "04-enviar-una-factura-por-correo.md",
+      "titulo": "Enviar una factura por correo",
+      "vigente": false,
+      "frases_obsoletas": [
+        "Pulsa **Más acciones > Enviar por correo**.",
+        "Si quieres, añade otro destinatario separado por comas.",
+        "El asunto lo pone Cuadra: «Factura [número] de [tu empresa]».",
+        "No por ahora: el asunto es siempre el mismo.",
+        "No: solo se envía el PDF."
+      ],
+      "texto_vigente": "# Enviar una factura por correo\n\nPuedes enviar cualquier factura emitida directamente desde Cuadra. Tu cliente la recibe en PDF.\n\n## Pasos\n\n1. Entra en **Ventas > Facturas** y abre la factura.\n2. Pulsa **Enviar**, arriba a la derecha de la factura.\n3. Revisa el correo del cliente. El campo de destinatario admite un solo correo: si quieres enviar copia a otras personas, añádelas en el campo **CC**.\n4. Escribe un mensaje opcional. Puedes editar el asunto; por defecto es «Factura [número] de [tu empresa]».\n5. Pulsa **Enviar**.\n\nEn el historial de la factura verás la fecha y la hora del envío.\n\n## Preguntas frecuentes\n\n**¿Puedo cambiar el asunto del correo?** Sí: puedes editar el asunto. Por defecto es «Factura [número] de [tu empresa]».\n\n**¿Se envía también el XML?** Solo si marcas la casilla **Adjuntar XML**, que está desmarcada por defecto.\n\n**Mi cliente dice que no le llegó.** Revisa que el correo esté bien escrito y pídele que mire la carpeta de\ncorreo no deseado.",
+      "notas_que_lo_cambian": [
+        "nota-2-nuevo-envio-de-facturas.md"
+      ]
+    },
+    {
+      "archivo": "05-exportar-tus-informes-de-ventas.md",
+      "titulo": "Exportar tus informes de ventas",
+      "vigente": true,
+      "frases_obsoletas": [],
+      "texto_vigente": "# Exportar tus informes de ventas\n\nLos informes de ventas te muestran cuánto has facturado por periodo, por cliente o por producto, y puedes\nllevarlos a Excel.\n\n## Pasos\n\n1. Entra en **Informes > Ventas**.\n2. Elige el informe: **Por periodo**, **Por cliente** o **Por producto**.\n3. Ajusta las fechas con el filtro de arriba.\n4. Pulsa **Exportar** y elige el formato: **Excel** o **PDF**.\n\nEl archivo se descarga en tu equipo. Los importes salen sin IVA, salvo en el informe **Por periodo**, que\nmuestra la base, el IVA y el total.\n\n## Preguntas frecuentes\n\n**¿Puedo programar que el informe me llegue solo?** No por ahora: la exportación es manual.\n\n**¿Por qué no cuadra con mi banco?** El informe de ventas muestra lo **facturado**, no lo cobrado. Para lo\ncobrado, usa **Informes > Tesorería**.",
+      "notas_que_lo_cambian": []
+    }
+  ],
+  "funciones_restringidas": [
+    {
+      "nombre": "Facturas recurrentes",
+      "plan": "Pro",
+      "limites": [
+        "No se puede pausar una factura recurrente",
+        "No se puede cambiar el importe de las facturas recurrentes que ya se emitieron",
+        "Una recurrente finalizada no se puede reactivar"
+      ],
+      "palabras_clave": [
+        "recurrente",
+        "recurrentes",
+        "factura recurrente",
+        "facturas recurrentes",
+        "cuota fija",
+        "cuotas fijas",
+        "emisión automática",
+        "emisiones automáticas"
+      ]
+    }
+  ],
+  "rutas_validas": [
+    "configuración > empresa",
+    "configuración > numeración",
+    "informes > impuestos",
+    "informes > tesorería",
+    "informes > ventas",
+    "inventario > productos y servicios",
+    "más acciones > rectificar",
+    "ventas > facturas",
+    "ventas > facturas recurrentes > nueva recurrente",
+    "ventas > pagos recibidos",
+    "ventas > pagos recibidos > nuevo pago"
+  ],
+  "rutas_obsoletas": [
+    "más acciones > enviar por correo"
+  ]
+}

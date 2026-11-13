@@ -1,0 +1,5 @@
+desde,hasta,n,mediana,p90,maximo
+registro,configuro_empresa,1200,1.0,1.0,1
+configuro_empresa,creo_cliente,773,1.0,3.0,3
+creo_cliente,emitio_primera_factura,548,2.0,4.0,4
+emitio_primera_factura,emitio_5_facturas,263,14.0,23.0,25

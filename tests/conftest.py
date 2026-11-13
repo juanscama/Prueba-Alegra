@@ -103,3 +103,24 @@ class ModeloEspia:
 @pytest.fixture
 def modelo_espia():
     return ModeloEspia()
+
+
+class ModeloGuion:
+    """Devuelve, en orden, los correos y veredictos que se le dan. Sirve para probar reintentos."""
+
+    def __init__(self, correos, veredictos=None, error=None):
+        self.correos, self.veredictos, self.error = list(correos), list(veredictos or []), error
+        self.usuarios_de_redaccion = []
+        self.llamadas_reales = 0
+
+    def pedir(self, *, tarea, sistema, usuario, esquema):
+        from cuadra.verificacion import Veredicto
+
+        if self.error:
+            raise self.error
+        if tarea == "redaccion":
+            self.usuarios_de_redaccion.append(usuario)
+            return self.correos.pop(0)
+        if self.veredictos:
+            return self.veredictos.pop(0)
+        return Veredicto(respaldado=True, responde_al_paso=True, tono_adecuado=True, un_solo_paso=True, motivos=[])

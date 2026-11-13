@@ -63,7 +63,8 @@ minúsculas (singular y plural) con las que se detectaría que un correo habla d
 en todos los planes, no la incluyas.
 """
 
-_FLECHAS = re.compile(r"\s*(?:>|›|→|»)\s*")
+# Las comillas españolas «…» no son flechas: » queda fuera a propósito.
+_FLECHAS = re.compile(r"\s*(?:>|›|→)\s*")
 _NEGRITA = re.compile(r"\*\*([^*]+)\*\*")
 
 

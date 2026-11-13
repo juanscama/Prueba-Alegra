@@ -1,0 +1,1514 @@
+[
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "academia",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "academia",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "agencia de marketing",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "agencia de marketing",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "clases particulares",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "clases particulares",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "clínica dental",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "clínica dental",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "construcción",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "construcción",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "consultoría",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "consultoría",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "diseño gráfico",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "diseño gráfico",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "distribuidora",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "distribuidora",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "electricidad",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "electricidad",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "fisioterapia",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "fisioterapia",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "fontanería",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "fontanería",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "fotografía",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "fotografía",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "peluquería",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "peluquería",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "reformas",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "reformas",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "restaurante",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "restaurante",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "taller mecánico",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "taller mecánico",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "tienda de ropa",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "tienda de ropa",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "traducción",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_cliente",
+      "actividad": "traducción",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "academia",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "academia",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "agencia de marketing",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "agencia de marketing",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "clases particulares",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "clases particulares",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "clínica dental",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "clínica dental",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "construcción",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "construcción",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "consultoría",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "consultoría",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "diseño gráfico",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "diseño gráfico",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "distribuidora",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "distribuidora",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "electricidad",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "electricidad",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "fisioterapia",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "fisioterapia",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "fontanería",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "fontanería",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "fotografía",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "fotografía",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "peluquería",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "peluquería",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "reformas",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "reformas",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "restaurante",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "restaurante",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "taller mecánico",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "taller mecánico",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "tienda de ropa",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "tienda de ropa",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "traducción",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_configurar",
+      "actividad": "traducción",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "academia",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "academia",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "agencia de marketing",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "agencia de marketing",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "clases particulares",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "clases particulares",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "clínica dental",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "clínica dental",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "construcción",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "construcción",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "consultoría",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "consultoría",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "diseño gráfico",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "diseño gráfico",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "distribuidora",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "distribuidora",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "electricidad",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "electricidad",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "fisioterapia",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "fisioterapia",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "fontanería",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "fontanería",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "fotografía",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "fotografía",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "peluquería",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "peluquería",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "reformas",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "reformas",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "restaurante",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "restaurante",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "taller mecánico",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "taller mecánico",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "tienda de ropa",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "tienda de ropa",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "traducción",
+      "tramo": "reciente"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  },
+  {
+    "variante": {
+      "paso": "sin_factura",
+      "actividad": "traducción",
+      "tramo": "rezagado"
+    },
+    "correo": null,
+    "estado": "revision",
+    "motivos": [
+      "sin caché y sin clave"
+    ],
+    "intentos": 1,
+    "veredicto": null
+  }
+]
