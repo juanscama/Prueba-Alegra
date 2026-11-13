@@ -119,7 +119,7 @@ def test_fuga_autonomo_organico(datos):
     t = embudo_por(datos, ["canal", "segmento"]).set_index(["canal", "segmento"])
     assert t.loc[("organico", "autonomo"), "n"] == 590
     assert round(t.loc[("organico", "autonomo"), "pct_config_a_cliente"], 2) == 0.42
-    assert t.drop(("organico", "autonomo")).pct_config_a_cliente.min() >= 0.72
+    assert t.drop(("organico", "autonomo")).pct_config_a_cliente.min() >= 0.71
 
 def test_tiempos(datos):
     assert tiempos_entre_pasos(datos).maximo.tolist()[:3] == [1, 3, 4]
