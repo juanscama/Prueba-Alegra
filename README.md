@@ -6,6 +6,40 @@ un correo verificado para cada una, con un grupo de control para saber si el cor
 
 El enunciado del caso está en [`ENUNCIADO.md`](ENUNCIADO.md).
 
+![Panel del flujo: portada, cifras clave, los cinco pasos y el diagnóstico](docs/img/panel-1-problema.png)
+
+## En 30 segundos
+
+| | |
+|---:|---|
+| **912** | personas registradas que llevan 3 días o más atascadas antes de su primera factura |
+| **1** | grupo concentra la fuga: autónomos de canal orgánico, solo el 42% crea su primer cliente |
+| **108 de 108** | correos modelo redactados por Claude que pasaron la verificación (8 reglas fijas y un juez) |
+| **1 de 5** | artículos de ayuda que Claude detectó como desactualizado por un cambio de esta semana |
+| **457 y 455** | personas que reciben correo y personas de control, para medir si el correo sirve |
+| **0** | claves o cuentas necesarias para reproducirlo: corre desde las respuestas guardadas |
+
+## Cómo funciona
+
+```mermaid
+flowchart LR
+    datos["CRM, producto y pagos<br/>1.500 registrados"] --> estado["Quién está atascado<br/>y en qué paso · 912"]
+    estado --> reparto{"Reparto al azar<br/>por hash del id"}
+    ayuda["5 artículos de ayuda<br/>+ 3 notas de cambios"] --> vigente["Claude pone<br/>la ayuda al día"]
+    vigente --> redaccion["Claude redacta<br/>108 correos modelo"]
+    redaccion --> control{"8 reglas fijas<br/>+ juez"}
+    control -- "pasa" --> bandeja["Bandeja de salida<br/>457 correos"]
+    control -- "falla dos veces" --> humano["Revisión humana"]
+    reparto -- "tratamiento · 457" --> bandeja
+    reparto -- "control · 455" --> medicion["Medición a 14 días<br/>¿facturó más el grupo con correo?"]
+    bandeja --> medicion
+    classDef ia fill:#dcebfc,stroke:#2a78d6,color:#0b1f3a;
+    class vigente,redaccion,control ia;
+```
+
+En azul, los pasos donde trabaja la IA. Todo lo demás es código: a quién se escribe y cómo se mide no lo
+decide un modelo.
+
 ## Cómo correrlo
 
 Hace falta [uv](https://docs.astral.sh/uv/). No hace falta ninguna clave ni cuenta.
@@ -64,6 +98,14 @@ Detalle en [`salida/diagnostico.md`](salida/diagnostico.md).
 | 7. Verificación | 8 reglas fijas y un juez; un rechazo da un segundo intento, dos mandan a revisión humana | Reglas no, juez sí |
 | 8. Bandeja | Une cada correo aprobado con las personas del grupo de tratamiento | No |
 
+La IA no repite instrucciones viejas. Esto es lo que encontró al cruzar la ayuda con las notas de la semana:
+
+![Antes y después del artículo de ayuda desactualizado](docs/img/panel-2-ayuda.png)
+
+Y así queda un correo, con el motivo por el que esa persona lo recibe y los controles que pasó:
+
+![Un correo de la bandeja con sus controles](docs/img/panel-3-correos.png)
+
 Resultado de la corrida incluida en el repositorio:
 
 - La etapa 5 marcó como desactualizado solo el artículo 04 y citó sus cinco frases obsoletas.
@@ -84,6 +126,8 @@ Archivos en `salida/`:
 | `SIMULADO_*` | Demostración de la medición con eventos inventados |
 
 ## Cómo sabría si funcionó
+
+![Los dos grupos, la línea de tiempo y la lectura del resultado simulado](docs/img/panel-4-funciono.png)
 
 - **Comparación:** tratamiento (recibe correo) contra control (no recibe), repartidos al azar con un hash del
   identificador. Se cuenta a todas las personas asignadas, abran el correo o no.
