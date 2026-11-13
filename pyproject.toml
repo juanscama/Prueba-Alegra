@@ -1,0 +1,29 @@
+[project]
+name = "cuadra"
+version = "0.1.0"
+description = "Flujo de activación con IA: de registrarse a facturar (reto técnico Growth con IA)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic",
+    "pandas>=2.2",
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+    "streamlit>=1.40",
+]
+
+[project.scripts]
+cuadra = "cuadra.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cuadra"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

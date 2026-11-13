@@ -1,0 +1,1501 @@
+id_contacto,nombre,email,fecha_registro,canal,segmento,actividad,etapa_crm
+C00001,Paula,c00001@correo.example,2026-10-03,pago,autonomo,clases particulares,PQL
+C00002,Álvaro,c00002@correo.example,2026-08-30,referido,pyme,tienda de ropa,PQL
+C00003,Iker,c00003@correo.example,2026-08-19,organico,pyme,agencia de marketing,registrado
+C00004,Sara,c00004@correo.example,2026-10-23,organico,pyme,restaurante,registrado
+C00005,Sara,c00005@correo.example,2026-10-17,referido,pyme,restaurante,PQL
+C00006,Nuria,c00006@correo.example,2026-07-18,referido,pyme,restaurante,registrado
+C00007,Daniel,c00007@correo.example,2026-10-22,organico,autonomo,electricidad,registrado
+C00008,Marcos,c00008@correo.example,2026-10-11,referido,pyme,tienda de ropa,registrado
+C00009,Pablo,c00009@correo.example,2026-09-11,pago,pyme,distribuidora,PQL
+C00010,Sergio,c00010@correo.example,2026-08-29,pago,autonomo,fontanería,cliente
+C00011,Rocío,c00011@correo.example,2026-08-03,contador,autonomo,consultoría,registrado
+C00012,Sergio,c00012@correo.example,2026-07-19,referido,pyme,distribuidora,registrado
+C00013,Álvaro,c00013@correo.example,2026-10-06,organico,autonomo,diseño gráfico,registrado
+C00014,Paula,c00014@correo.example,2026-09-27,contador,autonomo,fisioterapia,cliente
+C00015,Elena,c00015@correo.example,2026-08-10,contador,pyme,taller mecánico,PQL
+C00016,Iker,c00016@correo.example,2026-10-25,organico,autonomo,clases particulares,registrado
+C00017,Javier,c00017@correo.example,2026-07-09,organico,autonomo,fisioterapia,cliente
+C00018,Sara,c00018@correo.example,2026-10-29,organico,autonomo,diseño gráfico,registrado
+C00019,Rocío,c00019@correo.example,2026-07-03,organico,pyme,distribuidora,PQL
+C00020,Adrián,c00020@correo.example,2026-10-23,organico,autonomo,fisioterapia,registrado
+C00021,Daniel,c00021@correo.example,2026-07-06,pago,pyme,clínica dental,registrado
+C00022,Javier,c00022@correo.example,2026-08-17,contador,pyme,construcción,cliente
+C00023,Nuria,c00023@correo.example,2026-08-25,organico,autonomo,clases particulares,registrado
+C00024,Rocío,c00024@correo.example,2026-07-20,organico,pyme,clínica dental,registrado
+C00025,Elena,c00025@correo.example,2026-09-04,referido,pyme,distribuidora,PQL
+C00026,Sergio,c00026@correo.example,2026-09-07,contador,pyme,academia,registrado
+C00027,Paula,c00027@correo.example,2026-08-04,contador,pyme,agencia de marketing,registrado
+C00028,Nuria,c00028@correo.example,2026-07-16,pago,pyme,academia,cliente
+C00029,Marta,c00029@correo.example,2026-07-09,organico,autonomo,consultoría,registrado
+C00030,Laura,c00030@correo.example,2026-10-08,contador,pyme,construcción,PQL
+C00031,Paula,c00031@correo.example,2026-10-28,organico,autonomo,fontanería,registrado
+C00032,Marta,c00032@correo.example,2026-08-07,contador,autonomo,fisioterapia,registrado
+C00033,Carmen,c00033@correo.example,2026-09-30,pago,pyme,tienda de ropa,PQL
+C00034,Pablo,c00034@correo.example,2026-07-09,referido,pyme,tienda de ropa,PQL
+C00035,Elena,c00035@correo.example,2026-10-24,organico,autonomo,peluquería,registrado
+C00036,Iker,c00036@correo.example,2026-08-24,organico,autonomo,fisioterapia,registrado
+C00037,Rocío,c00037@correo.example,2026-09-19,pago,pyme,construcción,registrado
+C00038,Adrián,c00038@correo.example,2026-09-28,organico,autonomo,fotografía,registrado
+C00039,Laura,c00039@correo.example,2026-09-16,referido,pyme,restaurante,cliente
+C00040,Pablo,c00040@correo.example,2026-09-09,organico,autonomo,reformas,cliente
+C00041,Irene,c00041@correo.example,2026-09-06,referido,pyme,agencia de marketing,PQL
+C00042,Laura,c00042@correo.example,2026-08-01,organico,autonomo,traducción,registrado
+C00043,Irene,c00043@correo.example,2026-07-19,organico,autonomo,traducción,registrado
+C00044,Marcos,c00044@correo.example,2026-09-08,contador,pyme,clínica dental,registrado
+C00045,Elena,c00045@correo.example,2026-09-09,organico,autonomo,fisioterapia,registrado
+C00046,Javier,c00046@correo.example,2026-09-21,referido,autonomo,peluquería,registrado
+C00047,Marta,c00047@correo.example,2026-08-02,referido,pyme,agencia de marketing,registrado
+C00048,Iker,c00048@correo.example,2026-09-21,contador,pyme,restaurante,registrado
+C00049,Paula,c00049@correo.example,2026-09-22,contador,autonomo,reformas,PQL
+C00050,Javier,c00050@correo.example,2026-08-31,contador,autonomo,fontanería,cliente
+C00051,Carmen,c00051@correo.example,2026-08-16,pago,pyme,agencia de marketing,registrado
+C00052,Hugo,c00052@correo.example,2026-08-10,pago,pyme,clínica dental,PQL
+C00053,Javier,c00053@correo.example,2026-08-11,organico,autonomo,electricidad,registrado
+C00054,Sergio,c00054@correo.example,2026-08-15,organico,pyme,agencia de marketing,registrado
+C00055,Adrián,c00055@correo.example,2026-08-26,organico,autonomo,reformas,registrado
+C00056,Marta,c00056@correo.example,2026-09-24,referido,autonomo,reformas,PQL
+C00057,Elena,c00057@correo.example,2026-09-03,organico,pyme,tienda de ropa,PQL
+C00058,Adrián,c00058@correo.example,2026-07-02,organico,autonomo,electricidad,registrado
+C00059,Hugo,c00059@correo.example,2026-10-28,referido,pyme,distribuidora,registrado
+C00060,Sergio,c00060@correo.example,2026-09-20,organico,autonomo,peluquería,registrado
+C00061,Rocío,c00061@correo.example,2026-10-15,referido,pyme,agencia de marketing,registrado
+C00062,Hugo,c00062@correo.example,2026-09-24,organico,autonomo,fotografía,registrado
+C00063,Sergio,c00063@correo.example,2026-07-11,organico,autonomo,fontanería,registrado
+C00064,Pablo,c00064@correo.example,2026-10-28,organico,autonomo,clases particulares,registrado
+C00065,Sara,c00065@correo.example,2026-09-30,pago,autonomo,fotografía,cliente
+C00066,Carmen,c00066@correo.example,2026-08-27,pago,pyme,academia,cliente
+C00067,Elena,c00067@correo.example,2026-10-06,organico,autonomo,peluquería,registrado
+C00068,Sara,c00068@correo.example,2026-09-06,organico,autonomo,fontanería,registrado
+C00069,Adrián,c00069@correo.example,2026-10-30,organico,autonomo,consultoría,registrado
+C00070,Hugo,c00070@correo.example,2026-10-16,referido,pyme,agencia de marketing,cliente
+C00071,Hugo,c00071@correo.example,2026-08-21,organico,autonomo,fotografía,registrado
+C00072,Rocío,c00072@correo.example,2026-07-30,contador,autonomo,traducción,cliente
+C00073,Iker,c00073@correo.example,2026-08-05,organico,autonomo,electricidad,registrado
+C00074,Adrián,c00074@correo.example,2026-07-01,organico,pyme,taller mecánico,registrado
+C00075,Iker,c00075@correo.example,2026-09-08,organico,pyme,distribuidora,cliente
+C00076,Javier,c00076@correo.example,2026-08-11,organico,autonomo,consultoría,registrado
+C00077,Álvaro,c00077@correo.example,2026-07-03,organico,autonomo,fotografía,registrado
+C00078,Irene,c00078@correo.example,2026-08-16,organico,autonomo,fontanería,registrado
+C00079,Álvaro,c00079@correo.example,2026-09-08,referido,pyme,restaurante,registrado
+C00080,Sara,c00080@correo.example,2026-09-10,pago,pyme,distribuidora,registrado
+C00081,Javier,c00081@correo.example,2026-09-23,pago,pyme,restaurante,cliente
+C00082,Sergio,c00082@correo.example,2026-07-17,pago,autonomo,fotografía,cliente
+C00083,Carmen,c00083@correo.example,2026-09-10,organico,pyme,taller mecánico,cliente
+C00084,Pablo,c00084@correo.example,2026-07-02,pago,pyme,agencia de marketing,PQL
+C00085,Javier,c00085@correo.example,2026-08-28,referido,pyme,tienda de ropa,registrado
+C00086,Nuria,c00086@correo.example,2026-07-03,organico,pyme,clínica dental,registrado
+C00087,Sergio,c00087@correo.example,2026-08-06,organico,autonomo,peluquería,registrado
+C00088,Marcos,c00088@correo.example,2026-08-25,organico,autonomo,diseño gráfico,PQL
+C00089,Marcos,c00089@correo.example,2026-08-16,organico,autonomo,electricidad,PQL
+C00090,Raúl,c00090@correo.example,2026-08-18,organico,autonomo,fotografía,registrado
+C00091,Laura,c00091@correo.example,2026-07-06,contador,pyme,agencia de marketing,cliente
+C00092,Marcos,c00092@correo.example,2026-08-26,organico,autonomo,peluquería,registrado
+C00093,Irene,c00093@correo.example,2026-09-14,organico,autonomo,consultoría,registrado
+C00094,Marta,c00094@correo.example,2026-10-03,organico,pyme,distribuidora,registrado
+C00095,Daniel,c00095@correo.example,2026-10-22,organico,autonomo,peluquería,registrado
+C00096,Nuria,c00096@correo.example,2026-07-05,contador,autonomo,clases particulares,cliente
+C00097,Nuria,c00097@correo.example,2026-07-26,organico,autonomo,fotografía,PQL
+C00098,Laura,c00098@correo.example,2026-08-21,contador,autonomo,reformas,cliente
+C00099,Sara,c00099@correo.example,2026-08-15,organico,autonomo,peluquería,registrado
+C00100,Marcos,c00100@correo.example,2026-08-09,contador,pyme,agencia de marketing,PQL
+C00101,Javier,c00101@correo.example,2026-10-24,contador,pyme,restaurante,PQL
+C00102,Rocío,c00102@correo.example,2026-10-10,organico,pyme,restaurante,registrado
+C00103,Irene,c00103@correo.example,2026-10-06,pago,autonomo,diseño gráfico,PQL
+C00104,Pablo,c00104@correo.example,2026-10-12,organico,autonomo,consultoría,registrado
+C00105,Marta,c00105@correo.example,2026-08-08,organico,autonomo,fotografía,registrado
+C00106,Sergio,c00106@correo.example,2026-08-12,organico,autonomo,peluquería,registrado
+C00107,Javier,c00107@correo.example,2026-09-06,organico,autonomo,clases particulares,registrado
+C00108,Carmen,c00108@correo.example,2026-07-09,contador,autonomo,reformas,cliente
+C00109,Hugo,c00109@correo.example,2026-10-04,organico,autonomo,electricidad,registrado
+C00110,Raúl,c00110@correo.example,2026-10-22,referido,pyme,restaurante,PQL
+C00111,Sara,c00111@correo.example,2026-08-12,contador,autonomo,reformas,PQL
+C00112,Nuria,c00112@correo.example,2026-09-08,contador,pyme,tienda de ropa,PQL
+C00113,Rocío,c00113@correo.example,2026-07-12,pago,pyme,agencia de marketing,registrado
+C00114,Marcos,c00114@correo.example,2026-09-25,referido,pyme,agencia de marketing,cliente
+C00115,Adrián,c00115@correo.example,2026-07-23,organico,autonomo,electricidad,registrado
+C00116,Álvaro,c00116@correo.example,2026-09-25,contador,pyme,tienda de ropa,cliente
+C00117,Rocío,c00117@correo.example,2026-08-26,organico,pyme,restaurante,registrado
+C00118,Nuria,c00118@correo.example,2026-07-05,contador,pyme,taller mecánico,PQL
+C00119,Daniel,c00119@correo.example,2026-10-12,organico,autonomo,diseño gráfico,registrado
+C00120,Álvaro,c00120@correo.example,2026-10-24,contador,autonomo,peluquería,PQL
+C00121,Carmen,c00121@correo.example,2026-07-14,organico,autonomo,fisioterapia,registrado
+C00122,Marcos,c00122@correo.example,2026-09-30,organico,autonomo,fotografía,cliente
+C00123,Adrián,c00123@correo.example,2026-07-17,organico,autonomo,clases particulares,PQL
+C00124,Daniel,c00124@correo.example,2026-09-25,contador,autonomo,electricidad,registrado
+C00125,Iker,c00125@correo.example,2026-08-03,pago,pyme,agencia de marketing,registrado
+C00126,Rocío,c00126@correo.example,2026-07-03,referido,autonomo,clases particulares,registrado
+C00127,Adrián,c00127@correo.example,2026-07-16,contador,pyme,construcción,PQL
+C00128,Rocío,c00128@correo.example,2026-10-29,contador,pyme,distribuidora,registrado
+C00129,Hugo,c00129@correo.example,2026-08-08,organico,pyme,agencia de marketing,PQL
+C00130,Rocío,c00130@correo.example,2026-08-17,organico,pyme,taller mecánico,PQL
+C00131,Adrián,c00131@correo.example,2026-09-10,organico,pyme,tienda de ropa,registrado
+C00132,Sergio,c00132@correo.example,2026-08-01,organico,autonomo,traducción,registrado
+C00133,Javier,c00133@correo.example,2026-08-31,organico,autonomo,fotografía,registrado
+C00134,Marta,c00134@correo.example,2026-07-25,contador,pyme,academia,PQL
+C00135,Javier,c00135@correo.example,2026-10-28,referido,autonomo,fisioterapia,registrado
+C00136,Sara,c00136@correo.example,2026-10-09,referido,pyme,restaurante,registrado
+C00137,Sara,c00137@correo.example,2026-08-12,pago,pyme,tienda de ropa,PQL
+C00138,Álvaro,c00138@correo.example,2026-08-29,organico,pyme,academia,cliente
+C00139,Sara,c00139@correo.example,2026-10-05,organico,autonomo,peluquería,cliente
+C00140,Elena,c00140@correo.example,2026-09-18,organico,pyme,construcción,registrado
+C00141,Paula,c00141@correo.example,2026-08-16,contador,pyme,restaurante,PQL
+C00142,Raúl,c00142@correo.example,2026-09-13,organico,autonomo,traducción,registrado
+C00143,Ana,c00143@correo.example,2026-10-28,organico,autonomo,diseño gráfico,registrado
+C00144,Carmen,c00144@correo.example,2026-09-07,organico,pyme,agencia de marketing,registrado
+C00145,Raúl,c00145@correo.example,2026-07-07,organico,autonomo,fisioterapia,registrado
+C00146,Marcos,c00146@correo.example,2026-09-18,organico,autonomo,fotografía,registrado
+C00147,Marta,c00147@correo.example,2026-07-13,pago,pyme,restaurante,PQL
+C00148,Pablo,c00148@correo.example,2026-07-23,organico,autonomo,fontanería,registrado
+C00149,Álvaro,c00149@correo.example,2026-09-20,pago,pyme,tienda de ropa,registrado
+C00150,Daniel,c00150@correo.example,2026-10-20,contador,pyme,distribuidora,registrado
+C00151,Raúl,c00151@correo.example,2026-07-05,organico,autonomo,reformas,registrado
+C00152,Laura,c00152@correo.example,2026-09-09,pago,pyme,academia,registrado
+C00153,Ana,c00153@correo.example,2026-10-27,referido,pyme,taller mecánico,PQL
+C00154,Carmen,c00154@correo.example,2026-07-01,organico,pyme,restaurante,registrado
+C00155,Álvaro,c00155@correo.example,2026-09-10,organico,autonomo,consultoría,registrado
+C00156,Sergio,c00156@correo.example,2026-08-26,organico,autonomo,fontanería,registrado
+C00157,Carmen,c00157@correo.example,2026-07-22,organico,pyme,agencia de marketing,cliente
+C00158,Hugo,c00158@correo.example,2026-08-20,organico,pyme,restaurante,registrado
+C00159,Javier,c00159@correo.example,2026-07-11,organico,pyme,academia,registrado
+C00160,Sara,c00160@correo.example,2026-10-29,organico,pyme,agencia de marketing,registrado
+C00161,Adrián,c00161@correo.example,2026-09-26,organico,autonomo,reformas,registrado
+C00162,Pablo,c00162@correo.example,2026-10-15,organico,autonomo,electricidad,registrado
+C00163,Pablo,c00163@correo.example,2026-09-15,organico,pyme,distribuidora,registrado
+C00164,Marcos,c00164@correo.example,2026-07-24,organico,pyme,taller mecánico,cliente
+C00165,Hugo,c00165@correo.example,2026-09-04,referido,autonomo,traducción,PQL
+C00166,Nuria,c00166@correo.example,2026-09-26,contador,pyme,tienda de ropa,registrado
+C00167,Carmen,c00167@correo.example,2026-07-02,organico,autonomo,traducción,registrado
+C00168,Ana,c00168@correo.example,2026-10-22,organico,autonomo,diseño gráfico,registrado
+C00169,Irene,c00169@correo.example,2026-08-30,organico,autonomo,clases particulares,cliente
+C00170,Laura,c00170@correo.example,2026-10-03,organico,autonomo,traducción,registrado
+C00171,Sergio,c00171@correo.example,2026-09-08,organico,autonomo,peluquería,cliente
+C00172,Javier,c00172@correo.example,2026-07-06,contador,pyme,clínica dental,PQL
+C00173,Raúl,c00173@correo.example,2026-09-11,organico,pyme,construcción,registrado
+C00174,Javier,c00174@correo.example,2026-10-14,organico,autonomo,fotografía,registrado
+C00175,Nuria,c00175@correo.example,2026-08-18,organico,pyme,distribuidora,registrado
+C00176,Pablo,c00176@correo.example,2026-07-07,organico,autonomo,clases particulares,registrado
+C00177,Marta,c00177@correo.example,2026-08-17,organico,autonomo,electricidad,registrado
+C00178,Laura,c00178@correo.example,2026-09-12,referido,autonomo,electricidad,registrado
+C00179,Álvaro,c00179@correo.example,2026-10-01,referido,autonomo,peluquería,registrado
+C00180,Iker,c00180@correo.example,2026-08-12,organico,autonomo,consultoría,registrado
+C00181,Pablo,c00181@correo.example,2026-08-17,organico,autonomo,clases particulares,registrado
+C00182,Sara,c00182@correo.example,2026-09-02,contador,pyme,clínica dental,registrado
+C00183,Hugo,c00183@correo.example,2026-10-04,organico,pyme,academia,PQL
+C00184,Paula,c00184@correo.example,2026-08-15,organico,autonomo,clases particulares,registrado
+C00185,Raúl,c00185@correo.example,2026-09-20,contador,autonomo,electricidad,registrado
+C00186,Irene,c00186@correo.example,2026-09-16,referido,pyme,construcción,registrado
+C00187,Javier,c00187@correo.example,2026-10-04,contador,autonomo,clases particulares,PQL
+C00188,Laura,c00188@correo.example,2026-07-11,pago,pyme,restaurante,PQL
+C00189,Pablo,c00189@correo.example,2026-10-09,organico,autonomo,consultoría,registrado
+C00190,Hugo,c00190@correo.example,2026-09-24,organico,pyme,restaurante,PQL
+C00191,Ana,c00191@correo.example,2026-10-21,organico,autonomo,electricidad,registrado
+C00192,Pablo,c00192@correo.example,2026-09-08,organico,autonomo,fotografía,registrado
+C00193,Adrián,c00193@correo.example,2026-08-30,organico,pyme,taller mecánico,registrado
+C00194,Sergio,c00194@correo.example,2026-10-22,organico,autonomo,electricidad,registrado
+C00195,Hugo,c00195@correo.example,2026-10-21,pago,autonomo,reformas,PQL
+C00196,Iker,c00196@correo.example,2026-07-30,pago,autonomo,diseño gráfico,cliente
+C00197,Álvaro,c00197@correo.example,2026-07-03,contador,pyme,taller mecánico,PQL
+C00198,Paula,c00198@correo.example,2026-07-14,referido,pyme,taller mecánico,registrado
+C00199,Ana,c00199@correo.example,2026-07-27,organico,autonomo,fotografía,registrado
+C00200,Marta,c00200@correo.example,2026-07-13,pago,pyme,academia,PQL
+C00201,Elena,c00201@correo.example,2026-07-18,contador,pyme,agencia de marketing,registrado
+C00202,Sara,c00202@correo.example,2026-08-26,referido,autonomo,fisioterapia,registrado
+C00203,Rocío,c00203@correo.example,2026-10-24,organico,autonomo,fisioterapia,registrado
+C00204,Paula,c00204@correo.example,2026-09-05,pago,autonomo,peluquería,cliente
+C00205,Paula,c00205@correo.example,2026-07-19,pago,pyme,construcción,registrado
+C00206,Paula,c00206@correo.example,2026-10-26,organico,autonomo,traducción,registrado
+C00207,Nuria,c00207@correo.example,2026-09-23,organico,autonomo,peluquería,registrado
+C00208,Hugo,c00208@correo.example,2026-07-11,contador,pyme,agencia de marketing,registrado
+C00209,Sara,c00209@correo.example,2026-08-30,pago,autonomo,peluquería,PQL
+C00210,Javier,c00210@correo.example,2026-10-16,referido,pyme,academia,cliente
+C00211,Nuria,c00211@correo.example,2026-07-02,organico,pyme,academia,registrado
+C00212,Marta,c00212@correo.example,2026-08-12,referido,pyme,academia,cliente
+C00213,Daniel,c00213@correo.example,2026-07-09,pago,autonomo,fotografía,cliente
+C00214,Hugo,c00214@correo.example,2026-07-07,organico,autonomo,clases particulares,registrado
+C00215,Javier,c00215@correo.example,2026-09-23,organico,autonomo,clases particulares,registrado
+C00216,Hugo,c00216@correo.example,2026-09-15,organico,autonomo,fisioterapia,registrado
+C00217,Javier,c00217@correo.example,2026-08-19,organico,autonomo,reformas,cliente
+C00218,Adrián,c00218@correo.example,2026-10-11,organico,autonomo,fotografía,PQL
+C00219,Álvaro,c00219@correo.example,2026-07-28,contador,pyme,agencia de marketing,registrado
+C00220,Sara,c00220@correo.example,2026-07-30,organico,pyme,restaurante,cliente
+C00221,Laura,c00221@correo.example,2026-08-17,pago,autonomo,diseño gráfico,PQL
+C00222,Elena,c00222@correo.example,2026-10-03,organico,pyme,agencia de marketing,PQL
+C00223,Sergio,c00223@correo.example,2026-09-30,contador,autonomo,fontanería,registrado
+C00224,Javier,c00224@correo.example,2026-10-19,contador,pyme,clínica dental,PQL
+C00225,Ana,c00225@correo.example,2026-08-02,organico,pyme,construcción,registrado
+C00226,Pablo,c00226@correo.example,2026-10-14,organico,autonomo,peluquería,registrado
+C00227,Nuria,c00227@correo.example,2026-08-13,organico,autonomo,peluquería,registrado
+C00228,Irene,c00228@correo.example,2026-10-08,organico,pyme,tienda de ropa,registrado
+C00229,Iker,c00229@correo.example,2026-07-11,contador,autonomo,fotografía,registrado
+C00230,Elena,c00230@correo.example,2026-09-13,organico,autonomo,peluquería,registrado
+C00231,Adrián,c00231@correo.example,2026-10-15,organico,autonomo,clases particulares,PQL
+C00232,Iker,c00232@correo.example,2026-09-29,referido,pyme,tienda de ropa,PQL
+C00233,Nuria,c00233@correo.example,2026-07-07,organico,pyme,tienda de ropa,registrado
+C00234,Marta,c00234@correo.example,2026-09-17,referido,autonomo,consultoría,registrado
+C00235,Carmen,c00235@correo.example,2026-10-17,organico,autonomo,traducción,registrado
+C00236,Iker,c00236@correo.example,2026-09-14,contador,pyme,restaurante,cliente
+C00237,Ana,c00237@correo.example,2026-08-03,pago,autonomo,fotografía,PQL
+C00238,Irene,c00238@correo.example,2026-08-12,organico,autonomo,reformas,registrado
+C00239,Daniel,c00239@correo.example,2026-10-18,organico,autonomo,clases particulares,registrado
+C00240,Rocío,c00240@correo.example,2026-07-31,pago,pyme,tienda de ropa,PQL
+C00241,Marta,c00241@correo.example,2026-10-13,referido,pyme,academia,PQL
+C00242,Paula,c00242@correo.example,2026-09-23,organico,autonomo,electricidad,cliente
+C00243,Sergio,c00243@correo.example,2026-07-27,referido,pyme,clínica dental,registrado
+C00244,Nuria,c00244@correo.example,2026-10-28,organico,autonomo,traducción,registrado
+C00245,Daniel,c00245@correo.example,2026-08-22,organico,autonomo,traducción,PQL
+C00246,Irene,c00246@correo.example,2026-09-17,organico,autonomo,diseño gráfico,PQL
+C00247,Marta,c00247@correo.example,2026-10-11,referido,pyme,restaurante,registrado
+C00248,Álvaro,c00248@correo.example,2026-10-01,contador,pyme,tienda de ropa,PQL
+C00249,Paula,c00249@correo.example,2026-10-15,organico,autonomo,consultoría,registrado
+C00250,Javier,c00250@correo.example,2026-09-27,organico,pyme,distribuidora,registrado
+C00251,Raúl,c00251@correo.example,2026-09-28,organico,autonomo,fisioterapia,PQL
+C00252,Rocío,c00252@correo.example,2026-07-10,pago,pyme,distribuidora,registrado
+C00253,Paula,c00253@correo.example,2026-07-30,contador,autonomo,fontanería,registrado
+C00254,Carmen,c00254@correo.example,2026-10-22,organico,pyme,agencia de marketing,PQL
+C00255,Laura,c00255@correo.example,2026-07-26,organico,pyme,restaurante,registrado
+C00256,Carmen,c00256@correo.example,2026-08-01,organico,autonomo,electricidad,cliente
+C00257,Sergio,c00257@correo.example,2026-07-15,organico,autonomo,fontanería,registrado
+C00258,Paula,c00258@correo.example,2026-08-19,pago,pyme,academia,cliente
+C00259,Nuria,c00259@correo.example,2026-10-01,organico,autonomo,diseño gráfico,registrado
+C00260,Paula,c00260@correo.example,2026-08-27,referido,autonomo,fontanería,registrado
+C00261,Carmen,c00261@correo.example,2026-10-20,contador,autonomo,fisioterapia,registrado
+C00262,Daniel,c00262@correo.example,2026-07-24,referido,autonomo,diseño gráfico,registrado
+C00263,Raúl,c00263@correo.example,2026-07-28,contador,pyme,restaurante,PQL
+C00264,Laura,c00264@correo.example,2026-10-18,pago,pyme,restaurante,cliente
+C00265,Elena,c00265@correo.example,2026-07-19,referido,autonomo,diseño gráfico,cliente
+C00266,Álvaro,c00266@correo.example,2026-07-16,organico,autonomo,traducción,registrado
+C00267,Marcos,c00267@correo.example,2026-09-30,referido,autonomo,fontanería,registrado
+C00268,Hugo,c00268@correo.example,2026-08-02,organico,autonomo,consultoría,registrado
+C00269,Iker,c00269@correo.example,2026-08-05,contador,autonomo,consultoría,PQL
+C00270,Elena,c00270@correo.example,2026-10-21,referido,pyme,restaurante,PQL
+C00271,Adrián,c00271@correo.example,2026-07-31,referido,autonomo,consultoría,registrado
+C00272,Paula,c00272@correo.example,2026-08-22,pago,autonomo,diseño gráfico,registrado
+C00273,Paula,c00273@correo.example,2026-08-14,organico,autonomo,consultoría,registrado
+C00274,Carmen,c00274@correo.example,2026-08-12,organico,autonomo,traducción,registrado
+C00275,Adrián,c00275@correo.example,2026-10-03,organico,autonomo,peluquería,registrado
+C00276,Pablo,c00276@correo.example,2026-07-09,organico,pyme,distribuidora,registrado
+C00277,Irene,c00277@correo.example,2026-07-22,organico,autonomo,consultoría,registrado
+C00278,Irene,c00278@correo.example,2026-07-13,referido,pyme,taller mecánico,registrado
+C00279,Álvaro,c00279@correo.example,2026-07-28,pago,pyme,clínica dental,PQL
+C00280,Irene,c00280@correo.example,2026-10-30,organico,pyme,taller mecánico,registrado
+C00281,Marcos,c00281@correo.example,2026-07-08,pago,pyme,taller mecánico,registrado
+C00282,Iker,c00282@correo.example,2026-09-21,organico,pyme,clínica dental,registrado
+C00283,Raúl,c00283@correo.example,2026-09-25,referido,pyme,tienda de ropa,registrado
+C00284,Paula,c00284@correo.example,2026-09-30,pago,autonomo,peluquería,cliente
+C00285,Nuria,c00285@correo.example,2026-09-02,contador,autonomo,diseño gráfico,PQL
+C00286,Laura,c00286@correo.example,2026-09-27,organico,autonomo,diseño gráfico,registrado
+C00287,Nuria,c00287@correo.example,2026-07-21,organico,autonomo,fontanería,registrado
+C00288,Adrián,c00288@correo.example,2026-09-15,organico,autonomo,traducción,PQL
+C00289,Carmen,c00289@correo.example,2026-07-01,organico,autonomo,traducción,registrado
+C00290,Carmen,c00290@correo.example,2026-09-15,contador,pyme,taller mecánico,cliente
+C00291,Paula,c00291@correo.example,2026-10-19,organico,autonomo,clases particulares,registrado
+C00292,Álvaro,c00292@correo.example,2026-09-12,organico,pyme,clínica dental,PQL
+C00293,Rocío,c00293@correo.example,2026-09-18,referido,pyme,construcción,PQL
+C00294,Paula,c00294@correo.example,2026-10-11,organico,autonomo,traducción,registrado
+C00295,Marcos,c00295@correo.example,2026-09-24,contador,autonomo,fontanería,cliente
+C00296,Daniel,c00296@correo.example,2026-07-17,organico,pyme,academia,registrado
+C00297,Hugo,c00297@correo.example,2026-07-20,organico,autonomo,consultoría,registrado
+C00298,Daniel,c00298@correo.example,2026-09-15,organico,pyme,taller mecánico,cliente
+C00299,Elena,c00299@correo.example,2026-10-10,organico,autonomo,consultoría,cliente
+C00300,Daniel,c00300@correo.example,2026-07-18,pago,pyme,construcción,cliente
+C00301,Daniel,c00301@correo.example,2026-09-10,pago,autonomo,electricidad,registrado
+C00302,Rocío,c00302@correo.example,2026-09-21,organico,pyme,taller mecánico,PQL
+C00303,Pablo,c00303@correo.example,2026-09-04,referido,pyme,construcción,PQL
+C00304,Irene,c00304@correo.example,2026-09-12,referido,pyme,taller mecánico,registrado
+C00305,Laura,c00305@correo.example,2026-08-22,organico,autonomo,consultoría,registrado
+C00306,Sergio,c00306@correo.example,2026-09-21,referido,autonomo,peluquería,registrado
+C00307,Laura,c00307@correo.example,2026-10-02,organico,autonomo,peluquería,registrado
+C00308,Javier,c00308@correo.example,2026-07-05,organico,autonomo,reformas,registrado
+C00309,Irene,c00309@correo.example,2026-07-28,organico,pyme,agencia de marketing,PQL
+C00310,Iker,c00310@correo.example,2026-10-08,organico,autonomo,peluquería,registrado
+C00311,Nuria,c00311@correo.example,2026-08-18,contador,autonomo,fisioterapia,cliente
+C00312,Ana,c00312@correo.example,2026-09-20,organico,autonomo,fontanería,registrado
+C00313,Nuria,c00313@correo.example,2026-07-05,organico,autonomo,clases particulares,PQL
+C00314,Elena,c00314@correo.example,2026-08-12,organico,autonomo,clases particulares,registrado
+C00315,Sara,c00315@correo.example,2026-08-12,organico,autonomo,peluquería,registrado
+C00316,Rocío,c00316@correo.example,2026-08-20,referido,autonomo,fisioterapia,registrado
+C00317,Javier,c00317@correo.example,2026-09-04,organico,autonomo,traducción,registrado
+C00318,Elena,c00318@correo.example,2026-10-17,organico,pyme,taller mecánico,PQL
+C00319,Marcos,c00319@correo.example,2026-08-09,organico,autonomo,reformas,registrado
+C00320,Rocío,c00320@correo.example,2026-07-06,contador,autonomo,peluquería,registrado
+C00321,Sara,c00321@correo.example,2026-07-09,organico,autonomo,electricidad,registrado
+C00322,Sara,c00322@correo.example,2026-09-05,organico,pyme,tienda de ropa,registrado
+C00323,Álvaro,c00323@correo.example,2026-10-09,organico,pyme,academia,PQL
+C00324,Álvaro,c00324@correo.example,2026-08-31,organico,autonomo,reformas,registrado
+C00325,Elena,c00325@correo.example,2026-08-17,organico,pyme,restaurante,registrado
+C00326,Javier,c00326@correo.example,2026-10-07,organico,autonomo,fontanería,registrado
+C00327,Nuria,c00327@correo.example,2026-08-27,organico,autonomo,fotografía,registrado
+C00328,Sergio,c00328@correo.example,2026-08-27,pago,autonomo,fisioterapia,registrado
+C00329,Paula,c00329@correo.example,2026-07-03,organico,autonomo,clases particulares,registrado
+C00330,Elena,c00330@correo.example,2026-09-01,organico,autonomo,fotografía,registrado
+C00331,Rocío,c00331@correo.example,2026-09-02,contador,pyme,academia,registrado
+C00332,Iker,c00332@correo.example,2026-07-07,organico,autonomo,fontanería,registrado
+C00333,Rocío,c00333@correo.example,2026-08-15,pago,autonomo,reformas,registrado
+C00334,Iker,c00334@correo.example,2026-08-19,pago,pyme,taller mecánico,cliente
+C00335,Pablo,c00335@correo.example,2026-09-19,referido,pyme,clínica dental,registrado
+C00336,Marcos,c00336@correo.example,2026-09-18,organico,pyme,taller mecánico,cliente
+C00337,Nuria,c00337@correo.example,2026-10-04,pago,autonomo,consultoría,PQL
+C00338,Paula,c00338@correo.example,2026-10-05,organico,pyme,academia,cliente
+C00339,Rocío,c00339@correo.example,2026-07-22,pago,pyme,tienda de ropa,PQL
+C00340,Daniel,c00340@correo.example,2026-09-21,pago,pyme,taller mecánico,PQL
+C00341,Hugo,c00341@correo.example,2026-09-03,contador,autonomo,fisioterapia,registrado
+C00342,Marta,c00342@correo.example,2026-07-11,organico,pyme,tienda de ropa,registrado
+C00343,Hugo,c00343@correo.example,2026-07-29,organico,autonomo,peluquería,registrado
+C00344,Álvaro,c00344@correo.example,2026-08-12,pago,pyme,agencia de marketing,cliente
+C00345,Marta,c00345@correo.example,2026-07-01,contador,autonomo,consultoría,PQL
+C00346,Adrián,c00346@correo.example,2026-10-27,pago,autonomo,fisioterapia,registrado
+C00347,Marta,c00347@correo.example,2026-10-23,organico,autonomo,consultoría,registrado
+C00348,Iker,c00348@correo.example,2026-08-05,organico,autonomo,fontanería,registrado
+C00349,Laura,c00349@correo.example,2026-10-05,pago,pyme,construcción,cliente
+C00350,Elena,c00350@correo.example,2026-07-02,pago,pyme,taller mecánico,cliente
+C00351,Nuria,c00351@correo.example,2026-08-12,contador,pyme,clínica dental,PQL
+C00352,Adrián,c00352@correo.example,2026-08-27,referido,pyme,restaurante,registrado
+C00353,Laura,c00353@correo.example,2026-10-02,organico,autonomo,consultoría,registrado
+C00354,Hugo,c00354@correo.example,2026-08-19,organico,autonomo,consultoría,registrado
+C00355,Elena,c00355@correo.example,2026-10-21,referido,pyme,academia,PQL
+C00356,Marta,c00356@correo.example,2026-08-21,organico,autonomo,fontanería,registrado
+C00357,Paula,c00357@correo.example,2026-07-17,contador,pyme,agencia de marketing,cliente
+C00358,Pablo,c00358@correo.example,2026-08-03,organico,autonomo,clases particulares,registrado
+C00359,Marta,c00359@correo.example,2026-08-04,organico,autonomo,fotografía,PQL
+C00360,Irene,c00360@correo.example,2026-09-10,contador,pyme,distribuidora,PQL
+C00361,Hugo,c00361@correo.example,2026-08-02,organico,autonomo,fisioterapia,registrado
+C00362,Raúl,c00362@correo.example,2026-09-21,organico,autonomo,clases particulares,cliente
+C00363,Pablo,c00363@correo.example,2026-10-07,organico,pyme,distribuidora,PQL
+C00364,Irene,c00364@correo.example,2026-07-24,contador,autonomo,fontanería,PQL
+C00365,Adrián,c00365@correo.example,2026-10-06,referido,pyme,agencia de marketing,PQL
+C00366,Raúl,c00366@correo.example,2026-07-26,organico,autonomo,reformas,cliente
+C00367,Carmen,c00367@correo.example,2026-10-18,organico,autonomo,fisioterapia,PQL
+C00368,Daniel,c00368@correo.example,2026-09-30,contador,pyme,distribuidora,registrado
+C00369,Ana,c00369@correo.example,2026-10-04,organico,autonomo,diseño gráfico,registrado
+C00370,Daniel,c00370@correo.example,2026-08-12,organico,autonomo,traducción,registrado
+C00371,Álvaro,c00371@correo.example,2026-09-07,contador,pyme,academia,registrado
+C00372,Paula,c00372@correo.example,2026-10-06,organico,autonomo,electricidad,registrado
+C00373,Laura,c00373@correo.example,2026-09-16,referido,pyme,distribuidora,registrado
+C00374,Marcos,c00374@correo.example,2026-08-02,pago,pyme,construcción,cliente
+C00375,Nuria,c00375@correo.example,2026-08-12,referido,autonomo,clases particulares,cliente
+C00376,Daniel,c00376@correo.example,2026-07-09,organico,autonomo,reformas,registrado
+C00377,Irene,c00377@correo.example,2026-07-17,organico,autonomo,consultoría,registrado
+C00378,Nuria,c00378@correo.example,2026-08-02,organico,pyme,restaurante,cliente
+C00379,Marta,c00379@correo.example,2026-09-01,pago,pyme,restaurante,PQL
+C00380,Raúl,c00380@correo.example,2026-08-10,organico,autonomo,traducción,registrado
+C00381,Paula,c00381@correo.example,2026-07-24,referido,pyme,academia,PQL
+C00382,Daniel,c00382@correo.example,2026-10-01,referido,pyme,restaurante,PQL
+C00383,Ana,c00383@correo.example,2026-07-02,organico,autonomo,fontanería,registrado
+C00384,Sara,c00384@correo.example,2026-09-29,pago,pyme,construcción,PQL
+C00385,Elena,c00385@correo.example,2026-10-01,organico,autonomo,diseño gráfico,registrado
+C00386,Ana,c00386@correo.example,2026-08-29,referido,pyme,construcción,registrado
+C00387,Paula,c00387@correo.example,2026-10-19,organico,autonomo,fisioterapia,registrado
+C00388,Carmen,c00388@correo.example,2026-08-22,pago,autonomo,peluquería,PQL
+C00389,Marcos,c00389@correo.example,2026-07-17,organico,pyme,restaurante,registrado
+C00390,Laura,c00390@correo.example,2026-09-15,referido,autonomo,consultoría,registrado
+C00391,Adrián,c00391@correo.example,2026-10-19,referido,pyme,distribuidora,registrado
+C00392,Nuria,c00392@correo.example,2026-10-17,pago,autonomo,fotografía,registrado
+C00393,Carmen,c00393@correo.example,2026-10-15,organico,pyme,academia,registrado
+C00394,Laura,c00394@correo.example,2026-08-20,organico,autonomo,reformas,cliente
+C00395,Marta,c00395@correo.example,2026-07-14,organico,autonomo,fontanería,cliente
+C00396,Hugo,c00396@correo.example,2026-07-27,organico,pyme,agencia de marketing,registrado
+C00397,Elena,c00397@correo.example,2026-09-12,contador,pyme,restaurante,registrado
+C00398,Ana,c00398@correo.example,2026-09-25,contador,autonomo,fotografía,cliente
+C00399,Daniel,c00399@correo.example,2026-07-01,organico,autonomo,reformas,registrado
+C00400,Adrián,c00400@correo.example,2026-08-20,contador,autonomo,fisioterapia,PQL
+C00401,Carmen,c00401@correo.example,2026-07-08,contador,pyme,academia,registrado
+C00402,Adrián,c00402@correo.example,2026-10-14,organico,autonomo,fotografía,PQL
+C00403,Laura,c00403@correo.example,2026-08-26,referido,autonomo,diseño gráfico,cliente
+C00404,Nuria,c00404@correo.example,2026-07-15,organico,pyme,restaurante,registrado
+C00405,Iker,c00405@correo.example,2026-08-22,organico,autonomo,fotografía,registrado
+C00406,Adrián,c00406@correo.example,2026-08-25,organico,autonomo,fisioterapia,registrado
+C00407,Adrián,c00407@correo.example,2026-10-10,referido,pyme,agencia de marketing,cliente
+C00408,Carmen,c00408@correo.example,2026-08-22,organico,autonomo,traducción,registrado
+C00409,Sara,c00409@correo.example,2026-09-13,organico,autonomo,peluquería,cliente
+C00410,Ana,c00410@correo.example,2026-09-28,pago,pyme,tienda de ropa,cliente
+C00411,Rocío,c00411@correo.example,2026-10-22,organico,autonomo,peluquería,registrado
+C00412,Pablo,c00412@correo.example,2026-09-23,organico,autonomo,traducción,cliente
+C00413,Ana,c00413@correo.example,2026-10-29,organico,pyme,construcción,registrado
+C00414,Elena,c00414@correo.example,2026-07-29,contador,pyme,clínica dental,registrado
+C00415,Laura,c00415@correo.example,2026-09-25,organico,pyme,construcción,PQL
+C00416,Laura,c00416@correo.example,2026-09-12,organico,autonomo,peluquería,registrado
+C00417,Iker,c00417@correo.example,2026-08-26,pago,pyme,tienda de ropa,PQL
+C00418,Daniel,c00418@correo.example,2026-10-23,organico,autonomo,consultoría,PQL
+C00419,Raúl,c00419@correo.example,2026-07-07,contador,pyme,restaurante,registrado
+C00420,Pablo,c00420@correo.example,2026-08-20,organico,pyme,clínica dental,PQL
+C00421,Marta,c00421@correo.example,2026-07-10,organico,autonomo,clases particulares,PQL
+C00422,Sara,c00422@correo.example,2026-09-16,contador,autonomo,reformas,PQL
+C00423,Carmen,c00423@correo.example,2026-09-01,referido,autonomo,peluquería,cliente
+C00424,Álvaro,c00424@correo.example,2026-07-12,organico,pyme,taller mecánico,cliente
+C00425,Hugo,c00425@correo.example,2026-09-07,pago,pyme,agencia de marketing,cliente
+C00426,Daniel,c00426@correo.example,2026-07-23,organico,pyme,construcción,registrado
+C00427,Raúl,c00427@correo.example,2026-08-12,referido,pyme,construcción,registrado
+C00428,Sara,c00428@correo.example,2026-10-02,contador,autonomo,fontanería,cliente
+C00429,Adrián,c00429@correo.example,2026-07-17,contador,autonomo,fontanería,registrado
+C00430,Carmen,c00430@correo.example,2026-08-17,organico,autonomo,fisioterapia,registrado
+C00431,Raúl,c00431@correo.example,2026-07-02,referido,pyme,taller mecánico,registrado
+C00432,Álvaro,c00432@correo.example,2026-10-27,referido,pyme,agencia de marketing,registrado
+C00433,Daniel,c00433@correo.example,2026-10-20,pago,pyme,tienda de ropa,PQL
+C00434,Marcos,c00434@correo.example,2026-08-03,organico,autonomo,peluquería,registrado
+C00435,Marta,c00435@correo.example,2026-09-10,contador,pyme,tienda de ropa,cliente
+C00436,Laura,c00436@correo.example,2026-08-25,organico,pyme,restaurante,registrado
+C00437,Adrián,c00437@correo.example,2026-10-13,contador,pyme,distribuidora,PQL
+C00438,Álvaro,c00438@correo.example,2026-10-01,organico,autonomo,traducción,registrado
+C00439,Rocío,c00439@correo.example,2026-08-25,organico,autonomo,electricidad,cliente
+C00440,Adrián,c00440@correo.example,2026-08-08,organico,autonomo,fotografía,registrado
+C00441,Raúl,c00441@correo.example,2026-07-07,contador,pyme,restaurante,PQL
+C00442,Raúl,c00442@correo.example,2026-10-25,organico,autonomo,fontanería,registrado
+C00443,Raúl,c00443@correo.example,2026-08-07,organico,autonomo,consultoría,PQL
+C00444,Elena,c00444@correo.example,2026-08-01,organico,autonomo,clases particulares,registrado
+C00445,Nuria,c00445@correo.example,2026-08-02,organico,autonomo,fotografía,registrado
+C00446,Irene,c00446@correo.example,2026-09-22,organico,autonomo,reformas,registrado
+C00447,Marta,c00447@correo.example,2026-08-17,contador,autonomo,diseño gráfico,registrado
+C00448,Adrián,c00448@correo.example,2026-07-28,referido,pyme,clínica dental,PQL
+C00449,Pablo,c00449@correo.example,2026-07-19,contador,autonomo,diseño gráfico,PQL
+C00450,Laura,c00450@correo.example,2026-07-02,contador,pyme,clínica dental,cliente
+C00451,Marta,c00451@correo.example,2026-10-16,organico,pyme,tienda de ropa,registrado
+C00452,Irene,c00452@correo.example,2026-10-02,organico,pyme,clínica dental,cliente
+C00453,Nuria,c00453@correo.example,2026-08-13,referido,pyme,taller mecánico,PQL
+C00454,Ana,c00454@correo.example,2026-09-28,pago,autonomo,reformas,registrado
+C00455,Marta,c00455@correo.example,2026-08-01,organico,autonomo,peluquería,registrado
+C00456,Álvaro,c00456@correo.example,2026-10-15,contador,pyme,clínica dental,registrado
+C00457,Marcos,c00457@correo.example,2026-08-18,organico,pyme,tienda de ropa,registrado
+C00458,Marta,c00458@correo.example,2026-10-13,pago,pyme,academia,PQL
+C00459,Raúl,c00459@correo.example,2026-07-07,pago,autonomo,traducción,registrado
+C00460,Paula,c00460@correo.example,2026-09-12,pago,autonomo,consultoría,cliente
+C00461,Sergio,c00461@correo.example,2026-07-29,contador,pyme,construcción,registrado
+C00462,Sara,c00462@correo.example,2026-10-17,contador,autonomo,fotografía,PQL
+C00463,Adrián,c00463@correo.example,2026-10-02,pago,autonomo,fisioterapia,PQL
+C00464,Paula,c00464@correo.example,2026-07-30,contador,autonomo,reformas,cliente
+C00465,Irene,c00465@correo.example,2026-07-25,contador,pyme,academia,PQL
+C00466,Laura,c00466@correo.example,2026-08-26,organico,autonomo,fontanería,registrado
+C00467,Javier,c00467@correo.example,2026-07-15,organico,autonomo,reformas,registrado
+C00468,Daniel,c00468@correo.example,2026-09-12,contador,pyme,academia,PQL
+C00469,Ana,c00469@correo.example,2026-07-13,organico,pyme,distribuidora,PQL
+C00470,Daniel,c00470@correo.example,2026-09-16,organico,autonomo,fontanería,registrado
+C00471,Sara,c00471@correo.example,2026-07-12,contador,pyme,tienda de ropa,registrado
+C00472,Hugo,c00472@correo.example,2026-10-10,organico,autonomo,clases particulares,PQL
+C00473,Irene,c00473@correo.example,2026-09-09,organico,autonomo,consultoría,registrado
+C00474,Javier,c00474@correo.example,2026-10-03,referido,pyme,agencia de marketing,registrado
+C00475,Irene,c00475@correo.example,2026-08-04,pago,pyme,agencia de marketing,registrado
+C00476,Álvaro,c00476@correo.example,2026-10-21,organico,autonomo,consultoría,registrado
+C00477,Pablo,c00477@correo.example,2026-09-09,pago,pyme,taller mecánico,cliente
+C00478,Adrián,c00478@correo.example,2026-09-17,organico,autonomo,consultoría,registrado
+C00479,Elena,c00479@correo.example,2026-08-05,organico,pyme,taller mecánico,cliente
+C00480,Sergio,c00480@correo.example,2026-07-27,organico,autonomo,peluquería,registrado
+C00481,Elena,c00481@correo.example,2026-10-13,contador,autonomo,fontanería,registrado
+C00482,Irene,c00482@correo.example,2026-08-04,referido,autonomo,traducción,PQL
+C00483,Carmen,c00483@correo.example,2026-10-26,organico,autonomo,diseño gráfico,registrado
+C00484,Pablo,c00484@correo.example,2026-08-19,referido,autonomo,peluquería,PQL
+C00485,Iker,c00485@correo.example,2026-10-21,organico,autonomo,electricidad,registrado
+C00486,Álvaro,c00486@correo.example,2026-08-04,referido,pyme,tienda de ropa,PQL
+C00487,Marta,c00487@correo.example,2026-07-20,organico,pyme,clínica dental,PQL
+C00488,Marcos,c00488@correo.example,2026-08-18,organico,autonomo,traducción,registrado
+C00489,Ana,c00489@correo.example,2026-08-01,referido,pyme,restaurante,PQL
+C00490,Irene,c00490@correo.example,2026-10-10,referido,pyme,construcción,registrado
+C00491,Ana,c00491@correo.example,2026-10-05,organico,autonomo,consultoría,registrado
+C00492,Carmen,c00492@correo.example,2026-08-27,organico,autonomo,clases particulares,registrado
+C00493,Iker,c00493@correo.example,2026-07-18,organico,autonomo,diseño gráfico,registrado
+C00494,Rocío,c00494@correo.example,2026-07-02,referido,pyme,distribuidora,cliente
+C00495,Paula,c00495@correo.example,2026-08-22,organico,pyme,tienda de ropa,registrado
+C00496,Sara,c00496@correo.example,2026-07-27,organico,autonomo,electricidad,registrado
+C00497,Daniel,c00497@correo.example,2026-08-28,contador,pyme,academia,cliente
+C00498,Marta,c00498@correo.example,2026-08-09,contador,autonomo,peluquería,registrado
+C00499,Álvaro,c00499@correo.example,2026-08-30,contador,autonomo,fontanería,registrado
+C00500,Hugo,c00500@correo.example,2026-07-19,organico,autonomo,fisioterapia,registrado
+C00501,Elena,c00501@correo.example,2026-10-19,contador,autonomo,consultoría,registrado
+C00502,Sara,c00502@correo.example,2026-10-12,organico,pyme,restaurante,PQL
+C00503,Sara,c00503@correo.example,2026-09-24,organico,pyme,tienda de ropa,registrado
+C00504,Hugo,c00504@correo.example,2026-07-01,organico,pyme,clínica dental,cliente
+C00505,Pablo,c00505@correo.example,2026-08-02,organico,autonomo,fontanería,registrado
+C00506,Paula,c00506@correo.example,2026-10-16,contador,autonomo,fotografía,registrado
+C00507,Elena,c00507@correo.example,2026-09-21,contador,pyme,distribuidora,PQL
+C00508,Adrián,c00508@correo.example,2026-07-02,referido,pyme,construcción,registrado
+C00509,Adrián,c00509@correo.example,2026-08-24,organico,autonomo,clases particulares,registrado
+C00510,Marta,c00510@correo.example,2026-09-06,organico,autonomo,reformas,registrado
+C00511,Laura,c00511@correo.example,2026-08-31,organico,pyme,agencia de marketing,registrado
+C00512,Pablo,c00512@correo.example,2026-08-10,referido,pyme,restaurante,PQL
+C00513,Rocío,c00513@correo.example,2026-07-11,organico,autonomo,fisioterapia,registrado
+C00514,Rocío,c00514@correo.example,2026-08-16,organico,autonomo,reformas,registrado
+C00515,Paula,c00515@correo.example,2026-09-24,contador,pyme,agencia de marketing,cliente
+C00516,Paula,c00516@correo.example,2026-08-10,organico,autonomo,fontanería,registrado
+C00517,Paula,c00517@correo.example,2026-09-23,referido,pyme,clínica dental,PQL
+C00518,Sara,c00518@correo.example,2026-09-18,organico,autonomo,traducción,registrado
+C00519,Javier,c00519@correo.example,2026-09-07,referido,pyme,tienda de ropa,registrado
+C00520,Marcos,c00520@correo.example,2026-10-12,organico,autonomo,fontanería,registrado
+C00521,Rocío,c00521@correo.example,2026-09-29,organico,autonomo,consultoría,registrado
+C00522,Marcos,c00522@correo.example,2026-08-03,organico,pyme,agencia de marketing,registrado
+C00523,Daniel,c00523@correo.example,2026-07-07,organico,autonomo,electricidad,registrado
+C00524,Adrián,c00524@correo.example,2026-08-25,organico,autonomo,traducción,registrado
+C00525,Daniel,c00525@correo.example,2026-09-18,pago,pyme,clínica dental,cliente
+C00526,Ana,c00526@correo.example,2026-09-17,organico,autonomo,fotografía,registrado
+C00527,Iker,c00527@correo.example,2026-07-17,referido,autonomo,fisioterapia,cliente
+C00528,Raúl,c00528@correo.example,2026-08-23,organico,pyme,tienda de ropa,registrado
+C00529,Daniel,c00529@correo.example,2026-09-04,contador,autonomo,consultoría,cliente
+C00530,Irene,c00530@correo.example,2026-08-05,organico,autonomo,fotografía,registrado
+C00531,Raúl,c00531@correo.example,2026-07-20,organico,autonomo,consultoría,registrado
+C00532,Sergio,c00532@correo.example,2026-08-15,organico,pyme,restaurante,registrado
+C00533,Hugo,c00533@correo.example,2026-07-05,organico,autonomo,peluquería,registrado
+C00534,Álvaro,c00534@correo.example,2026-08-18,organico,autonomo,peluquería,registrado
+C00535,Carmen,c00535@correo.example,2026-10-07,referido,pyme,taller mecánico,PQL
+C00536,Álvaro,c00536@correo.example,2026-09-22,organico,pyme,clínica dental,PQL
+C00537,Nuria,c00537@correo.example,2026-10-15,organico,autonomo,fotografía,registrado
+C00538,Adrián,c00538@correo.example,2026-10-14,organico,autonomo,consultoría,registrado
+C00539,Laura,c00539@correo.example,2026-07-25,contador,autonomo,fontanería,registrado
+C00540,Pablo,c00540@correo.example,2026-09-12,organico,autonomo,fisioterapia,registrado
+C00541,Paula,c00541@correo.example,2026-08-24,organico,autonomo,fontanería,registrado
+C00542,Rocío,c00542@correo.example,2026-08-16,organico,autonomo,reformas,registrado
+C00543,Marta,c00543@correo.example,2026-08-01,contador,autonomo,peluquería,cliente
+C00544,Álvaro,c00544@correo.example,2026-09-07,referido,autonomo,electricidad,registrado
+C00545,Adrián,c00545@correo.example,2026-10-03,organico,autonomo,electricidad,registrado
+C00546,Ana,c00546@correo.example,2026-08-09,organico,autonomo,traducción,registrado
+C00547,Sara,c00547@correo.example,2026-10-07,referido,autonomo,electricidad,registrado
+C00548,Sara,c00548@correo.example,2026-07-26,organico,autonomo,fontanería,registrado
+C00549,Adrián,c00549@correo.example,2026-07-16,organico,autonomo,peluquería,registrado
+C00550,Hugo,c00550@correo.example,2026-07-08,organico,pyme,academia,PQL
+C00551,Daniel,c00551@correo.example,2026-09-22,contador,autonomo,traducción,registrado
+C00552,Irene,c00552@correo.example,2026-07-12,referido,autonomo,peluquería,PQL
+C00553,Adrián,c00553@correo.example,2026-07-27,contador,pyme,agencia de marketing,PQL
+C00554,Rocío,c00554@correo.example,2026-08-19,organico,autonomo,diseño gráfico,PQL
+C00555,Javier,c00555@correo.example,2026-07-02,organico,autonomo,fisioterapia,PQL
+C00556,Elena,c00556@correo.example,2026-09-06,referido,pyme,distribuidora,cliente
+C00557,Álvaro,c00557@correo.example,2026-07-25,organico,pyme,tienda de ropa,PQL
+C00558,Paula,c00558@correo.example,2026-08-28,organico,autonomo,electricidad,registrado
+C00559,Sergio,c00559@correo.example,2026-09-02,referido,autonomo,electricidad,registrado
+C00560,Irene,c00560@correo.example,2026-10-18,pago,pyme,tienda de ropa,PQL
+C00561,Rocío,c00561@correo.example,2026-07-21,organico,autonomo,electricidad,registrado
+C00562,Irene,c00562@correo.example,2026-08-15,organico,pyme,tienda de ropa,registrado
+C00563,Carmen,c00563@correo.example,2026-07-27,organico,autonomo,fotografía,registrado
+C00564,Laura,c00564@correo.example,2026-08-18,organico,pyme,taller mecánico,PQL
+C00565,Marcos,c00565@correo.example,2026-10-29,referido,autonomo,electricidad,registrado
+C00566,Carmen,c00566@correo.example,2026-08-20,pago,autonomo,peluquería,registrado
+C00567,Ana,c00567@correo.example,2026-09-15,organico,autonomo,fotografía,registrado
+C00568,Sara,c00568@correo.example,2026-08-12,organico,autonomo,fisioterapia,registrado
+C00569,Ana,c00569@correo.example,2026-08-19,organico,autonomo,fisioterapia,registrado
+C00570,Raúl,c00570@correo.example,2026-07-13,organico,autonomo,electricidad,registrado
+C00571,Ana,c00571@correo.example,2026-10-05,organico,autonomo,diseño gráfico,registrado
+C00572,Adrián,c00572@correo.example,2026-07-14,organico,autonomo,electricidad,registrado
+C00573,Irene,c00573@correo.example,2026-08-30,organico,autonomo,peluquería,registrado
+C00574,Irene,c00574@correo.example,2026-09-15,organico,autonomo,peluquería,registrado
+C00575,Raúl,c00575@correo.example,2026-08-23,organico,pyme,clínica dental,cliente
+C00576,Javier,c00576@correo.example,2026-10-11,contador,pyme,agencia de marketing,registrado
+C00577,Laura,c00577@correo.example,2026-07-07,organico,autonomo,consultoría,registrado
+C00578,Nuria,c00578@correo.example,2026-07-02,contador,autonomo,electricidad,PQL
+C00579,Sara,c00579@correo.example,2026-08-07,contador,pyme,tienda de ropa,registrado
+C00580,Rocío,c00580@correo.example,2026-09-06,organico,pyme,academia,registrado
+C00581,Sergio,c00581@correo.example,2026-07-30,referido,autonomo,fisioterapia,cliente
+C00582,Daniel,c00582@correo.example,2026-10-10,organico,pyme,academia,PQL
+C00583,Adrián,c00583@correo.example,2026-08-19,contador,pyme,taller mecánico,PQL
+C00584,Marcos,c00584@correo.example,2026-08-31,contador,autonomo,reformas,PQL
+C00585,Sara,c00585@correo.example,2026-07-15,contador,pyme,construcción,registrado
+C00586,Adrián,c00586@correo.example,2026-08-13,organico,pyme,taller mecánico,registrado
+C00587,Iker,c00587@correo.example,2026-07-16,organico,autonomo,fotografía,registrado
+C00588,Adrián,c00588@correo.example,2026-10-01,organico,autonomo,electricidad,registrado
+C00589,Rocío,c00589@correo.example,2026-07-11,organico,pyme,taller mecánico,registrado
+C00590,Marta,c00590@correo.example,2026-08-07,organico,autonomo,peluquería,PQL
+C00591,Javier,c00591@correo.example,2026-07-24,organico,autonomo,peluquería,registrado
+C00592,Hugo,c00592@correo.example,2026-10-15,referido,autonomo,fontanería,cliente
+C00593,Paula,c00593@correo.example,2026-09-13,pago,autonomo,fotografía,registrado
+C00594,Álvaro,c00594@correo.example,2026-10-11,organico,autonomo,diseño gráfico,registrado
+C00595,Ana,c00595@correo.example,2026-08-29,organico,pyme,academia,registrado
+C00596,Nuria,c00596@correo.example,2026-08-24,contador,autonomo,diseño gráfico,registrado
+C00597,Iker,c00597@correo.example,2026-09-05,contador,pyme,restaurante,PQL
+C00598,Iker,c00598@correo.example,2026-09-08,referido,autonomo,reformas,registrado
+C00599,Irene,c00599@correo.example,2026-07-31,organico,autonomo,peluquería,cliente
+C00600,Pablo,c00600@correo.example,2026-10-30,organico,pyme,academia,registrado
+C00601,Raúl,c00601@correo.example,2026-08-17,organico,autonomo,traducción,registrado
+C00602,Álvaro,c00602@correo.example,2026-07-22,organico,autonomo,reformas,registrado
+C00603,Marcos,c00603@correo.example,2026-10-25,pago,pyme,construcción,registrado
+C00604,Daniel,c00604@correo.example,2026-08-12,organico,pyme,construcción,cliente
+C00605,Daniel,c00605@correo.example,2026-09-07,contador,autonomo,traducción,registrado
+C00606,Adrián,c00606@correo.example,2026-07-09,organico,pyme,distribuidora,PQL
+C00607,Carmen,c00607@correo.example,2026-08-27,organico,autonomo,fotografía,registrado
+C00608,Marta,c00608@correo.example,2026-10-10,contador,pyme,construcción,registrado
+C00609,Iker,c00609@correo.example,2026-09-01,organico,autonomo,fisioterapia,registrado
+C00610,Iker,c00610@correo.example,2026-10-17,contador,pyme,distribuidora,PQL
+C00611,Daniel,c00611@correo.example,2026-08-19,pago,pyme,agencia de marketing,PQL
+C00612,Iker,c00612@correo.example,2026-08-13,organico,autonomo,fontanería,registrado
+C00613,Raúl,c00613@correo.example,2026-09-03,contador,autonomo,fisioterapia,registrado
+C00614,Hugo,c00614@correo.example,2026-09-01,organico,autonomo,consultoría,registrado
+C00615,Hugo,c00615@correo.example,2026-09-19,organico,autonomo,clases particulares,registrado
+C00616,Iker,c00616@correo.example,2026-08-18,organico,autonomo,electricidad,registrado
+C00617,Hugo,c00617@correo.example,2026-08-01,organico,autonomo,clases particulares,registrado
+C00618,Daniel,c00618@correo.example,2026-07-20,organico,pyme,restaurante,registrado
+C00619,Irene,c00619@correo.example,2026-07-07,organico,autonomo,electricidad,PQL
+C00620,Adrián,c00620@correo.example,2026-10-26,referido,pyme,academia,registrado
+C00621,Rocío,c00621@correo.example,2026-08-13,organico,autonomo,clases particulares,registrado
+C00622,Álvaro,c00622@correo.example,2026-07-30,pago,pyme,taller mecánico,cliente
+C00623,Álvaro,c00623@correo.example,2026-08-21,organico,autonomo,diseño gráfico,registrado
+C00624,Iker,c00624@correo.example,2026-08-08,pago,pyme,clínica dental,registrado
+C00625,Paula,c00625@correo.example,2026-10-07,organico,autonomo,traducción,cliente
+C00626,Hugo,c00626@correo.example,2026-08-17,organico,autonomo,consultoría,registrado
+C00627,Paula,c00627@correo.example,2026-08-12,organico,autonomo,electricidad,registrado
+C00628,Nuria,c00628@correo.example,2026-08-18,organico,pyme,construcción,cliente
+C00629,Pablo,c00629@correo.example,2026-09-04,organico,autonomo,electricidad,cliente
+C00630,Carmen,c00630@correo.example,2026-08-26,contador,pyme,academia,registrado
+C00631,Carmen,c00631@correo.example,2026-08-30,organico,autonomo,peluquería,registrado
+C00632,Laura,c00632@correo.example,2026-07-01,organico,autonomo,peluquería,registrado
+C00633,Rocío,c00633@correo.example,2026-08-18,referido,pyme,agencia de marketing,registrado
+C00634,Pablo,c00634@correo.example,2026-07-23,contador,pyme,restaurante,PQL
+C00635,Javier,c00635@correo.example,2026-08-08,organico,pyme,clínica dental,PQL
+C00636,Raúl,c00636@correo.example,2026-10-27,organico,autonomo,consultoría,registrado
+C00637,Nuria,c00637@correo.example,2026-10-03,contador,autonomo,fontanería,cliente
+C00638,Elena,c00638@correo.example,2026-10-17,contador,pyme,tienda de ropa,PQL
+C00639,Adrián,c00639@correo.example,2026-07-06,organico,pyme,academia,registrado
+C00640,Irene,c00640@correo.example,2026-07-26,referido,pyme,taller mecánico,PQL
+C00641,Laura,c00641@correo.example,2026-10-09,referido,pyme,agencia de marketing,PQL
+C00642,Elena,c00642@correo.example,2026-08-25,pago,autonomo,fotografía,PQL
+C00643,Paula,c00643@correo.example,2026-07-14,referido,pyme,taller mecánico,registrado
+C00644,Hugo,c00644@correo.example,2026-09-24,contador,autonomo,diseño gráfico,cliente
+C00645,Ana,c00645@correo.example,2026-07-14,organico,pyme,construcción,PQL
+C00646,Irene,c00646@correo.example,2026-07-09,organico,autonomo,fontanería,registrado
+C00647,Sergio,c00647@correo.example,2026-08-22,pago,pyme,clínica dental,PQL
+C00648,Elena,c00648@correo.example,2026-07-12,organico,autonomo,reformas,registrado
+C00649,Nuria,c00649@correo.example,2026-07-04,organico,pyme,clínica dental,registrado
+C00650,Sara,c00650@correo.example,2026-08-16,organico,autonomo,fisioterapia,registrado
+C00651,Ana,c00651@correo.example,2026-09-22,organico,pyme,academia,registrado
+C00652,Álvaro,c00652@correo.example,2026-07-15,organico,autonomo,clases particulares,PQL
+C00653,Iker,c00653@correo.example,2026-08-31,contador,pyme,distribuidora,PQL
+C00654,Rocío,c00654@correo.example,2026-10-29,contador,autonomo,clases particulares,registrado
+C00655,Sara,c00655@correo.example,2026-09-12,referido,pyme,agencia de marketing,PQL
+C00656,Hugo,c00656@correo.example,2026-09-21,organico,autonomo,consultoría,registrado
+C00657,Javier,c00657@correo.example,2026-07-26,contador,pyme,clínica dental,registrado
+C00658,Elena,c00658@correo.example,2026-10-06,organico,pyme,agencia de marketing,registrado
+C00659,Hugo,c00659@correo.example,2026-07-04,organico,autonomo,consultoría,registrado
+C00660,Laura,c00660@correo.example,2026-09-27,organico,autonomo,electricidad,cliente
+C00661,Irene,c00661@correo.example,2026-07-29,referido,pyme,restaurante,registrado
+C00662,Nuria,c00662@correo.example,2026-08-12,organico,pyme,construcción,registrado
+C00663,Sara,c00663@correo.example,2026-10-14,contador,pyme,distribuidora,registrado
+C00664,Raúl,c00664@correo.example,2026-07-07,pago,autonomo,clases particulares,registrado
+C00665,Irene,c00665@correo.example,2026-08-12,referido,autonomo,consultoría,cliente
+C00666,Sara,c00666@correo.example,2026-09-27,organico,pyme,construcción,PQL
+C00667,Ana,c00667@correo.example,2026-09-13,referido,autonomo,reformas,registrado
+C00668,Adrián,c00668@correo.example,2026-08-08,organico,autonomo,diseño gráfico,PQL
+C00669,Ana,c00669@correo.example,2026-10-18,contador,pyme,academia,registrado
+C00670,Javier,c00670@correo.example,2026-10-06,pago,pyme,construcción,registrado
+C00671,Pablo,c00671@correo.example,2026-07-10,pago,pyme,construcción,cliente
+C00672,Ana,c00672@correo.example,2026-07-20,organico,autonomo,fisioterapia,registrado
+C00673,Álvaro,c00673@correo.example,2026-09-08,organico,pyme,taller mecánico,registrado
+C00674,Álvaro,c00674@correo.example,2026-07-08,pago,autonomo,diseño gráfico,registrado
+C00675,Javier,c00675@correo.example,2026-09-05,contador,autonomo,fisioterapia,PQL
+C00676,Pablo,c00676@correo.example,2026-08-19,organico,autonomo,clases particulares,registrado
+C00677,Paula,c00677@correo.example,2026-09-02,referido,autonomo,fisioterapia,PQL
+C00678,Sara,c00678@correo.example,2026-09-01,pago,pyme,clínica dental,registrado
+C00679,Elena,c00679@correo.example,2026-07-21,contador,pyme,academia,registrado
+C00680,Daniel,c00680@correo.example,2026-10-24,organico,autonomo,traducción,PQL
+C00681,Sara,c00681@correo.example,2026-10-14,organico,autonomo,clases particulares,registrado
+C00682,Iker,c00682@correo.example,2026-07-28,organico,autonomo,fisioterapia,registrado
+C00683,Laura,c00683@correo.example,2026-08-17,organico,pyme,restaurante,registrado
+C00684,Carmen,c00684@correo.example,2026-09-11,organico,pyme,construcción,PQL
+C00685,Iker,c00685@correo.example,2026-07-19,referido,pyme,academia,cliente
+C00686,Hugo,c00686@correo.example,2026-10-26,contador,pyme,taller mecánico,PQL
+C00687,Marta,c00687@correo.example,2026-09-03,organico,pyme,restaurante,registrado
+C00688,Sara,c00688@correo.example,2026-07-07,referido,pyme,construcción,PQL
+C00689,Sara,c00689@correo.example,2026-09-24,organico,autonomo,diseño gráfico,PQL
+C00690,Iker,c00690@correo.example,2026-10-24,pago,pyme,clínica dental,PQL
+C00691,Raúl,c00691@correo.example,2026-10-27,referido,autonomo,peluquería,registrado
+C00692,Sara,c00692@correo.example,2026-09-06,referido,pyme,restaurante,PQL
+C00693,Adrián,c00693@correo.example,2026-09-03,referido,pyme,clínica dental,registrado
+C00694,Marta,c00694@correo.example,2026-07-03,contador,pyme,academia,registrado
+C00695,Paula,c00695@correo.example,2026-07-02,organico,autonomo,clases particulares,registrado
+C00696,Adrián,c00696@correo.example,2026-08-22,contador,autonomo,clases particulares,registrado
+C00697,Rocío,c00697@correo.example,2026-09-20,pago,pyme,agencia de marketing,cliente
+C00698,Raúl,c00698@correo.example,2026-10-06,organico,pyme,clínica dental,PQL
+C00699,Iker,c00699@correo.example,2026-09-28,organico,autonomo,electricidad,registrado
+C00700,Laura,c00700@correo.example,2026-08-22,referido,pyme,tienda de ropa,PQL
+C00701,Paula,c00701@correo.example,2026-10-25,organico,autonomo,fontanería,registrado
+C00702,Ana,c00702@correo.example,2026-07-23,organico,autonomo,peluquería,registrado
+C00703,Sergio,c00703@correo.example,2026-07-11,contador,pyme,distribuidora,PQL
+C00704,Adrián,c00704@correo.example,2026-10-15,referido,pyme,taller mecánico,registrado
+C00705,Elena,c00705@correo.example,2026-07-11,contador,pyme,academia,PQL
+C00706,Marta,c00706@correo.example,2026-07-23,referido,pyme,distribuidora,registrado
+C00707,Pablo,c00707@correo.example,2026-07-19,contador,autonomo,reformas,PQL
+C00708,Sara,c00708@correo.example,2026-09-08,organico,autonomo,peluquería,registrado
+C00709,Elena,c00709@correo.example,2026-10-09,organico,autonomo,fontanería,PQL
+C00710,Álvaro,c00710@correo.example,2026-07-24,contador,autonomo,clases particulares,registrado
+C00711,Carmen,c00711@correo.example,2026-09-03,organico,autonomo,fotografía,registrado
+C00712,Daniel,c00712@correo.example,2026-10-24,referido,pyme,taller mecánico,PQL
+C00713,Adrián,c00713@correo.example,2026-07-01,organico,autonomo,consultoría,registrado
+C00714,Raúl,c00714@correo.example,2026-09-21,contador,pyme,restaurante,registrado
+C00715,Iker,c00715@correo.example,2026-07-10,referido,autonomo,traducción,PQL
+C00716,Sergio,c00716@correo.example,2026-10-09,contador,autonomo,fisioterapia,registrado
+C00717,Nuria,c00717@correo.example,2026-09-18,organico,pyme,tienda de ropa,cliente
+C00718,Rocío,c00718@correo.example,2026-07-29,organico,autonomo,peluquería,registrado
+C00719,Ana,c00719@correo.example,2026-10-25,organico,autonomo,clases particulares,registrado
+C00720,Carmen,c00720@correo.example,2026-08-03,referido,autonomo,fotografía,registrado
+C00721,Laura,c00721@correo.example,2026-09-17,pago,pyme,tienda de ropa,registrado
+C00722,Elena,c00722@correo.example,2026-07-11,referido,autonomo,electricidad,registrado
+C00723,Nuria,c00723@correo.example,2026-08-13,organico,autonomo,traducción,registrado
+C00724,Raúl,c00724@correo.example,2026-09-03,organico,autonomo,peluquería,registrado
+C00725,Rocío,c00725@correo.example,2026-07-24,pago,autonomo,fotografía,cliente
+C00726,Pablo,c00726@correo.example,2026-09-18,organico,pyme,restaurante,registrado
+C00727,Sergio,c00727@correo.example,2026-08-08,referido,autonomo,consultoría,cliente
+C00728,Marta,c00728@correo.example,2026-08-01,organico,pyme,clínica dental,registrado
+C00729,Marcos,c00729@correo.example,2026-09-03,organico,pyme,agencia de marketing,cliente
+C00730,Raúl,c00730@correo.example,2026-10-03,contador,autonomo,reformas,registrado
+C00731,Marta,c00731@correo.example,2026-10-08,organico,pyme,academia,registrado
+C00732,Carmen,c00732@correo.example,2026-07-15,contador,pyme,distribuidora,PQL
+C00733,Carmen,c00733@correo.example,2026-07-15,contador,pyme,agencia de marketing,registrado
+C00734,Pablo,c00734@correo.example,2026-07-25,contador,autonomo,peluquería,registrado
+C00735,Marcos,c00735@correo.example,2026-07-02,referido,pyme,academia,registrado
+C00736,Álvaro,c00736@correo.example,2026-07-21,contador,pyme,tienda de ropa,PQL
+C00737,Marcos,c00737@correo.example,2026-08-04,organico,autonomo,reformas,registrado
+C00738,Adrián,c00738@correo.example,2026-07-15,contador,pyme,construcción,PQL
+C00739,Adrián,c00739@correo.example,2026-10-18,referido,pyme,tienda de ropa,registrado
+C00740,Iker,c00740@correo.example,2026-07-16,organico,autonomo,fotografía,registrado
+C00741,Marta,c00741@correo.example,2026-07-12,organico,autonomo,electricidad,registrado
+C00742,Sara,c00742@correo.example,2026-07-31,organico,pyme,restaurante,registrado
+C00743,Álvaro,c00743@correo.example,2026-10-17,contador,autonomo,fisioterapia,registrado
+C00744,Marcos,c00744@correo.example,2026-07-19,organico,autonomo,clases particulares,registrado
+C00745,Álvaro,c00745@correo.example,2026-09-17,organico,autonomo,fisioterapia,registrado
+C00746,Daniel,c00746@correo.example,2026-07-06,contador,pyme,restaurante,PQL
+C00747,Adrián,c00747@correo.example,2026-09-08,organico,autonomo,electricidad,registrado
+C00748,Adrián,c00748@correo.example,2026-08-18,organico,pyme,tienda de ropa,PQL
+C00749,Iker,c00749@correo.example,2026-07-01,contador,autonomo,traducción,PQL
+C00750,Iker,c00750@correo.example,2026-10-28,organico,autonomo,clases particulares,registrado
+C00751,Álvaro,c00751@correo.example,2026-09-04,referido,pyme,tienda de ropa,registrado
+C00752,Elena,c00752@correo.example,2026-08-27,contador,autonomo,clases particulares,registrado
+C00753,Carmen,c00753@correo.example,2026-07-01,organico,autonomo,electricidad,registrado
+C00754,Elena,c00754@correo.example,2026-07-15,pago,autonomo,electricidad,PQL
+C00755,Pablo,c00755@correo.example,2026-08-04,organico,autonomo,consultoría,registrado
+C00756,Carmen,c00756@correo.example,2026-07-26,pago,autonomo,diseño gráfico,registrado
+C00757,Iker,c00757@correo.example,2026-07-20,organico,pyme,distribuidora,PQL
+C00758,Irene,c00758@correo.example,2026-08-20,referido,pyme,restaurante,PQL
+C00759,Hugo,c00759@correo.example,2026-10-04,contador,autonomo,peluquería,PQL
+C00760,Álvaro,c00760@correo.example,2026-08-16,organico,pyme,restaurante,registrado
+C00761,Marcos,c00761@correo.example,2026-08-10,contador,autonomo,fisioterapia,cliente
+C00762,Sara,c00762@correo.example,2026-09-06,organico,autonomo,fisioterapia,registrado
+C00763,Ana,c00763@correo.example,2026-10-04,referido,autonomo,fotografía,registrado
+C00764,Sergio,c00764@correo.example,2026-09-30,organico,pyme,tienda de ropa,registrado
+C00765,Pablo,c00765@correo.example,2026-08-27,contador,pyme,distribuidora,PQL
+C00766,Rocío,c00766@correo.example,2026-08-03,contador,pyme,restaurante,PQL
+C00767,Sergio,c00767@correo.example,2026-07-29,pago,pyme,distribuidora,registrado
+C00768,Nuria,c00768@correo.example,2026-10-08,organico,autonomo,electricidad,registrado
+C00769,Raúl,c00769@correo.example,2026-10-09,pago,autonomo,peluquería,registrado
+C00770,Iker,c00770@correo.example,2026-08-19,contador,pyme,academia,registrado
+C00771,Daniel,c00771@correo.example,2026-07-20,contador,pyme,construcción,registrado
+C00772,Ana,c00772@correo.example,2026-10-14,organico,autonomo,traducción,registrado
+C00773,Raúl,c00773@correo.example,2026-07-02,pago,autonomo,traducción,cliente
+C00774,Rocío,c00774@correo.example,2026-09-26,pago,pyme,distribuidora,PQL
+C00775,Marcos,c00775@correo.example,2026-09-28,contador,autonomo,consultoría,registrado
+C00776,Javier,c00776@correo.example,2026-09-07,organico,autonomo,traducción,registrado
+C00777,Irene,c00777@correo.example,2026-07-14,pago,autonomo,consultoría,registrado
+C00778,Raúl,c00778@correo.example,2026-08-04,organico,autonomo,reformas,registrado
+C00779,Iker,c00779@correo.example,2026-08-06,organico,autonomo,reformas,registrado
+C00780,Irene,c00780@correo.example,2026-09-29,organico,autonomo,fisioterapia,registrado
+C00781,Paula,c00781@correo.example,2026-08-27,organico,pyme,taller mecánico,cliente
+C00782,Hugo,c00782@correo.example,2026-10-18,organico,autonomo,reformas,registrado
+C00783,Paula,c00783@correo.example,2026-08-24,organico,autonomo,fontanería,registrado
+C00784,Rocío,c00784@correo.example,2026-09-25,organico,pyme,tienda de ropa,cliente
+C00785,Pablo,c00785@correo.example,2026-07-10,contador,pyme,clínica dental,registrado
+C00786,Laura,c00786@correo.example,2026-08-28,organico,pyme,clínica dental,PQL
+C00787,Hugo,c00787@correo.example,2026-08-19,organico,pyme,restaurante,registrado
+C00788,Hugo,c00788@correo.example,2026-09-30,referido,pyme,tienda de ropa,PQL
+C00789,Laura,c00789@correo.example,2026-09-18,organico,pyme,restaurante,cliente
+C00790,Laura,c00790@correo.example,2026-08-26,organico,autonomo,fontanería,registrado
+C00791,Sara,c00791@correo.example,2026-08-05,organico,autonomo,traducción,registrado
+C00792,Pablo,c00792@correo.example,2026-09-22,referido,pyme,clínica dental,registrado
+C00793,Adrián,c00793@correo.example,2026-08-12,organico,pyme,academia,cliente
+C00794,Álvaro,c00794@correo.example,2026-08-27,organico,autonomo,reformas,registrado
+C00795,Raúl,c00795@correo.example,2026-08-20,organico,pyme,distribuidora,registrado
+C00796,Raúl,c00796@correo.example,2026-08-29,organico,autonomo,fotografía,cliente
+C00797,Sergio,c00797@correo.example,2026-09-29,contador,autonomo,traducción,registrado
+C00798,Carmen,c00798@correo.example,2026-08-09,contador,autonomo,reformas,cliente
+C00799,Ana,c00799@correo.example,2026-07-10,organico,pyme,restaurante,registrado
+C00800,Daniel,c00800@correo.example,2026-08-26,organico,autonomo,fotografía,PQL
+C00801,Elena,c00801@correo.example,2026-09-27,organico,pyme,academia,registrado
+C00802,Sara,c00802@correo.example,2026-10-19,organico,autonomo,fisioterapia,registrado
+C00803,Iker,c00803@correo.example,2026-07-15,organico,pyme,tienda de ropa,registrado
+C00804,Marta,c00804@correo.example,2026-10-07,contador,pyme,construcción,PQL
+C00805,Pablo,c00805@correo.example,2026-09-29,organico,autonomo,fontanería,registrado
+C00806,Adrián,c00806@correo.example,2026-08-03,contador,pyme,tienda de ropa,registrado
+C00807,Javier,c00807@correo.example,2026-07-08,organico,autonomo,reformas,registrado
+C00808,Nuria,c00808@correo.example,2026-09-29,contador,pyme,construcción,registrado
+C00809,Hugo,c00809@correo.example,2026-08-05,organico,autonomo,reformas,registrado
+C00810,Nuria,c00810@correo.example,2026-08-29,referido,pyme,clínica dental,registrado
+C00811,Iker,c00811@correo.example,2026-09-30,contador,pyme,agencia de marketing,PQL
+C00812,Iker,c00812@correo.example,2026-08-24,organico,autonomo,diseño gráfico,registrado
+C00813,Laura,c00813@correo.example,2026-10-16,organico,autonomo,clases particulares,PQL
+C00814,Sergio,c00814@correo.example,2026-08-26,pago,pyme,academia,cliente
+C00815,Irene,c00815@correo.example,2026-07-10,organico,autonomo,peluquería,cliente
+C00816,Nuria,c00816@correo.example,2026-10-05,pago,pyme,agencia de marketing,PQL
+C00817,Marcos,c00817@correo.example,2026-10-18,pago,autonomo,reformas,PQL
+C00818,Irene,c00818@correo.example,2026-07-05,pago,pyme,taller mecánico,registrado
+C00819,Irene,c00819@correo.example,2026-09-20,pago,autonomo,reformas,registrado
+C00820,Álvaro,c00820@correo.example,2026-08-21,contador,autonomo,reformas,registrado
+C00821,Nuria,c00821@correo.example,2026-07-09,organico,autonomo,fisioterapia,registrado
+C00822,Javier,c00822@correo.example,2026-09-22,organico,autonomo,fontanería,registrado
+C00823,Adrián,c00823@correo.example,2026-09-03,organico,pyme,construcción,PQL
+C00824,Rocío,c00824@correo.example,2026-08-08,contador,autonomo,peluquería,PQL
+C00825,Laura,c00825@correo.example,2026-10-01,organico,pyme,construcción,PQL
+C00826,Adrián,c00826@correo.example,2026-10-06,contador,autonomo,diseño gráfico,PQL
+C00827,Sergio,c00827@correo.example,2026-10-11,referido,pyme,taller mecánico,PQL
+C00828,Marcos,c00828@correo.example,2026-07-09,referido,pyme,distribuidora,registrado
+C00829,Laura,c00829@correo.example,2026-08-02,organico,autonomo,peluquería,registrado
+C00830,Nuria,c00830@correo.example,2026-08-06,organico,autonomo,peluquería,registrado
+C00831,Laura,c00831@correo.example,2026-07-28,referido,pyme,taller mecánico,PQL
+C00832,Nuria,c00832@correo.example,2026-08-29,organico,autonomo,consultoría,registrado
+C00833,Ana,c00833@correo.example,2026-07-03,referido,pyme,taller mecánico,cliente
+C00834,Elena,c00834@correo.example,2026-07-26,contador,pyme,distribuidora,registrado
+C00835,Marta,c00835@correo.example,2026-10-01,referido,autonomo,electricidad,registrado
+C00836,Sara,c00836@correo.example,2026-09-05,organico,pyme,taller mecánico,registrado
+C00837,Ana,c00837@correo.example,2026-09-28,organico,autonomo,clases particulares,registrado
+C00838,Pablo,c00838@correo.example,2026-07-23,organico,autonomo,reformas,registrado
+C00839,Rocío,c00839@correo.example,2026-07-13,referido,autonomo,peluquería,registrado
+C00840,Ana,c00840@correo.example,2026-10-07,organico,autonomo,fisioterapia,registrado
+C00841,Pablo,c00841@correo.example,2026-09-10,organico,autonomo,fontanería,registrado
+C00842,Carmen,c00842@correo.example,2026-09-21,pago,pyme,tienda de ropa,cliente
+C00843,Álvaro,c00843@correo.example,2026-08-26,pago,autonomo,consultoría,PQL
+C00844,Adrián,c00844@correo.example,2026-09-23,referido,autonomo,peluquería,registrado
+C00845,Daniel,c00845@correo.example,2026-10-28,organico,autonomo,electricidad,registrado
+C00846,Laura,c00846@correo.example,2026-10-05,organico,autonomo,clases particulares,registrado
+C00847,Pablo,c00847@correo.example,2026-09-09,organico,autonomo,clases particulares,registrado
+C00848,Pablo,c00848@correo.example,2026-10-01,contador,pyme,taller mecánico,registrado
+C00849,Hugo,c00849@correo.example,2026-10-05,organico,autonomo,fotografía,registrado
+C00850,Javier,c00850@correo.example,2026-09-30,organico,pyme,tienda de ropa,registrado
+C00851,Marcos,c00851@correo.example,2026-10-11,organico,autonomo,reformas,registrado
+C00852,Laura,c00852@correo.example,2026-10-15,contador,autonomo,clases particulares,PQL
+C00853,Pablo,c00853@correo.example,2026-10-14,referido,autonomo,fisioterapia,registrado
+C00854,Hugo,c00854@correo.example,2026-07-12,organico,autonomo,fisioterapia,PQL
+C00855,Marta,c00855@correo.example,2026-10-14,organico,pyme,distribuidora,registrado
+C00856,Elena,c00856@correo.example,2026-07-07,pago,autonomo,peluquería,PQL
+C00857,Sara,c00857@correo.example,2026-07-16,organico,pyme,taller mecánico,PQL
+C00858,Daniel,c00858@correo.example,2026-07-20,contador,pyme,restaurante,PQL
+C00859,Rocío,c00859@correo.example,2026-08-21,referido,autonomo,electricidad,PQL
+C00860,Irene,c00860@correo.example,2026-09-25,organico,autonomo,reformas,registrado
+C00861,Elena,c00861@correo.example,2026-07-27,referido,pyme,construcción,PQL
+C00862,Javier,c00862@correo.example,2026-10-23,referido,pyme,tienda de ropa,registrado
+C00863,Rocío,c00863@correo.example,2026-08-14,organico,autonomo,traducción,registrado
+C00864,Marta,c00864@correo.example,2026-08-04,organico,autonomo,fotografía,registrado
+C00865,Sara,c00865@correo.example,2026-08-26,organico,autonomo,fisioterapia,registrado
+C00866,Carmen,c00866@correo.example,2026-07-28,contador,pyme,construcción,registrado
+C00867,Hugo,c00867@correo.example,2026-10-09,organico,autonomo,clases particulares,registrado
+C00868,Marta,c00868@correo.example,2026-09-26,organico,autonomo,reformas,registrado
+C00869,Daniel,c00869@correo.example,2026-09-22,organico,pyme,construcción,registrado
+C00870,Iker,c00870@correo.example,2026-09-16,organico,autonomo,clases particulares,registrado
+C00871,Álvaro,c00871@correo.example,2026-08-01,contador,autonomo,fisioterapia,PQL
+C00872,Hugo,c00872@correo.example,2026-09-05,contador,pyme,distribuidora,registrado
+C00873,Marcos,c00873@correo.example,2026-08-17,organico,autonomo,clases particulares,registrado
+C00874,Adrián,c00874@correo.example,2026-07-14,referido,pyme,construcción,PQL
+C00875,Carmen,c00875@correo.example,2026-08-14,organico,pyme,clínica dental,registrado
+C00876,Hugo,c00876@correo.example,2026-09-01,organico,autonomo,clases particulares,registrado
+C00877,Irene,c00877@correo.example,2026-07-07,organico,pyme,clínica dental,registrado
+C00878,Rocío,c00878@correo.example,2026-10-12,organico,pyme,restaurante,cliente
+C00879,Adrián,c00879@correo.example,2026-07-02,organico,autonomo,reformas,registrado
+C00880,Paula,c00880@correo.example,2026-09-27,contador,autonomo,electricidad,registrado
+C00881,Daniel,c00881@correo.example,2026-07-13,organico,autonomo,fotografía,registrado
+C00882,Javier,c00882@correo.example,2026-09-10,organico,autonomo,clases particulares,registrado
+C00883,Irene,c00883@correo.example,2026-09-01,referido,autonomo,peluquería,registrado
+C00884,Ana,c00884@correo.example,2026-08-05,referido,pyme,distribuidora,PQL
+C00885,Rocío,c00885@correo.example,2026-08-28,contador,pyme,academia,registrado
+C00886,Carmen,c00886@correo.example,2026-07-15,contador,pyme,tienda de ropa,cliente
+C00887,Adrián,c00887@correo.example,2026-08-23,organico,pyme,restaurante,PQL
+C00888,Álvaro,c00888@correo.example,2026-07-03,organico,pyme,distribuidora,registrado
+C00889,Javier,c00889@correo.example,2026-07-17,organico,pyme,agencia de marketing,registrado
+C00890,Iker,c00890@correo.example,2026-09-15,organico,autonomo,fotografía,registrado
+C00891,Iker,c00891@correo.example,2026-09-24,referido,pyme,academia,registrado
+C00892,Nuria,c00892@correo.example,2026-09-12,organico,pyme,tienda de ropa,PQL
+C00893,Iker,c00893@correo.example,2026-10-28,pago,pyme,tienda de ropa,registrado
+C00894,Rocío,c00894@correo.example,2026-07-10,organico,autonomo,electricidad,registrado
+C00895,Adrián,c00895@correo.example,2026-07-25,organico,pyme,tienda de ropa,registrado
+C00896,Marta,c00896@correo.example,2026-10-21,contador,pyme,restaurante,PQL
+C00897,Carmen,c00897@correo.example,2026-09-21,organico,autonomo,diseño gráfico,registrado
+C00898,Carmen,c00898@correo.example,2026-09-15,organico,pyme,taller mecánico,registrado
+C00899,Javier,c00899@correo.example,2026-10-13,referido,pyme,restaurante,registrado
+C00900,Hugo,c00900@correo.example,2026-09-05,organico,pyme,construcción,cliente
+C00901,Marta,c00901@correo.example,2026-08-05,organico,autonomo,fisioterapia,registrado
+C00902,Sara,c00902@correo.example,2026-10-25,organico,autonomo,traducción,registrado
+C00903,Daniel,c00903@correo.example,2026-09-10,contador,autonomo,fontanería,registrado
+C00904,Ana,c00904@correo.example,2026-08-23,organico,autonomo,diseño gráfico,registrado
+C00905,Hugo,c00905@correo.example,2026-10-30,organico,autonomo,fotografía,registrado
+C00906,Nuria,c00906@correo.example,2026-09-10,referido,pyme,academia,PQL
+C00907,Álvaro,c00907@correo.example,2026-09-01,pago,autonomo,fotografía,PQL
+C00908,Laura,c00908@correo.example,2026-10-08,organico,autonomo,fontanería,registrado
+C00909,Ana,c00909@correo.example,2026-08-24,contador,autonomo,peluquería,cliente
+C00910,Carmen,c00910@correo.example,2026-10-29,referido,pyme,taller mecánico,registrado
+C00911,Javier,c00911@correo.example,2026-07-20,referido,autonomo,fisioterapia,registrado
+C00912,Laura,c00912@correo.example,2026-09-26,organico,pyme,tienda de ropa,registrado
+C00913,Marta,c00913@correo.example,2026-08-21,organico,autonomo,clases particulares,registrado
+C00914,Elena,c00914@correo.example,2026-07-16,contador,pyme,restaurante,registrado
+C00915,Adrián,c00915@correo.example,2026-09-17,pago,pyme,agencia de marketing,PQL
+C00916,Laura,c00916@correo.example,2026-09-19,contador,pyme,tienda de ropa,PQL
+C00917,Marta,c00917@correo.example,2026-09-23,organico,pyme,agencia de marketing,PQL
+C00918,Elena,c00918@correo.example,2026-07-02,contador,pyme,construcción,cliente
+C00919,Sara,c00919@correo.example,2026-08-24,referido,pyme,academia,PQL
+C00920,Ana,c00920@correo.example,2026-07-30,referido,autonomo,clases particulares,cliente
+C00921,Marcos,c00921@correo.example,2026-07-24,organico,pyme,tienda de ropa,registrado
+C00922,Sergio,c00922@correo.example,2026-09-06,referido,pyme,academia,cliente
+C00923,Nuria,c00923@correo.example,2026-07-05,organico,autonomo,diseño gráfico,registrado
+C00924,Daniel,c00924@correo.example,2026-10-27,pago,pyme,restaurante,PQL
+C00925,Elena,c00925@correo.example,2026-07-12,organico,pyme,distribuidora,registrado
+C00926,Raúl,c00926@correo.example,2026-08-24,organico,autonomo,traducción,registrado
+C00927,Raúl,c00927@correo.example,2026-08-22,organico,autonomo,fisioterapia,registrado
+C00928,Paula,c00928@correo.example,2026-07-21,contador,autonomo,fontanería,registrado
+C00929,Laura,c00929@correo.example,2026-08-04,contador,pyme,academia,PQL
+C00930,Javier,c00930@correo.example,2026-08-13,organico,autonomo,reformas,registrado
+C00931,Carmen,c00931@correo.example,2026-09-13,organico,autonomo,consultoría,registrado
+C00932,Laura,c00932@correo.example,2026-09-18,contador,pyme,distribuidora,registrado
+C00933,Irene,c00933@correo.example,2026-08-12,organico,autonomo,fotografía,registrado
+C00934,Sergio,c00934@correo.example,2026-08-17,organico,autonomo,traducción,registrado
+C00935,Laura,c00935@correo.example,2026-07-22,contador,autonomo,electricidad,PQL
+C00936,Álvaro,c00936@correo.example,2026-10-17,organico,autonomo,fotografía,registrado
+C00937,Álvaro,c00937@correo.example,2026-10-01,organico,autonomo,traducción,registrado
+C00938,Elena,c00938@correo.example,2026-08-03,organico,pyme,tienda de ropa,registrado
+C00939,Javier,c00939@correo.example,2026-10-28,organico,autonomo,clases particulares,registrado
+C00940,Rocío,c00940@correo.example,2026-09-29,contador,pyme,tienda de ropa,registrado
+C00941,Pablo,c00941@correo.example,2026-07-31,organico,pyme,tienda de ropa,registrado
+C00942,Daniel,c00942@correo.example,2026-09-21,organico,pyme,agencia de marketing,cliente
+C00943,Sara,c00943@correo.example,2026-09-15,pago,pyme,taller mecánico,PQL
+C00944,Adrián,c00944@correo.example,2026-08-12,contador,pyme,agencia de marketing,registrado
+C00945,Javier,c00945@correo.example,2026-10-26,organico,autonomo,fotografía,registrado
+C00946,Irene,c00946@correo.example,2026-08-16,referido,autonomo,electricidad,PQL
+C00947,Iker,c00947@correo.example,2026-08-28,organico,autonomo,traducción,PQL
+C00948,Álvaro,c00948@correo.example,2026-09-15,organico,pyme,clínica dental,PQL
+C00949,Iker,c00949@correo.example,2026-10-29,referido,pyme,agencia de marketing,registrado
+C00950,Pablo,c00950@correo.example,2026-07-22,contador,autonomo,traducción,registrado
+C00951,Marta,c00951@correo.example,2026-07-26,organico,pyme,construcción,cliente
+C00952,Adrián,c00952@correo.example,2026-09-13,referido,pyme,tienda de ropa,registrado
+C00953,Carmen,c00953@correo.example,2026-07-27,contador,autonomo,fisioterapia,cliente
+C00954,Ana,c00954@correo.example,2026-09-03,organico,autonomo,consultoría,registrado
+C00955,Adrián,c00955@correo.example,2026-10-23,pago,pyme,restaurante,PQL
+C00956,Marcos,c00956@correo.example,2026-07-18,organico,pyme,clínica dental,registrado
+C00957,Iker,c00957@correo.example,2026-07-23,organico,autonomo,fisioterapia,registrado
+C00958,Hugo,c00958@correo.example,2026-09-06,organico,pyme,tienda de ropa,PQL
+C00959,Carmen,c00959@correo.example,2026-08-12,pago,autonomo,consultoría,cliente
+C00960,Carmen,c00960@correo.example,2026-07-26,organico,autonomo,diseño gráfico,registrado
+C00961,Adrián,c00961@correo.example,2026-10-12,referido,pyme,agencia de marketing,registrado
+C00962,Javier,c00962@correo.example,2026-07-20,contador,pyme,tienda de ropa,registrado
+C00963,Nuria,c00963@correo.example,2026-09-01,pago,autonomo,fotografía,PQL
+C00964,Elena,c00964@correo.example,2026-07-19,referido,pyme,academia,cliente
+C00965,Adrián,c00965@correo.example,2026-07-18,organico,pyme,taller mecánico,PQL
+C00966,Adrián,c00966@correo.example,2026-10-06,organico,autonomo,consultoría,PQL
+C00967,Sara,c00967@correo.example,2026-09-10,contador,autonomo,diseño gráfico,cliente
+C00968,Sergio,c00968@correo.example,2026-09-22,contador,pyme,agencia de marketing,registrado
+C00969,Sara,c00969@correo.example,2026-08-05,pago,autonomo,electricidad,PQL
+C00970,Marta,c00970@correo.example,2026-09-12,pago,pyme,tienda de ropa,cliente
+C00971,Irene,c00971@correo.example,2026-09-19,referido,pyme,tienda de ropa,registrado
+C00972,Elena,c00972@correo.example,2026-08-01,referido,pyme,construcción,registrado
+C00973,Nuria,c00973@correo.example,2026-07-24,organico,autonomo,diseño gráfico,cliente
+C00974,Rocío,c00974@correo.example,2026-09-17,organico,autonomo,peluquería,registrado
+C00975,Daniel,c00975@correo.example,2026-07-05,organico,autonomo,clases particulares,registrado
+C00976,Paula,c00976@correo.example,2026-10-15,organico,pyme,taller mecánico,registrado
+C00977,Marcos,c00977@correo.example,2026-08-13,organico,pyme,restaurante,PQL
+C00978,Hugo,c00978@correo.example,2026-10-16,organico,pyme,restaurante,registrado
+C00979,Pablo,c00979@correo.example,2026-10-20,organico,pyme,tienda de ropa,PQL
+C00980,Nuria,c00980@correo.example,2026-10-28,organico,pyme,academia,registrado
+C00981,Álvaro,c00981@correo.example,2026-07-13,organico,autonomo,fotografía,cliente
+C00982,Adrián,c00982@correo.example,2026-09-16,organico,pyme,distribuidora,registrado
+C00983,Adrián,c00983@correo.example,2026-07-09,organico,pyme,distribuidora,registrado
+C00984,Pablo,c00984@correo.example,2026-08-06,contador,pyme,distribuidora,PQL
+C00985,Carmen,c00985@correo.example,2026-07-01,referido,pyme,restaurante,registrado
+C00986,Marta,c00986@correo.example,2026-07-07,organico,autonomo,diseño gráfico,PQL
+C00987,Javier,c00987@correo.example,2026-09-09,organico,autonomo,reformas,registrado
+C00988,Javier,c00988@correo.example,2026-07-29,organico,autonomo,electricidad,registrado
+C00989,Adrián,c00989@correo.example,2026-09-20,organico,autonomo,fotografía,registrado
+C00990,Paula,c00990@correo.example,2026-07-24,organico,autonomo,reformas,registrado
+C00991,Nuria,c00991@correo.example,2026-10-01,referido,pyme,academia,PQL
+C00992,Ana,c00992@correo.example,2026-08-19,organico,autonomo,fontanería,registrado
+C00993,Álvaro,c00993@correo.example,2026-08-03,organico,autonomo,consultoría,registrado
+C00994,Hugo,c00994@correo.example,2026-07-13,referido,pyme,distribuidora,registrado
+C00995,Ana,c00995@correo.example,2026-10-27,referido,pyme,tienda de ropa,registrado
+C00996,Paula,c00996@correo.example,2026-08-23,organico,autonomo,fontanería,registrado
+C00997,Álvaro,c00997@correo.example,2026-09-04,organico,autonomo,fotografía,registrado
+C00998,Marta,c00998@correo.example,2026-10-02,contador,pyme,distribuidora,PQL
+C00999,Marta,c00999@correo.example,2026-10-23,organico,autonomo,fotografía,registrado
+C01000,Álvaro,c01000@correo.example,2026-10-03,organico,pyme,construcción,cliente
+C01001,Raúl,c01001@correo.example,2026-08-15,contador,autonomo,fisioterapia,registrado
+C01002,Sara,c01002@correo.example,2026-10-25,organico,autonomo,reformas,PQL
+C01003,Raúl,c01003@correo.example,2026-10-11,organico,autonomo,diseño gráfico,PQL
+C01004,Raúl,c01004@correo.example,2026-10-04,organico,autonomo,fontanería,registrado
+C01005,Sergio,c01005@correo.example,2026-07-01,organico,autonomo,diseño gráfico,registrado
+C01006,Hugo,c01006@correo.example,2026-09-08,pago,pyme,distribuidora,cliente
+C01007,Álvaro,c01007@correo.example,2026-08-08,organico,pyme,tienda de ropa,registrado
+C01008,Carmen,c01008@correo.example,2026-07-06,organico,pyme,agencia de marketing,registrado
+C01009,Daniel,c01009@correo.example,2026-08-04,organico,autonomo,fontanería,registrado
+C01010,Ana,c01010@correo.example,2026-08-05,contador,pyme,distribuidora,cliente
+C01011,Iker,c01011@correo.example,2026-08-16,contador,pyme,clínica dental,PQL
+C01012,Pablo,c01012@correo.example,2026-07-23,organico,autonomo,fotografía,registrado
+C01013,Raúl,c01013@correo.example,2026-09-29,pago,autonomo,fontanería,registrado
+C01014,Pablo,c01014@correo.example,2026-10-04,contador,autonomo,peluquería,registrado
+C01015,Marta,c01015@correo.example,2026-09-19,organico,pyme,academia,registrado
+C01016,Javier,c01016@correo.example,2026-08-19,organico,autonomo,traducción,registrado
+C01017,Ana,c01017@correo.example,2026-08-22,organico,autonomo,diseño gráfico,cliente
+C01018,Laura,c01018@correo.example,2026-08-09,organico,autonomo,consultoría,registrado
+C01019,Carmen,c01019@correo.example,2026-10-04,organico,pyme,clínica dental,PQL
+C01020,Elena,c01020@correo.example,2026-10-21,contador,autonomo,traducción,PQL
+C01021,Daniel,c01021@correo.example,2026-09-26,organico,autonomo,fotografía,registrado
+C01022,Laura,c01022@correo.example,2026-10-16,organico,autonomo,diseño gráfico,registrado
+C01023,Sergio,c01023@correo.example,2026-10-19,organico,autonomo,consultoría,registrado
+C01024,Laura,c01024@correo.example,2026-10-06,pago,pyme,tienda de ropa,registrado
+C01025,Paula,c01025@correo.example,2026-10-27,organico,autonomo,peluquería,registrado
+C01026,Sergio,c01026@correo.example,2026-10-13,organico,autonomo,clases particulares,registrado
+C01027,Laura,c01027@correo.example,2026-09-01,referido,autonomo,diseño gráfico,registrado
+C01028,Carmen,c01028@correo.example,2026-09-16,referido,pyme,taller mecánico,registrado
+C01029,Marcos,c01029@correo.example,2026-10-16,contador,autonomo,fotografía,registrado
+C01030,Pablo,c01030@correo.example,2026-10-04,referido,autonomo,electricidad,PQL
+C01031,Elena,c01031@correo.example,2026-09-26,organico,pyme,agencia de marketing,registrado
+C01032,Hugo,c01032@correo.example,2026-09-04,organico,autonomo,electricidad,cliente
+C01033,Raúl,c01033@correo.example,2026-07-13,organico,autonomo,clases particulares,registrado
+C01034,Adrián,c01034@correo.example,2026-08-04,referido,autonomo,diseño gráfico,registrado
+C01035,Irene,c01035@correo.example,2026-09-30,referido,pyme,taller mecánico,registrado
+C01036,Raúl,c01036@correo.example,2026-10-02,organico,autonomo,traducción,registrado
+C01037,Sergio,c01037@correo.example,2026-07-24,pago,pyme,taller mecánico,cliente
+C01038,Raúl,c01038@correo.example,2026-09-21,organico,pyme,clínica dental,cliente
+C01039,Carmen,c01039@correo.example,2026-10-16,organico,autonomo,electricidad,registrado
+C01040,Irene,c01040@correo.example,2026-07-16,contador,autonomo,clases particulares,PQL
+C01041,Laura,c01041@correo.example,2026-09-10,organico,autonomo,reformas,registrado
+C01042,Iker,c01042@correo.example,2026-08-28,contador,autonomo,fotografía,registrado
+C01043,Raúl,c01043@correo.example,2026-10-23,organico,autonomo,fontanería,registrado
+C01044,Marta,c01044@correo.example,2026-09-23,organico,autonomo,consultoría,registrado
+C01045,Álvaro,c01045@correo.example,2026-10-15,organico,autonomo,fontanería,registrado
+C01046,Rocío,c01046@correo.example,2026-09-05,pago,pyme,clínica dental,cliente
+C01047,Paula,c01047@correo.example,2026-09-08,organico,autonomo,reformas,registrado
+C01048,Rocío,c01048@correo.example,2026-09-03,contador,pyme,tienda de ropa,registrado
+C01049,Marcos,c01049@correo.example,2026-07-17,organico,pyme,academia,PQL
+C01050,Irene,c01050@correo.example,2026-10-23,referido,pyme,restaurante,registrado
+C01051,Javier,c01051@correo.example,2026-09-25,pago,pyme,taller mecánico,registrado
+C01052,Álvaro,c01052@correo.example,2026-10-01,organico,autonomo,fontanería,registrado
+C01053,Rocío,c01053@correo.example,2026-09-22,pago,autonomo,clases particulares,cliente
+C01054,Marta,c01054@correo.example,2026-09-14,referido,pyme,tienda de ropa,registrado
+C01055,Laura,c01055@correo.example,2026-07-06,organico,pyme,clínica dental,cliente
+C01056,Sara,c01056@correo.example,2026-08-26,contador,pyme,taller mecánico,PQL
+C01057,Pablo,c01057@correo.example,2026-07-10,pago,pyme,construcción,PQL
+C01058,Hugo,c01058@correo.example,2026-09-21,pago,pyme,agencia de marketing,cliente
+C01059,Adrián,c01059@correo.example,2026-10-14,organico,pyme,academia,PQL
+C01060,Paula,c01060@correo.example,2026-07-03,organico,autonomo,diseño gráfico,registrado
+C01061,Adrián,c01061@correo.example,2026-07-12,organico,autonomo,fisioterapia,registrado
+C01062,Sergio,c01062@correo.example,2026-07-05,organico,autonomo,reformas,registrado
+C01063,Hugo,c01063@correo.example,2026-10-21,contador,autonomo,clases particulares,registrado
+C01064,Hugo,c01064@correo.example,2026-08-03,organico,autonomo,clases particulares,registrado
+C01065,Ana,c01065@correo.example,2026-07-24,organico,autonomo,peluquería,cliente
+C01066,Marcos,c01066@correo.example,2026-10-14,organico,autonomo,peluquería,registrado
+C01067,Laura,c01067@correo.example,2026-10-19,organico,autonomo,reformas,registrado
+C01068,Carmen,c01068@correo.example,2026-07-23,organico,autonomo,electricidad,registrado
+C01069,Carmen,c01069@correo.example,2026-08-14,organico,autonomo,consultoría,registrado
+C01070,Álvaro,c01070@correo.example,2026-07-14,contador,pyme,distribuidora,PQL
+C01071,Rocío,c01071@correo.example,2026-10-08,referido,pyme,taller mecánico,PQL
+C01072,Hugo,c01072@correo.example,2026-10-23,organico,autonomo,fotografía,registrado
+C01073,Javier,c01073@correo.example,2026-08-09,referido,autonomo,fontanería,cliente
+C01074,Elena,c01074@correo.example,2026-09-08,pago,pyme,agencia de marketing,registrado
+C01075,Rocío,c01075@correo.example,2026-09-02,organico,autonomo,fisioterapia,registrado
+C01076,Álvaro,c01076@correo.example,2026-10-12,organico,pyme,clínica dental,registrado
+C01077,Daniel,c01077@correo.example,2026-07-09,organico,autonomo,consultoría,registrado
+C01078,Marcos,c01078@correo.example,2026-07-07,pago,autonomo,diseño gráfico,PQL
+C01079,Ana,c01079@correo.example,2026-09-23,organico,autonomo,reformas,registrado
+C01080,Pablo,c01080@correo.example,2026-08-07,referido,autonomo,traducción,registrado
+C01081,Irene,c01081@correo.example,2026-10-23,organico,autonomo,reformas,registrado
+C01082,Sergio,c01082@correo.example,2026-08-02,pago,pyme,academia,PQL
+C01083,Marta,c01083@correo.example,2026-09-29,organico,autonomo,fisioterapia,PQL
+C01084,Elena,c01084@correo.example,2026-08-21,organico,pyme,construcción,registrado
+C01085,Irene,c01085@correo.example,2026-07-23,contador,pyme,restaurante,registrado
+C01086,Nuria,c01086@correo.example,2026-08-04,organico,autonomo,fotografía,PQL
+C01087,Sara,c01087@correo.example,2026-10-12,contador,autonomo,clases particulares,registrado
+C01088,Daniel,c01088@correo.example,2026-09-13,referido,pyme,taller mecánico,registrado
+C01089,Ana,c01089@correo.example,2026-10-05,pago,pyme,tienda de ropa,registrado
+C01090,Iker,c01090@correo.example,2026-09-19,organico,autonomo,fisioterapia,registrado
+C01091,Javier,c01091@correo.example,2026-08-24,contador,pyme,clínica dental,registrado
+C01092,Iker,c01092@correo.example,2026-10-26,contador,pyme,academia,PQL
+C01093,Raúl,c01093@correo.example,2026-08-11,organico,autonomo,reformas,registrado
+C01094,Marcos,c01094@correo.example,2026-08-20,organico,autonomo,electricidad,registrado
+C01095,Pablo,c01095@correo.example,2026-08-29,organico,autonomo,fontanería,registrado
+C01096,Pablo,c01096@correo.example,2026-10-08,organico,autonomo,peluquería,registrado
+C01097,Daniel,c01097@correo.example,2026-07-18,organico,autonomo,fisioterapia,PQL
+C01098,Iker,c01098@correo.example,2026-09-29,contador,autonomo,clases particulares,PQL
+C01099,Hugo,c01099@correo.example,2026-08-19,referido,pyme,construcción,registrado
+C01100,Álvaro,c01100@correo.example,2026-09-06,organico,pyme,tienda de ropa,cliente
+C01101,Marta,c01101@correo.example,2026-10-28,pago,pyme,restaurante,registrado
+C01102,Ana,c01102@correo.example,2026-08-13,organico,autonomo,peluquería,registrado
+C01103,Laura,c01103@correo.example,2026-07-10,referido,autonomo,fontanería,cliente
+C01104,Pablo,c01104@correo.example,2026-07-08,referido,autonomo,fotografía,registrado
+C01105,Marta,c01105@correo.example,2026-07-01,contador,autonomo,reformas,PQL
+C01106,Adrián,c01106@correo.example,2026-08-28,organico,pyme,tienda de ropa,registrado
+C01107,Carmen,c01107@correo.example,2026-09-18,referido,pyme,taller mecánico,PQL
+C01108,Irene,c01108@correo.example,2026-07-14,contador,autonomo,fontanería,registrado
+C01109,Rocío,c01109@correo.example,2026-09-16,contador,pyme,distribuidora,registrado
+C01110,Hugo,c01110@correo.example,2026-08-04,contador,pyme,construcción,registrado
+C01111,Ana,c01111@correo.example,2026-10-30,organico,autonomo,peluquería,registrado
+C01112,Ana,c01112@correo.example,2026-08-12,pago,pyme,clínica dental,cliente
+C01113,Pablo,c01113@correo.example,2026-08-29,referido,pyme,clínica dental,registrado
+C01114,Marcos,c01114@correo.example,2026-09-18,organico,autonomo,peluquería,registrado
+C01115,Rocío,c01115@correo.example,2026-09-22,organico,autonomo,fontanería,registrado
+C01116,Álvaro,c01116@correo.example,2026-07-09,organico,autonomo,fotografía,registrado
+C01117,Laura,c01117@correo.example,2026-09-23,organico,autonomo,peluquería,registrado
+C01118,Adrián,c01118@correo.example,2026-07-20,organico,pyme,taller mecánico,registrado
+C01119,Carmen,c01119@correo.example,2026-07-28,referido,pyme,taller mecánico,PQL
+C01120,Álvaro,c01120@correo.example,2026-07-11,referido,pyme,tienda de ropa,PQL
+C01121,Hugo,c01121@correo.example,2026-10-07,contador,pyme,academia,registrado
+C01122,Sergio,c01122@correo.example,2026-08-29,organico,autonomo,diseño gráfico,registrado
+C01123,Daniel,c01123@correo.example,2026-07-15,referido,pyme,tienda de ropa,registrado
+C01124,Nuria,c01124@correo.example,2026-07-04,pago,autonomo,peluquería,PQL
+C01125,Marcos,c01125@correo.example,2026-09-25,organico,autonomo,reformas,PQL
+C01126,Marcos,c01126@correo.example,2026-08-05,organico,pyme,clínica dental,registrado
+C01127,Ana,c01127@correo.example,2026-08-16,organico,autonomo,electricidad,PQL
+C01128,Daniel,c01128@correo.example,2026-10-26,organico,pyme,distribuidora,registrado
+C01129,Daniel,c01129@correo.example,2026-07-03,contador,autonomo,fotografía,PQL
+C01130,Álvaro,c01130@correo.example,2026-10-20,organico,pyme,academia,PQL
+C01131,Pablo,c01131@correo.example,2026-09-06,organico,autonomo,peluquería,registrado
+C01132,Sara,c01132@correo.example,2026-08-27,organico,autonomo,reformas,PQL
+C01133,Irene,c01133@correo.example,2026-07-14,contador,autonomo,diseño gráfico,registrado
+C01134,Daniel,c01134@correo.example,2026-07-13,organico,autonomo,fotografía,registrado
+C01135,Carmen,c01135@correo.example,2026-09-14,organico,autonomo,reformas,registrado
+C01136,Elena,c01136@correo.example,2026-07-30,organico,autonomo,peluquería,registrado
+C01137,Daniel,c01137@correo.example,2026-08-25,pago,pyme,clínica dental,registrado
+C01138,Álvaro,c01138@correo.example,2026-10-08,pago,pyme,construcción,registrado
+C01139,Marcos,c01139@correo.example,2026-08-02,organico,pyme,agencia de marketing,registrado
+C01140,Sergio,c01140@correo.example,2026-08-31,referido,pyme,distribuidora,cliente
+C01141,Javier,c01141@correo.example,2026-07-08,contador,autonomo,electricidad,PQL
+C01142,Nuria,c01142@correo.example,2026-08-20,organico,autonomo,fisioterapia,registrado
+C01143,Marta,c01143@correo.example,2026-09-03,contador,pyme,tienda de ropa,PQL
+C01144,Álvaro,c01144@correo.example,2026-10-05,organico,pyme,taller mecánico,registrado
+C01145,Raúl,c01145@correo.example,2026-09-23,referido,pyme,taller mecánico,registrado
+C01146,Sara,c01146@correo.example,2026-07-21,contador,pyme,academia,cliente
+C01147,Álvaro,c01147@correo.example,2026-07-02,organico,autonomo,fontanería,registrado
+C01148,Adrián,c01148@correo.example,2026-07-11,organico,pyme,tienda de ropa,registrado
+C01149,Ana,c01149@correo.example,2026-09-24,organico,autonomo,peluquería,PQL
+C01150,Adrián,c01150@correo.example,2026-07-06,organico,autonomo,reformas,registrado
+C01151,Daniel,c01151@correo.example,2026-07-18,organico,autonomo,electricidad,registrado
+C01152,Sergio,c01152@correo.example,2026-08-06,organico,autonomo,fontanería,registrado
+C01153,Raúl,c01153@correo.example,2026-07-08,organico,autonomo,clases particulares,registrado
+C01154,Raúl,c01154@correo.example,2026-08-16,pago,pyme,distribuidora,PQL
+C01155,Laura,c01155@correo.example,2026-07-25,organico,autonomo,fisioterapia,registrado
+C01156,Paula,c01156@correo.example,2026-07-19,pago,autonomo,reformas,registrado
+C01157,Álvaro,c01157@correo.example,2026-10-18,contador,pyme,restaurante,registrado
+C01158,Hugo,c01158@correo.example,2026-08-22,referido,pyme,clínica dental,PQL
+C01159,Marcos,c01159@correo.example,2026-07-04,organico,autonomo,peluquería,registrado
+C01160,Nuria,c01160@correo.example,2026-10-03,referido,autonomo,traducción,registrado
+C01161,Daniel,c01161@correo.example,2026-09-08,pago,autonomo,fotografía,registrado
+C01162,Rocío,c01162@correo.example,2026-10-18,referido,autonomo,clases particulares,PQL
+C01163,Álvaro,c01163@correo.example,2026-09-11,pago,pyme,agencia de marketing,cliente
+C01164,Nuria,c01164@correo.example,2026-08-05,organico,autonomo,fontanería,registrado
+C01165,Marcos,c01165@correo.example,2026-10-06,pago,pyme,construcción,cliente
+C01166,Irene,c01166@correo.example,2026-07-03,referido,pyme,taller mecánico,cliente
+C01167,Raúl,c01167@correo.example,2026-09-26,organico,pyme,agencia de marketing,registrado
+C01168,Sergio,c01168@correo.example,2026-08-24,referido,pyme,distribuidora,PQL
+C01169,Adrián,c01169@correo.example,2026-10-30,organico,pyme,construcción,registrado
+C01170,Marta,c01170@correo.example,2026-10-03,organico,autonomo,clases particulares,registrado
+C01171,Iker,c01171@correo.example,2026-10-24,contador,autonomo,fontanería,registrado
+C01172,Laura,c01172@correo.example,2026-08-20,organico,autonomo,fotografía,registrado
+C01173,Iker,c01173@correo.example,2026-10-07,organico,autonomo,diseño gráfico,registrado
+C01174,Laura,c01174@correo.example,2026-10-21,organico,autonomo,electricidad,registrado
+C01175,Laura,c01175@correo.example,2026-10-11,pago,pyme,distribuidora,cliente
+C01176,Paula,c01176@correo.example,2026-10-14,organico,pyme,construcción,PQL
+C01177,Raúl,c01177@correo.example,2026-10-06,pago,pyme,tienda de ropa,PQL
+C01178,Sergio,c01178@correo.example,2026-08-04,organico,autonomo,traducción,registrado
+C01179,Ana,c01179@correo.example,2026-07-09,contador,pyme,construcción,cliente
+C01180,Nuria,c01180@correo.example,2026-09-25,referido,pyme,tienda de ropa,registrado
+C01181,Hugo,c01181@correo.example,2026-07-29,organico,pyme,clínica dental,cliente
+C01182,Ana,c01182@correo.example,2026-09-13,pago,pyme,distribuidora,registrado
+C01183,Nuria,c01183@correo.example,2026-10-03,organico,autonomo,peluquería,registrado
+C01184,Sara,c01184@correo.example,2026-09-13,organico,autonomo,fontanería,registrado
+C01185,Adrián,c01185@correo.example,2026-07-01,organico,pyme,restaurante,cliente
+C01186,Paula,c01186@correo.example,2026-09-09,organico,autonomo,traducción,registrado
+C01187,Nuria,c01187@correo.example,2026-10-20,contador,autonomo,consultoría,registrado
+C01188,Laura,c01188@correo.example,2026-08-13,pago,pyme,restaurante,cliente
+C01189,Sergio,c01189@correo.example,2026-07-15,pago,pyme,academia,PQL
+C01190,Pablo,c01190@correo.example,2026-09-27,referido,pyme,tienda de ropa,registrado
+C01191,Marcos,c01191@correo.example,2026-08-26,organico,pyme,tienda de ropa,cliente
+C01192,Sergio,c01192@correo.example,2026-07-13,contador,pyme,restaurante,cliente
+C01193,Javier,c01193@correo.example,2026-08-05,organico,autonomo,fotografía,registrado
+C01194,Carmen,c01194@correo.example,2026-08-14,organico,autonomo,peluquería,cliente
+C01195,Carmen,c01195@correo.example,2026-08-29,organico,autonomo,reformas,cliente
+C01196,Carmen,c01196@correo.example,2026-09-25,contador,pyme,tienda de ropa,registrado
+C01197,Nuria,c01197@correo.example,2026-09-16,referido,autonomo,fontanería,cliente
+C01198,Pablo,c01198@correo.example,2026-08-13,organico,autonomo,fontanería,registrado
+C01199,Paula,c01199@correo.example,2026-10-16,pago,autonomo,clases particulares,PQL
+C01200,Carmen,c01200@correo.example,2026-07-27,organico,autonomo,traducción,registrado
+C01201,Carmen,c01201@correo.example,2026-09-13,organico,autonomo,electricidad,PQL
+C01202,Nuria,c01202@correo.example,2026-10-03,organico,pyme,taller mecánico,PQL
+C01203,Paula,c01203@correo.example,2026-07-08,organico,autonomo,fisioterapia,cliente
+C01204,Hugo,c01204@correo.example,2026-09-06,organico,autonomo,clases particulares,PQL
+C01205,Adrián,c01205@correo.example,2026-07-19,contador,pyme,distribuidora,registrado
+C01206,Paula,c01206@correo.example,2026-09-13,organico,autonomo,reformas,registrado
+C01207,Álvaro,c01207@correo.example,2026-07-11,organico,autonomo,peluquería,PQL
+C01208,Raúl,c01208@correo.example,2026-10-23,organico,autonomo,traducción,registrado
+C01209,Nuria,c01209@correo.example,2026-09-04,organico,autonomo,traducción,registrado
+C01210,Rocío,c01210@correo.example,2026-08-23,organico,pyme,distribuidora,registrado
+C01211,Elena,c01211@correo.example,2026-10-15,contador,pyme,taller mecánico,registrado
+C01212,Marta,c01212@correo.example,2026-08-18,pago,pyme,restaurante,PQL
+C01213,Iker,c01213@correo.example,2026-09-29,contador,pyme,academia,PQL
+C01214,Sergio,c01214@correo.example,2026-10-11,contador,autonomo,reformas,PQL
+C01215,Pablo,c01215@correo.example,2026-08-15,organico,autonomo,traducción,registrado
+C01216,Marcos,c01216@correo.example,2026-10-03,pago,autonomo,consultoría,registrado
+C01217,Irene,c01217@correo.example,2026-10-01,organico,autonomo,peluquería,registrado
+C01218,Javier,c01218@correo.example,2026-10-16,organico,autonomo,peluquería,registrado
+C01219,Álvaro,c01219@correo.example,2026-07-21,referido,autonomo,diseño gráfico,PQL
+C01220,Adrián,c01220@correo.example,2026-08-28,organico,autonomo,fisioterapia,registrado
+C01221,Rocío,c01221@correo.example,2026-08-30,referido,autonomo,fisioterapia,registrado
+C01222,Irene,c01222@correo.example,2026-08-20,organico,pyme,academia,PQL
+C01223,Javier,c01223@correo.example,2026-09-23,contador,autonomo,diseño gráfico,registrado
+C01224,Paula,c01224@correo.example,2026-08-17,referido,autonomo,consultoría,registrado
+C01225,Sergio,c01225@correo.example,2026-08-18,organico,pyme,construcción,cliente
+C01226,Álvaro,c01226@correo.example,2026-07-19,contador,autonomo,electricidad,cliente
+C01227,Paula,c01227@correo.example,2026-09-22,organico,autonomo,fotografía,registrado
+C01228,Paula,c01228@correo.example,2026-07-06,referido,pyme,taller mecánico,registrado
+C01229,Hugo,c01229@correo.example,2026-10-17,organico,autonomo,peluquería,PQL
+C01230,Elena,c01230@correo.example,2026-08-15,contador,autonomo,fisioterapia,PQL
+C01231,Sergio,c01231@correo.example,2026-09-06,organico,autonomo,consultoría,registrado
+C01232,Irene,c01232@correo.example,2026-10-26,organico,autonomo,diseño gráfico,registrado
+C01233,Iker,c01233@correo.example,2026-07-22,contador,autonomo,fotografía,registrado
+C01234,Pablo,c01234@correo.example,2026-07-08,referido,autonomo,clases particulares,registrado
+C01235,Sara,c01235@correo.example,2026-07-30,referido,pyme,construcción,registrado
+C01236,Marcos,c01236@correo.example,2026-10-10,organico,autonomo,consultoría,registrado
+C01237,Hugo,c01237@correo.example,2026-08-21,contador,pyme,agencia de marketing,registrado
+C01238,Irene,c01238@correo.example,2026-07-15,organico,autonomo,diseño gráfico,registrado
+C01239,Raúl,c01239@correo.example,2026-10-18,organico,autonomo,fontanería,registrado
+C01240,Nuria,c01240@correo.example,2026-08-18,organico,pyme,agencia de marketing,registrado
+C01241,Carmen,c01241@correo.example,2026-08-02,organico,pyme,academia,cliente
+C01242,Daniel,c01242@correo.example,2026-07-13,organico,pyme,academia,registrado
+C01243,Ana,c01243@correo.example,2026-08-29,contador,pyme,clínica dental,registrado
+C01244,Javier,c01244@correo.example,2026-09-23,contador,autonomo,clases particulares,registrado
+C01245,Ana,c01245@correo.example,2026-08-21,organico,autonomo,reformas,registrado
+C01246,Elena,c01246@correo.example,2026-08-19,organico,autonomo,reformas,registrado
+C01247,Sergio,c01247@correo.example,2026-10-13,referido,pyme,academia,PQL
+C01248,Marta,c01248@correo.example,2026-09-26,organico,autonomo,reformas,registrado
+C01249,Nuria,c01249@correo.example,2026-10-25,organico,pyme,construcción,PQL
+C01250,Sergio,c01250@correo.example,2026-09-02,organico,autonomo,traducción,registrado
+C01251,Sergio,c01251@correo.example,2026-07-26,contador,pyme,taller mecánico,registrado
+C01252,Laura,c01252@correo.example,2026-10-20,organico,autonomo,fisioterapia,registrado
+C01253,Paula,c01253@correo.example,2026-08-09,organico,autonomo,consultoría,registrado
+C01254,Adrián,c01254@correo.example,2026-09-22,pago,pyme,restaurante,cliente
+C01255,Elena,c01255@correo.example,2026-08-02,organico,autonomo,consultoría,PQL
+C01256,Sergio,c01256@correo.example,2026-08-09,organico,autonomo,fontanería,registrado
+C01257,Hugo,c01257@correo.example,2026-09-08,contador,autonomo,diseño gráfico,registrado
+C01258,Marta,c01258@correo.example,2026-08-06,organico,autonomo,fontanería,registrado
+C01259,Sara,c01259@correo.example,2026-10-28,organico,pyme,taller mecánico,registrado
+C01260,Carmen,c01260@correo.example,2026-10-10,organico,autonomo,traducción,PQL
+C01261,Laura,c01261@correo.example,2026-10-07,pago,autonomo,reformas,PQL
+C01262,Álvaro,c01262@correo.example,2026-10-21,organico,autonomo,consultoría,registrado
+C01263,Pablo,c01263@correo.example,2026-08-24,pago,autonomo,reformas,cliente
+C01264,Álvaro,c01264@correo.example,2026-08-10,contador,autonomo,fisioterapia,cliente
+C01265,Iker,c01265@correo.example,2026-07-16,organico,autonomo,consultoría,registrado
+C01266,Nuria,c01266@correo.example,2026-08-06,organico,autonomo,clases particulares,registrado
+C01267,Daniel,c01267@correo.example,2026-09-25,contador,pyme,clínica dental,PQL
+C01268,Iker,c01268@correo.example,2026-09-23,organico,autonomo,clases particulares,registrado
+C01269,Marcos,c01269@correo.example,2026-07-27,organico,autonomo,consultoría,registrado
+C01270,Nuria,c01270@correo.example,2026-09-29,referido,pyme,restaurante,PQL
+C01271,Álvaro,c01271@correo.example,2026-10-13,contador,autonomo,peluquería,registrado
+C01272,Raúl,c01272@correo.example,2026-07-31,organico,autonomo,fotografía,registrado
+C01273,Sara,c01273@correo.example,2026-09-06,organico,autonomo,fisioterapia,registrado
+C01274,Iker,c01274@correo.example,2026-07-24,organico,autonomo,fisioterapia,registrado
+C01275,Adrián,c01275@correo.example,2026-07-01,referido,autonomo,diseño gráfico,registrado
+C01276,Pablo,c01276@correo.example,2026-08-21,pago,autonomo,fisioterapia,PQL
+C01277,Ana,c01277@correo.example,2026-10-04,organico,autonomo,traducción,registrado
+C01278,Paula,c01278@correo.example,2026-09-29,organico,autonomo,electricidad,registrado
+C01279,Daniel,c01279@correo.example,2026-08-31,organico,autonomo,traducción,registrado
+C01280,Hugo,c01280@correo.example,2026-10-22,organico,autonomo,fotografía,registrado
+C01281,Pablo,c01281@correo.example,2026-07-23,organico,autonomo,clases particulares,registrado
+C01282,Nuria,c01282@correo.example,2026-07-20,pago,pyme,construcción,registrado
+C01283,Paula,c01283@correo.example,2026-08-28,organico,autonomo,consultoría,registrado
+C01284,Adrián,c01284@correo.example,2026-10-11,pago,pyme,restaurante,registrado
+C01285,Carmen,c01285@correo.example,2026-10-29,contador,autonomo,fontanería,registrado
+C01286,Raúl,c01286@correo.example,2026-07-25,contador,pyme,taller mecánico,registrado
+C01287,Hugo,c01287@correo.example,2026-10-25,referido,autonomo,diseño gráfico,PQL
+C01288,Iker,c01288@correo.example,2026-10-06,contador,autonomo,consultoría,PQL
+C01289,Daniel,c01289@correo.example,2026-09-09,organico,pyme,agencia de marketing,registrado
+C01290,Marta,c01290@correo.example,2026-10-20,referido,autonomo,peluquería,registrado
+C01291,Daniel,c01291@correo.example,2026-09-06,organico,autonomo,electricidad,registrado
+C01292,Álvaro,c01292@correo.example,2026-10-01,organico,autonomo,fotografía,registrado
+C01293,Carmen,c01293@correo.example,2026-10-06,referido,autonomo,peluquería,cliente
+C01294,Iker,c01294@correo.example,2026-10-30,organico,autonomo,fisioterapia,registrado
+C01295,Paula,c01295@correo.example,2026-07-12,pago,pyme,clínica dental,PQL
+C01296,Álvaro,c01296@correo.example,2026-09-12,contador,autonomo,fontanería,cliente
+C01297,Nuria,c01297@correo.example,2026-09-09,contador,pyme,restaurante,registrado
+C01298,Iker,c01298@correo.example,2026-09-15,referido,autonomo,fotografía,cliente
+C01299,Pablo,c01299@correo.example,2026-08-06,organico,autonomo,electricidad,registrado
+C01300,Ana,c01300@correo.example,2026-10-01,organico,pyme,academia,registrado
+C01301,Javier,c01301@correo.example,2026-10-24,organico,autonomo,diseño gráfico,registrado
+C01302,Adrián,c01302@correo.example,2026-08-17,organico,pyme,restaurante,PQL
+C01303,Javier,c01303@correo.example,2026-09-20,organico,pyme,academia,cliente
+C01304,Pablo,c01304@correo.example,2026-08-15,referido,autonomo,clases particulares,PQL
+C01305,Marta,c01305@correo.example,2026-10-30,organico,autonomo,traducción,registrado
+C01306,Marta,c01306@correo.example,2026-09-19,pago,pyme,clínica dental,registrado
+C01307,Sergio,c01307@correo.example,2026-08-09,organico,autonomo,traducción,registrado
+C01308,Álvaro,c01308@correo.example,2026-10-22,referido,autonomo,fontanería,PQL
+C01309,Nuria,c01309@correo.example,2026-07-06,organico,pyme,restaurante,PQL
+C01310,Laura,c01310@correo.example,2026-08-24,organico,pyme,clínica dental,registrado
+C01311,Laura,c01311@correo.example,2026-08-18,organico,autonomo,fotografía,registrado
+C01312,Rocío,c01312@correo.example,2026-10-03,organico,autonomo,peluquería,registrado
+C01313,Hugo,c01313@correo.example,2026-07-02,organico,autonomo,diseño gráfico,registrado
+C01314,Laura,c01314@correo.example,2026-08-03,pago,autonomo,fontanería,cliente
+C01315,Carmen,c01315@correo.example,2026-08-25,referido,autonomo,clases particulares,registrado
+C01316,Marta,c01316@correo.example,2026-08-04,contador,pyme,academia,cliente
+C01317,Paula,c01317@correo.example,2026-10-15,contador,pyme,tienda de ropa,PQL
+C01318,Rocío,c01318@correo.example,2026-09-19,organico,autonomo,clases particulares,registrado
+C01319,Paula,c01319@correo.example,2026-10-01,organico,autonomo,consultoría,registrado
+C01320,Marcos,c01320@correo.example,2026-10-16,organico,autonomo,reformas,PQL
+C01321,Paula,c01321@correo.example,2026-09-21,referido,autonomo,clases particulares,PQL
+C01322,Laura,c01322@correo.example,2026-10-28,organico,autonomo,consultoría,registrado
+C01323,Rocío,c01323@correo.example,2026-07-04,organico,pyme,academia,registrado
+C01324,Daniel,c01324@correo.example,2026-08-18,referido,pyme,academia,PQL
+C01325,Laura,c01325@correo.example,2026-10-26,organico,autonomo,traducción,registrado
+C01326,Paula,c01326@correo.example,2026-07-29,organico,pyme,distribuidora,registrado
+C01327,Rocío,c01327@correo.example,2026-10-12,pago,autonomo,electricidad,cliente
+C01328,Álvaro,c01328@correo.example,2026-07-19,organico,autonomo,consultoría,registrado
+C01329,Elena,c01329@correo.example,2026-07-18,organico,autonomo,fisioterapia,registrado
+C01330,Iker,c01330@correo.example,2026-07-24,contador,pyme,taller mecánico,cliente
+C01331,Marcos,c01331@correo.example,2026-10-26,contador,autonomo,peluquería,registrado
+C01332,Rocío,c01332@correo.example,2026-10-29,organico,autonomo,reformas,registrado
+C01333,Rocío,c01333@correo.example,2026-07-06,organico,autonomo,fotografía,registrado
+C01334,Marta,c01334@correo.example,2026-08-03,pago,pyme,clínica dental,PQL
+C01335,Irene,c01335@correo.example,2026-07-02,organico,pyme,clínica dental,cliente
+C01336,Hugo,c01336@correo.example,2026-09-23,contador,autonomo,fontanería,registrado
+C01337,Daniel,c01337@correo.example,2026-07-26,contador,pyme,tienda de ropa,PQL
+C01338,Álvaro,c01338@correo.example,2026-07-31,organico,autonomo,diseño gráfico,registrado
+C01339,Sergio,c01339@correo.example,2026-10-28,contador,autonomo,peluquería,registrado
+C01340,Marcos,c01340@correo.example,2026-08-19,organico,pyme,agencia de marketing,registrado
+C01341,Hugo,c01341@correo.example,2026-10-28,contador,pyme,agencia de marketing,PQL
+C01342,Rocío,c01342@correo.example,2026-10-07,organico,autonomo,reformas,registrado
+C01343,Carmen,c01343@correo.example,2026-09-22,organico,autonomo,reformas,registrado
+C01344,Javier,c01344@correo.example,2026-07-29,organico,autonomo,diseño gráfico,cliente
+C01345,Sara,c01345@correo.example,2026-10-19,organico,pyme,clínica dental,registrado
+C01346,Adrián,c01346@correo.example,2026-09-14,contador,autonomo,fontanería,registrado
+C01347,Carmen,c01347@correo.example,2026-09-10,pago,autonomo,consultoría,PQL
+C01348,Iker,c01348@correo.example,2026-09-29,pago,autonomo,clases particulares,registrado
+C01349,Marcos,c01349@correo.example,2026-07-09,organico,autonomo,fontanería,registrado
+C01350,Paula,c01350@correo.example,2026-08-16,organico,autonomo,fontanería,registrado
+C01351,Daniel,c01351@correo.example,2026-07-08,organico,autonomo,reformas,registrado
+C01352,Marcos,c01352@correo.example,2026-07-12,pago,pyme,distribuidora,cliente
+C01353,Paula,c01353@correo.example,2026-10-10,contador,pyme,agencia de marketing,cliente
+C01354,Javier,c01354@correo.example,2026-08-13,organico,autonomo,fotografía,registrado
+C01355,Marta,c01355@correo.example,2026-09-03,contador,autonomo,fontanería,registrado
+C01356,Carmen,c01356@correo.example,2026-08-21,contador,autonomo,diseño gráfico,registrado
+C01357,Iker,c01357@correo.example,2026-10-20,organico,autonomo,fisioterapia,registrado
+C01358,Rocío,c01358@correo.example,2026-08-18,organico,autonomo,peluquería,registrado
+C01359,Daniel,c01359@correo.example,2026-09-27,organico,autonomo,fisioterapia,registrado
+C01360,Javier,c01360@correo.example,2026-10-15,pago,autonomo,fontanería,PQL
+C01361,Sara,c01361@correo.example,2026-08-29,organico,pyme,academia,PQL
+C01362,Iker,c01362@correo.example,2026-10-29,organico,autonomo,peluquería,registrado
+C01363,Javier,c01363@correo.example,2026-07-08,organico,autonomo,consultoría,registrado
+C01364,Irene,c01364@correo.example,2026-10-07,pago,pyme,agencia de marketing,PQL
+C01365,Álvaro,c01365@correo.example,2026-10-05,contador,pyme,restaurante,registrado
+C01366,Raúl,c01366@correo.example,2026-08-18,contador,pyme,taller mecánico,registrado
+C01367,Daniel,c01367@correo.example,2026-08-29,referido,autonomo,electricidad,registrado
+C01368,Rocío,c01368@correo.example,2026-08-04,referido,pyme,taller mecánico,registrado
+C01369,Sara,c01369@correo.example,2026-07-14,organico,pyme,construcción,registrado
+C01370,Sara,c01370@correo.example,2026-07-14,pago,autonomo,fotografía,cliente
+C01371,Javier,c01371@correo.example,2026-09-18,organico,pyme,tienda de ropa,registrado
+C01372,Álvaro,c01372@correo.example,2026-10-01,organico,autonomo,reformas,registrado
+C01373,Álvaro,c01373@correo.example,2026-08-12,pago,pyme,restaurante,registrado
+C01374,Laura,c01374@correo.example,2026-08-13,organico,autonomo,consultoría,registrado
+C01375,Sara,c01375@correo.example,2026-10-21,organico,autonomo,consultoría,registrado
+C01376,Nuria,c01376@correo.example,2026-08-05,contador,pyme,restaurante,registrado
+C01377,Iker,c01377@correo.example,2026-08-10,contador,autonomo,electricidad,PQL
+C01378,Adrián,c01378@correo.example,2026-09-27,organico,autonomo,consultoría,registrado
+C01379,Nuria,c01379@correo.example,2026-07-02,organico,autonomo,traducción,PQL
+C01380,Laura,c01380@correo.example,2026-10-05,pago,autonomo,fontanería,cliente
+C01381,Javier,c01381@correo.example,2026-09-12,organico,autonomo,peluquería,registrado
+C01382,Carmen,c01382@correo.example,2026-09-24,organico,pyme,restaurante,registrado
+C01383,Nuria,c01383@correo.example,2026-08-13,organico,autonomo,reformas,registrado
+C01384,Rocío,c01384@correo.example,2026-09-02,contador,pyme,academia,registrado
+C01385,Elena,c01385@correo.example,2026-09-20,organico,pyme,taller mecánico,PQL
+C01386,Álvaro,c01386@correo.example,2026-07-31,pago,pyme,clínica dental,PQL
+C01387,Daniel,c01387@correo.example,2026-08-08,organico,autonomo,reformas,registrado
+C01388,Daniel,c01388@correo.example,2026-10-16,referido,pyme,taller mecánico,PQL
+C01389,Laura,c01389@correo.example,2026-07-17,organico,autonomo,reformas,registrado
+C01390,Laura,c01390@correo.example,2026-09-21,referido,pyme,distribuidora,registrado
+C01391,Irene,c01391@correo.example,2026-09-23,contador,pyme,restaurante,PQL
+C01392,Álvaro,c01392@correo.example,2026-09-28,organico,autonomo,clases particulares,registrado
+C01393,Ana,c01393@correo.example,2026-07-07,pago,autonomo,electricidad,registrado
+C01394,Sara,c01394@correo.example,2026-09-17,organico,autonomo,fotografía,registrado
+C01395,Elena,c01395@correo.example,2026-10-03,organico,autonomo,consultoría,registrado
+C01396,Javier,c01396@correo.example,2026-10-26,contador,autonomo,traducción,registrado
+C01397,Paula,c01397@correo.example,2026-07-27,referido,pyme,agencia de marketing,PQL
+C01398,Raúl,c01398@correo.example,2026-09-16,organico,pyme,clínica dental,cliente
+C01399,Laura,c01399@correo.example,2026-10-23,organico,autonomo,reformas,registrado
+C01400,Daniel,c01400@correo.example,2026-07-13,pago,pyme,agencia de marketing,cliente
+C01401,Ana,c01401@correo.example,2026-08-03,organico,autonomo,diseño gráfico,registrado
+C01402,Sara,c01402@correo.example,2026-09-01,organico,autonomo,consultoría,registrado
+C01403,Nuria,c01403@correo.example,2026-08-11,organico,autonomo,fisioterapia,PQL
+C01404,Irene,c01404@correo.example,2026-08-14,contador,pyme,restaurante,cliente
+C01405,Raúl,c01405@correo.example,2026-10-06,organico,autonomo,clases particulares,registrado
+C01406,Hugo,c01406@correo.example,2026-09-14,referido,autonomo,reformas,PQL
+C01407,Hugo,c01407@correo.example,2026-10-28,contador,pyme,taller mecánico,registrado
+C01408,Sergio,c01408@correo.example,2026-10-20,referido,pyme,agencia de marketing,PQL
+C01409,Sergio,c01409@correo.example,2026-10-08,pago,pyme,clínica dental,registrado
+C01410,Daniel,c01410@correo.example,2026-09-17,contador,pyme,distribuidora,PQL
+C01411,Nuria,c01411@correo.example,2026-07-21,organico,autonomo,reformas,PQL
+C01412,Elena,c01412@correo.example,2026-09-14,contador,autonomo,fontanería,PQL
+C01413,Rocío,c01413@correo.example,2026-10-28,organico,pyme,academia,PQL
+C01414,Carmen,c01414@correo.example,2026-07-13,organico,autonomo,consultoría,registrado
+C01415,Irene,c01415@correo.example,2026-08-27,organico,autonomo,diseño gráfico,registrado
+C01416,Marcos,c01416@correo.example,2026-07-03,organico,autonomo,traducción,PQL
+C01417,Adrián,c01417@correo.example,2026-08-12,organico,autonomo,consultoría,registrado
+C01418,Nuria,c01418@correo.example,2026-09-25,organico,autonomo,clases particulares,registrado
+C01419,Irene,c01419@correo.example,2026-09-27,contador,autonomo,peluquería,registrado
+C01420,Pablo,c01420@correo.example,2026-10-08,organico,pyme,restaurante,registrado
+C01421,Sergio,c01421@correo.example,2026-08-24,organico,autonomo,fisioterapia,registrado
+C01422,Paula,c01422@correo.example,2026-09-09,pago,autonomo,electricidad,registrado
+C01423,Marcos,c01423@correo.example,2026-10-14,organico,pyme,taller mecánico,PQL
+C01424,Hugo,c01424@correo.example,2026-07-14,contador,autonomo,consultoría,cliente
+C01425,Daniel,c01425@correo.example,2026-08-26,organico,autonomo,clases particulares,registrado
+C01426,Paula,c01426@correo.example,2026-10-02,organico,autonomo,fisioterapia,registrado
+C01427,Adrián,c01427@correo.example,2026-10-18,pago,autonomo,consultoría,PQL
+C01428,Adrián,c01428@correo.example,2026-10-16,organico,autonomo,traducción,registrado
+C01429,Raúl,c01429@correo.example,2026-08-15,organico,autonomo,traducción,PQL
+C01430,Iker,c01430@correo.example,2026-07-17,organico,autonomo,diseño gráfico,registrado
+C01431,Sergio,c01431@correo.example,2026-09-24,contador,pyme,restaurante,cliente
+C01432,Marcos,c01432@correo.example,2026-07-09,pago,pyme,academia,cliente
+C01433,Laura,c01433@correo.example,2026-07-20,organico,pyme,taller mecánico,cliente
+C01434,Daniel,c01434@correo.example,2026-09-03,contador,pyme,restaurante,PQL
+C01435,Álvaro,c01435@correo.example,2026-10-09,pago,pyme,agencia de marketing,registrado
+C01436,Marcos,c01436@correo.example,2026-07-17,organico,autonomo,electricidad,registrado
+C01437,Marcos,c01437@correo.example,2026-10-10,contador,pyme,taller mecánico,PQL
+C01438,Paula,c01438@correo.example,2026-07-02,organico,autonomo,peluquería,registrado
+C01439,Irene,c01439@correo.example,2026-09-14,organico,autonomo,consultoría,registrado
+C01440,Paula,c01440@correo.example,2026-09-11,pago,autonomo,fotografía,registrado
+C01441,Álvaro,c01441@correo.example,2026-07-28,pago,pyme,academia,PQL
+C01442,Javier,c01442@correo.example,2026-09-20,pago,autonomo,reformas,registrado
+C01443,Nuria,c01443@correo.example,2026-07-15,organico,autonomo,diseño gráfico,cliente
+C01444,Javier,c01444@correo.example,2026-09-30,pago,pyme,agencia de marketing,registrado
+C01445,Iker,c01445@correo.example,2026-08-26,pago,pyme,clínica dental,registrado
+C01446,Álvaro,c01446@correo.example,2026-08-04,contador,autonomo,consultoría,PQL
+C01447,Ana,c01447@correo.example,2026-09-06,contador,pyme,distribuidora,cliente
+C01448,Iker,c01448@correo.example,2026-09-21,referido,autonomo,fontanería,registrado
+C01449,Ana,c01449@correo.example,2026-09-02,organico,pyme,clínica dental,registrado
+C01450,Paula,c01450@correo.example,2026-07-12,contador,pyme,tienda de ropa,PQL
+C01451,Raúl,c01451@correo.example,2026-09-22,referido,pyme,academia,registrado
+C01452,Irene,c01452@correo.example,2026-07-08,organico,autonomo,fontanería,registrado
+C01453,Laura,c01453@correo.example,2026-07-17,contador,autonomo,electricidad,cliente
+C01454,Álvaro,c01454@correo.example,2026-10-26,organico,autonomo,reformas,registrado
+C01455,Raúl,c01455@correo.example,2026-08-14,organico,pyme,restaurante,PQL
+C01456,Daniel,c01456@correo.example,2026-08-24,organico,pyme,taller mecánico,PQL
+C01457,Marta,c01457@correo.example,2026-08-22,contador,pyme,clínica dental,registrado
+C01458,Laura,c01458@correo.example,2026-08-06,organico,pyme,taller mecánico,registrado
+C01459,Marcos,c01459@correo.example,2026-10-01,organico,pyme,academia,PQL
+C01460,Daniel,c01460@correo.example,2026-09-23,organico,pyme,restaurante,registrado
+C01461,Rocío,c01461@correo.example,2026-10-22,organico,autonomo,fisioterapia,registrado
+C01462,Daniel,c01462@correo.example,2026-10-08,organico,autonomo,peluquería,registrado
+C01463,Álvaro,c01463@correo.example,2026-08-07,referido,pyme,restaurante,PQL
+C01464,Pablo,c01464@correo.example,2026-10-10,pago,pyme,academia,PQL
+C01465,Marta,c01465@correo.example,2026-07-02,pago,autonomo,reformas,cliente
+C01466,Javier,c01466@correo.example,2026-09-30,organico,autonomo,fisioterapia,registrado
+C01467,Irene,c01467@correo.example,2026-09-25,organico,pyme,agencia de marketing,registrado
+C01468,Laura,c01468@correo.example,2026-09-17,organico,autonomo,peluquería,registrado
+C01469,Paula,c01469@correo.example,2026-09-20,organico,autonomo,electricidad,PQL
+C01470,Paula,c01470@correo.example,2026-09-17,organico,pyme,distribuidora,registrado
+C01471,Sergio,c01471@correo.example,2026-07-16,referido,autonomo,fontanería,PQL
+C01472,Hugo,c01472@correo.example,2026-08-09,contador,autonomo,diseño gráfico,registrado
+C01473,Marcos,c01473@correo.example,2026-09-12,organico,pyme,agencia de marketing,registrado
+C01474,Paula,c01474@correo.example,2026-08-13,organico,autonomo,consultoría,cliente
+C01475,Daniel,c01475@correo.example,2026-09-25,pago,pyme,clínica dental,registrado
+C01476,Elena,c01476@correo.example,2026-08-03,contador,pyme,academia,PQL
+C01477,Ana,c01477@correo.example,2026-07-17,organico,autonomo,clases particulares,registrado
+C01478,Daniel,c01478@correo.example,2026-09-07,contador,autonomo,electricidad,registrado
+C01479,Iker,c01479@correo.example,2026-10-21,organico,autonomo,fontanería,registrado
+C01480,Sara,c01480@correo.example,2026-10-20,pago,autonomo,electricidad,registrado
+C01481,Carmen,c01481@correo.example,2026-08-09,pago,autonomo,peluquería,registrado
+C01482,Sara,c01482@correo.example,2026-07-22,pago,autonomo,fontanería,cliente
+C01483,Álvaro,c01483@correo.example,2026-10-05,organico,autonomo,fontanería,registrado
+C01484,Sara,c01484@correo.example,2026-08-09,organico,pyme,tienda de ropa,registrado
+C01485,Daniel,c01485@correo.example,2026-10-30,organico,autonomo,fotografía,registrado
+C01486,Adrián,c01486@correo.example,2026-08-29,pago,autonomo,peluquería,cliente
+C01487,Sara,c01487@correo.example,2026-10-06,organico,autonomo,reformas,registrado
+C01488,Daniel,c01488@correo.example,2026-08-20,contador,autonomo,consultoría,PQL
+C01489,Álvaro,c01489@correo.example,2026-08-08,organico,autonomo,fontanería,registrado
+C01490,Marcos,c01490@correo.example,2026-09-08,organico,autonomo,consultoría,registrado
+C01491,Hugo,c01491@correo.example,2026-08-27,organico,autonomo,peluquería,cliente
+C01492,Ana,c01492@correo.example,2026-10-22,organico,autonomo,electricidad,PQL
+C01493,Rocío,c01493@correo.example,2026-08-26,referido,pyme,tienda de ropa,registrado
+C01494,Pablo,c01494@correo.example,2026-07-28,contador,pyme,academia,PQL
+C01495,Irene,c01495@correo.example,2026-07-02,organico,autonomo,electricidad,registrado
+C01496,Nuria,c01496@correo.example,2026-07-08,referido,pyme,clínica dental,registrado
+C01497,Raúl,c01497@correo.example,2026-09-22,organico,autonomo,reformas,registrado
+C01498,Raúl,c01498@correo.example,2026-08-06,referido,autonomo,fisioterapia,PQL
+C01499,Irene,c01499@correo.example,2026-10-07,organico,pyme,restaurante,registrado
+C01500,Iker,c01500@correo.example,2026-08-23,referido,autonomo,fontanería,registrado
