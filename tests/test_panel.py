@@ -42,10 +42,24 @@ def test_cli_panel_lanza_streamlit(monkeypatch):
 
     from cuadra.cli import main
 
+    from cuadra import cli
+
+    class TemporizadorInmediato:
+        def __init__(self, espera, funcion, args=()):
+            self.funcion, self.args = funcion, args
+
+        def start(self):
+            self.funcion(*self.args)
+
     lanzado = {}
     monkeypatch.setattr(subprocess, "call", lambda orden: lanzado.update(orden=orden) or 0)
+    monkeypatch.setattr(cli.threading, "Timer", TemporizadorInmediato)
+    monkeypatch.setattr(cli.webbrowser, "open", lambda url: lanzado.update(url=url))
     assert main(["panel"]) == 0
-    assert lanzado["orden"] == [sys.executable, "-m", "streamlit", "run", PANEL]
+    assert lanzado["orden"][:5] == [sys.executable, "-m", "streamlit", "run", PANEL]
+    # Sin terminal interactiva, Streamlit se queda esperando un correo en su primer arranque: modo sin cabeza.
+    assert "--server.headless" in lanzado["orden"]
+    assert lanzado["url"] == "http://localhost:8501"
 
 
 def test_panel_no_afirma_que_la_aa_pasa_si_no_pasa(tmp_path, monkeypatch):

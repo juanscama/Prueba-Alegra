@@ -4,6 +4,8 @@ import argparse
 import json
 import subprocess
 import sys
+import threading
+import webbrowser
 from datetime import date
 
 import pandas as pd
@@ -13,6 +15,8 @@ from cuadra.config import FECHA_CORRIDA, RAIZ
 from cuadra.medicion import medir
 from cuadra.modelo import SinClave
 from cuadra.simulador import simular_eventos
+
+PUERTO_PANEL = 8501
 
 ETIQUETAS = [
     ("fecha", "Fecha de corrida"),
@@ -94,7 +98,19 @@ def _medir(args) -> int:
 
 
 def _panel(args) -> int:
-    return subprocess.call([sys.executable, "-m", "streamlit", "run", str(RAIZ / "panel" / "app.py")])
+    url = f"http://localhost:{PUERTO_PANEL}"
+    print(f"Panel en {url} (Ctrl+C para cerrarlo)")
+    # Modo sin cabeza: en su primer arranque Streamlit pide un correo por teclado y bloquea la demo.
+    # El navegador lo abrimos nosotros cuando el servidor ya está arriba.
+    threading.Timer(2.5, webbrowser.open, args=[url]).start()
+    return subprocess.call(
+        [
+            sys.executable, "-m", "streamlit", "run", str(RAIZ / "panel" / "app.py"),
+            "--server.headless", "true",
+            "--server.port", str(PUERTO_PANEL),
+            "--browser.gatherUsageStats", "false",
+        ]
+    )
 
 
 def main(argv: list[str] | None = None) -> int:
