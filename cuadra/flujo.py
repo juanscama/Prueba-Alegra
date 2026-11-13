@@ -20,7 +20,7 @@ from cuadra.verificacion import en_revision, procesar
 
 # Conversión natural en 14 días de quien lleva 3 o más días quieto: entre 0% y 3% en cinco cortes históricos.
 TASA_BASE_ESTIMADA = 0.02
-HILOS = 4
+HILOS = 8
 
 
 def _csv(tabla: pd.DataFrame, ruta: Path) -> None:

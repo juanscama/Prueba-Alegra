@@ -1,0 +1,19 @@
+{
+  "peticion": {
+    "modelo": "claude-opus-5-5",
+    "tarea": "juez",
+    "sistema": "Revisas correos de activación de Cuadra, un software de facturación para autónomos y pymes de España,\nantes de que se envíen a personas que se registraron y no han emitido su primera factura. Un correo con una\ninstrucción equivocada deja a esa persona buscando un botón que no existe, así que tu revisión es la última\nbarrera.\n\nRecibes el correo, la situación de la persona a la que va dirigido y el material de ayuda vigente. Evalúa\ncuatro criterios por separado:\n\n- respaldado: cada afirmación sobre lo que Cuadra hace, dónde está cada cosa o qué exige el producto\n  aparece en el material de ayuda. Los ejemplos del oficio de la persona (a quién o qué facturaría) son\n  ilustraciones y no cuentan como afirmaciones sobre el producto. Sí incumple cualquier dato inventado:\n  tiempos, precios, plazos, funciones, consejos fiscales o legales.\n- responde_al_paso: la acción que pide es el paso que le falta a esa persona según su situación.\n- tono_adecuado: español de España, trato de tú, cercano y directo, sin tono publicitario ni reproches.\n- un_solo_paso: pide una única acción. Explicar brevemente para qué sirve no cuenta como otro paso.\n\nSé estricto con los hechos y razonable con el estilo: rechaza por un dato sin respaldo, no por una\npreferencia de redacción. En motivos, escribe una frase concreta por cada criterio incumplido, citando el\nfragmento que falla, para que quien redacta pueda corregirlo.\n",
+    "usuario": "<persona>\nOficio: fotografía\nTipo de negocio: autónomo\nSituación: Se registró pero no ha completado los datos de su empresa. El paso que le falta: completar el NIF y la dirección fiscal de su empresa en la configuración, porque sin esos datos Cuadra no deja emitir facturas.\n</persona>\n\n<material_de_ayuda_vigente>\n<articulo archivo=\"01-crear-tu-primera-factura.md\">\n# Crear tu primera factura\n\nAntes de empezar, revisa que tu empresa tenga el **NIF** y la dirección fiscal completos en\n**Configuración > Empresa**. Sin esos datos, Cuadra no te deja emitir.\n\n## Pasos\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Si el cliente no existe, pulsa **Crear cliente** y completa\n   sus datos fiscales.\n4. Añade las líneas: elige un producto o servicio, la cantidad y el precio. El **IVA** se aplica según lo\n   que tenga configurado cada producto.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nLa factura queda con un número correlativo que Cuadra asigna solo. Una factura emitida ya no se puede\neditar: si hay un error, emite una **factura rectificativa** desde **Más acciones > Rectificar**.\n\n## Preguntas frecuentes\n\n**¿Puedo guardar una factura sin emitirla?** Sí: pulsa **Guardar como borrador**. Los borradores no tienen\nnúmero hasta que los emites.\n\n**¿Puedo cambiar la numeración?** Sí, en **Configuración > Numeración**, antes de emitir la primera factura\nde la serie.\n</articulo>\n</material_de_ayuda_vigente>\n\n<correo>\nAsunto: Completa el NIF de tu empresa en Cuadra\n\nHola, {nombre}:\n\nYa tienes tu cuenta de Cuadra creada, pero aún faltan los datos fiscales de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCon eso hecho, la próxima vez que termines un trabajo, como el reportaje de una boda o una sesión de fotos de producto para una tienda, tendrás la cuenta preparada para facturarlo.\n\nEl equipo de Cuadra\n</correo>"
+  },
+  "respuesta": {
+    "respaldado": true,
+    "responde_al_paso": true,
+    "tono_adecuado": true,
+    "un_solo_paso": true,
+    "motivos": []
+  },
+  "uso": {
+    "tokens_entrada": 2081,
+    "tokens_salida": 52
+  }
+}

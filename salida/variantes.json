@@ -5,13 +5,23 @@
       "actividad": "academia",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Crea tu primer cliente en Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. El siguiente paso es crear tu primer cliente, y se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF.\n4. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa en alguien a quien vayas a facturar pronto. Puede ser la familia de un alumno que paga la mensualidad de las clases de refuerzo, o una empresa que te ha contratado un curso de inglés para su plantilla.\n\nPor hoy basta con eso: dar de alta ese primer cliente.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -19,13 +29,23 @@
       "actividad": "academia",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra: crea el primer cliente de tu academia",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. Los datos de tu academia ya están configurados, así que puedes retomar justo donde lo dejaste: crear tu primer cliente. Se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en la empresa que te ha encargado un curso de inglés para su plantilla o en la familia de un alumno de clases de refuerzo.\n\nCon ese primer cliente creado, tu academia queda lista para seguir.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -33,13 +53,23 @@
       "actividad": "agencia de marketing",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso: crear tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Para seguir, te falta crear tu primer cliente, y se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa en una marca con la que trabajes ahora, por ejemplo la tienda de ropa a la que le llevas las redes sociales o el restaurante al que le preparas la campaña de lanzamiento. Ten a mano su NIF y su dirección fiscal, y créalo hoy.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -47,13 +77,23 @@
       "actividad": "agencia de marketing",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue lista para tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu empresa ya está configurada en Cuadra y todo sigue tal como lo dejaste. Puedes retomarlo justo donde te quedaste: crear tu primer cliente.\n\nLo más directo es hacerlo desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en la marca de cosmética a la que llevas las redes sociales o en el restaurante que te encargó su última campaña. Ten sus datos fiscales a mano y empieza por ahí.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -61,13 +101,23 @@
       "actividad": "clases particulares",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Crea tu primer cliente en Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes configurada tu empresa en Cuadra, así que vas por la mitad de la puesta en marcha. El siguiente paso es crear tu primer cliente, y se hace desde una factura nueva.\n\nPiensa, por ejemplo, en la madre de un alumno al que das clases de matemáticas de 2.º de ESO un par de tardes por semana.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás tu primer cliente creado en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -75,13 +125,23 @@
       "actividad": "clases particulares",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta sigue lista: crea tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, con tu empresa ya configurada. Puedes retomarla justo donde la dejaste: dar de alta a tu primer cliente, y eso se hace desde una factura nueva.\n\nPiensa, por ejemplo, en la familia de un alumno al que das clases de matemáticas de 2.º de ESO.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás tu primer cliente creado.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -89,13 +149,23 @@
       "actividad": "clínica dental",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Crea tu primer cliente en Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes los datos de tu clínica configurados. Lo que te falta ahora es crear tu primer cliente, y se hace desde una factura nueva.\n\nPiensa, por ejemplo, en el paciente al que acabas de terminar una ortodoncia o en la empresa con la que tenéis un convenio para sus empleados.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás tu primer cliente dado de alta en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí el primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -103,13 +173,23 @@
       "actividad": "clínica dental",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra: crea el primer cliente de tu clínica",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: los datos de tu clínica ya están configurados. Puedes retomarla justo donde te quedaste, creando tu primer cliente.\n\nPiensa, por ejemplo, en un paciente al que acabas de hacer una endodoncia. El cliente se crea desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del paciente.\n4. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon ese paso, tu clínica ya tendrá su primer cliente en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí el primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -117,13 +197,23 @@
       "actividad": "construcción",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Crea tu primer cliente desde una factura nueva",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Ahora te falta dar de alta a tu primer cliente, y puedes hacerlo directamente desde una factura nueva. Piensa, por ejemplo, en la comunidad de propietarios a la que le estás rehabilitando la fachada o en la promotora para la que levantas la estructura.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso ya tendrás tu primer cliente dado de alta en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí su primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -131,13 +221,23 @@
       "actividad": "construcción",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue lista para tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu empresa ya está configurada en Cuadra y la cuenta sigue tal como la dejaste. Puedes retomarla justo en el punto donde te quedaste: crear tu primer cliente.\n\nPiensa, por ejemplo, en la comunidad de propietarios a la que le estás rehabilitando la fachada o en la promotora para la que levantáis la estructura.\n\nAsí se hace:\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás tu primer cliente dado de alta en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -145,13 +245,23 @@
       "actividad": "consultoría",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Crea tu primer cliente desde una factura nueva",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Ahora te falta crear tu primer cliente, y puedes hacerlo directamente al abrir una factura nueva.\n\nPiensa, por ejemplo, en la pyme a la que estás asesorando este mes para reorganizar sus procesos internos:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás a tu primer cliente dado de alta.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear su primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -159,13 +269,23 @@
       "actividad": "consultoría",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra donde lo dejaste: tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa ya está configurada, así que puedes retomar justo en ese punto. Lo que falta es crear tu primer cliente, y se hace desde la propia factura:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en la pyme a la que estás ayudando a ordenar sus procesos o en la empresa que te pidió unas sesiones de asesoría el mes pasado. Ese puede ser tu primer cliente en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -173,13 +293,23 @@
       "actividad": "diseño gráfico",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, te falta crear tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Ahora te falta crear tu primer cliente, y se hace desde la propia factura:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa en alguien para quien ya hayas hecho un trabajo, por ejemplo la cafetería del barrio a la que le diseñaste el logotipo y la carta. Ten a mano su nombre fiscal, su NIF y su dirección.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -187,13 +317,23 @@
       "actividad": "diseño gráfico",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma donde lo dejaste: crea tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, con los datos de tu empresa ya configurados. Puedes retomarla justo donde te quedaste: crear tu primer cliente.\n\nSe hace desde la propia factura:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF.\n4. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en la cafetería que te encargó el rediseño de su logo o en el estudio de arquitectura al que le maquetas el portfolio. Ese puede ser tu primer cliente.\n\nPor hoy, con eso basta.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -201,13 +341,23 @@
       "actividad": "distribuidora",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primer cliente en Cuadra se crea desde la factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Te falta un paso para seguir: crear tu primer cliente. Se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF.\n4. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa en uno de tus clientes habituales, por ejemplo el bar al que le sirves cajas de refrescos cada semana o la tienda de barrio que te pide género. Ten a mano su nombre, su NIF y su dirección fiscal, y lo das de alta ahí mismo.\n\nPor hoy, con eso basta.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -215,13 +365,23 @@
       "actividad": "distribuidora",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra donde lo dejaste: tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. Los datos de tu empresa ya están configurados, así que puedes retomar justo en ese punto.\n\nLo que te falta es crear tu primer cliente, y se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa en uno de tus clientes habituales: el bar al que sirves cajas de refrescos cada semana o la tienda de alimentación que te pide conservas y aceite. Ten a mano su NIF y su dirección fiscal.\n\nPor hoy, con ese paso es suficiente.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -229,13 +389,23 @@
       "actividad": "electricidad",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu siguiente paso en Cuadra: crear tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Para seguir con la puesta en marcha te falta una cosa: crear tu primer cliente. Piensa en tu último trabajo, por ejemplo la comunidad de vecinos a la que le cambiaste el alumbrado del portal.\n\nEl cliente se crea desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso ya tendrás tu primer cliente en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -243,13 +413,23 @@
       "actividad": "electricidad",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primer cliente en Cuadra, justo donde lo dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa ya está configurada, así que puedes retomarla justo en ese punto. Lo siguiente es crear tu primer cliente, y se hace desde una factura nueva.\n\nPiensa, por ejemplo, en la comunidad de vecinos a la que le cambiaste la iluminación del portal o en el particular al que le renovaste el cuadro eléctrico.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear su primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -257,13 +437,23 @@
       "actividad": "fisioterapia",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu siguiente paso en Cuadra: crear tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Ahora te falta crear tu primer cliente, y se hace desde la propia factura:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPuede ser, por ejemplo, un paciente al que estás tratando de una lesión de rodilla o el club deportivo con el que colaboras.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -271,13 +461,23 @@
       "actividad": "fisioterapia",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, retoma Cuadra creando tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, con tu empresa ya configurada. Puedes retomarla justo en ese punto.\n\nLo que te falta es crear tu primer cliente, y se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en el paciente que viene a sesiones por una lesión de rodilla o en el club deportivo cuyos jugadores atiendes.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear su primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -285,13 +485,23 @@
       "actividad": "fontanería",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primer cliente en Cuadra, desde una factura nueva",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes los datos de tu empresa configurados en Cuadra. Ahora te falta dar de alta tu primer cliente, y se hace desde una factura nueva.\n\nPiensa en tu último trabajo: la comunidad de vecinos a la que le cambiaste la bajante o el particular que te llamó por una fuga en la cocina.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nEso es todo lo que te pedimos hoy.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -299,13 +509,23 @@
       "actividad": "fontanería",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
-    "intentos": 1,
-    "veredicto": null
+    "correo": {
+      "asunto": "Retoma Cuadra donde lo dejaste: tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. Los datos de tu empresa ya están configurados, así que puedes retomar justo en ese punto.\n\nLo siguiente es crear tu primer cliente, y se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en la comunidad de vecinos a la que le cambiaste una bajante o en el particular al que le arreglaste una fuga en el baño. Empieza por ese cliente.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
+    "intentos": 2,
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -313,13 +533,23 @@
       "actividad": "fotografía",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, te falta un paso: crear tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. El siguiente paso es dar de alta a tu primer cliente, y se hace desde la propia factura.\n\nPiensa, por ejemplo, en la tienda que te encargó las fotos de su catálogo o en la pareja cuya boda cubriste. Así lo creas:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás a tu primer cliente dentro de la factura.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -327,13 +557,23 @@
       "actividad": "fotografía",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra donde lo dejaste: tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa ya está configurada, así que puedes retomar justo donde te quedaste. Lo siguiente es crear tu primer cliente, y se hace desde una factura nueva.\n\nPiensa, por ejemplo, en la pareja que te contrató para fotografiar su boda o en la tienda que te encargó las fotos de su catálogo.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás tu primer cliente creado en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -341,13 +581,23 @@
       "actividad": "peluquería",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Crea tu primer cliente en Cuadra desde una factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Ahora te falta crear tu primer cliente, y se hace desde la propia factura:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa en alguien a quien vayas a facturar pronto. Puede ser la productora que te llama para peinar en una sesión de fotos o la novia que te reserva el peinado del día de la boda. Con tener a esa persona a mano, tienes lo que necesitas para este paso.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -355,13 +605,23 @@
       "actividad": "peluquería",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta sigue lista: crea tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa ya está configurada, así que puedes retomar justo en ese punto.\n\nLo que te falta es crear tu primer cliente, y se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en esa clienta que te pidió factura por el peinado de su boda.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -369,13 +629,23 @@
       "actividad": "reformas",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primer cliente en Cuadra se crea desde la factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Ahora te falta dar de alta a tu primer cliente, y se hace desde la propia factura:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no lo tienes guardado, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa en el próximo trabajo que vas a cobrar: la reforma del baño de un particular o el cambio de suelo de un local del barrio. Empieza por esa persona o esa empresa.\n\nCuando lo tengas creado, ya habrás dado el paso en el que más gente se queda.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -383,13 +653,23 @@
       "actividad": "reformas",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra donde lo dejaste: tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. Tu empresa ya está configurada, así que puedes retomar justo en ese punto.\n\nTe falta crear tu primer cliente, y se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en la familia a la que estás reformando el baño o en la comunidad de propietarios que te encargó arreglar el portal. Cualquiera de ellos puede ser tu primer cliente.\n\nCon eso, el paso de hoy está hecho.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -397,13 +677,23 @@
       "actividad": "restaurante",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Crea tu primer cliente desde una factura nueva",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Ahora te falta crear tu primer cliente, y se hace desde una factura nueva.\n\nPiensa, por ejemplo, en la empresa del barrio que te reservó el comedor para su cena de Navidad y te pidió factura.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nEse es el paso que te queda hoy para seguir con la puesta en marcha.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -411,13 +701,23 @@
       "actividad": "restaurante",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta sigue como la dejaste: crea tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa ya está configurada, así que puedes retomarla justo donde te quedaste. Lo que te falta es crear tu primer cliente; por ejemplo, la empresa del barrio que celebra su comida de Navidad en tu restaurante.\n\nEl cliente se crea desde la propia factura:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás tu primer cliente dado de alta.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -425,13 +725,23 @@
       "actividad": "taller mecánico",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Crea tu primer cliente del taller en Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. El siguiente paso es crear tu primer cliente, y se hace desde la propia factura:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF.\n4. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa en el próximo que pase por el taller. Puede ser la empresa de reparto que te trae una furgoneta para cambiar las pastillas de freno, o el particular que viene a la revisión de su coche. Empieza con ese.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -439,13 +749,23 @@
       "actividad": "taller mecánico",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra donde lo dejaste: tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, con los datos de tu empresa ya configurados. Puedes retomarla justo en ese punto y crear tu primer cliente.\n\nSe hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en la empresa de reparto que te trae sus furgonetas a revisión o en el cliente al que le cambiaste las pastillas de freno la semana pasada.\n\nCon ese paso tendrás tu primer cliente dado de alta.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -453,13 +773,23 @@
       "actividad": "tienda de ropa",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu siguiente paso en Cuadra: crear tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. El siguiente paso es crear tu primer cliente, y se hace desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en el restaurante del barrio que te encargó los uniformes de su equipo o en la empresa que te pidió unos polos para su plantilla: cualquiera de ellos puede ser ese primer cliente.\n\nCon esto hecho, tendrás a tu primer cliente dado de alta en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -467,13 +797,23 @@
       "actividad": "tienda de ropa",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta te espera: crea tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, con los datos de tu empresa ya configurados. Puedes retomarla justo ahí: lo siguiente es crear tu primer cliente, y se hace desde una factura nueva.\n\nPiensa, por ejemplo, en el restaurante del barrio que te encarga las camisetas de su plantilla y te pide factura.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso tendrás tu primer cliente creado.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -481,13 +821,23 @@
       "actividad": "traducción",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, crea tu primer cliente en Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra. Lo que te falta ahora es dar de alta a tu primer cliente, y puedes hacerlo directamente desde una factura nueva:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Como todavía no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nPiensa, por ejemplo, en la editorial para la que estás traduciendo un libro o en la agencia que te encarga contratos y manuales. Ten a mano sus datos fiscales y empieza por ese cliente.\n\nPor hoy, eso es todo lo que te pedimos: crear tu primer cliente.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Abrir una factura nueva y crear ahí tu primer cliente",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -495,13 +845,23 @@
       "actividad": "traducción",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta te espera: crea tu primer cliente",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. Los datos de tu empresa ya están configurados, así que puedes retomar justo en ese punto.\n\nLo que te falta es crear tu primer cliente, y se hace desde una factura nueva. Piensa, por ejemplo, en la agencia que te encarga traducir un manual técnico o en la editorial con la que estás traduciendo una novela.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales.\n\nCon eso ya tienes tu primer cliente en Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Crear tu primer cliente desde una factura nueva",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -509,13 +869,23 @@
       "actividad": "academia",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso para facturar desde tu academia",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra creada y solo te falta un paso para poder facturar: completar los datos de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena el **NIF** y la dirección fiscal de tu academia.\n\nCon eso hecho, la próxima vez que tengas que cobrar, por ejemplo, la mensualidad de las clases de inglés de un alumno, tendrás la cuenta lista para emitir la factura.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -523,13 +893,23 @@
       "actividad": "academia",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto.\n\nTe falta un paso para poder facturar: completar los datos de tu academia, es decir, el **NIF** y la dirección fiscal. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena el **NIF** y la dirección fiscal de tu academia.\n\nCon eso hecho, ya podrás facturar, por ejemplo, la mensualidad de un alumno del curso de inglés o la matrícula de un intensivo de verano.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -537,13 +917,23 @@
       "actividad": "agencia de marketing",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Completa los datos de tu agencia para poder facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra abierta. Para poder emitir facturas te falta un paso: añadir el **NIF** y la dirección fiscal de tu agencia. Sin esos datos, Cuadra no te deja emitir.\n\nPara completarlos:\n\n1. Entra en **Configuración > Empresa**.\n2. Rellena el **NIF** y la dirección fiscal de tu empresa.\n\nAsí, cuando te toque facturar la gestión mensual de redes sociales de un cliente o la campaña de lanzamiento de una tienda online, tendrás tus datos fiscales listos.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -551,13 +941,23 @@
       "actividad": "agencia de marketing",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
-    "intentos": 1,
-    "veredicto": null
+    "correo": {
+      "asunto": "Un paso para poder facturar con Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nCuando entraste en Cuadra, te quedó un paso pendiente: completar los datos fiscales de tu agencia. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara completarlos:\n1. Entra en **Configuración > Empresa**.\n2. Rellena el **NIF** y la dirección fiscal de tu empresa.\n\nCon eso cubierto, tendrás lo necesario para facturar, por ejemplo, la campaña de redes sociales que llevas para una clínica dental o el rediseño de la web de una tienda de tu zona.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
+    "intentos": 2,
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -565,13 +965,23 @@
       "actividad": "clases particulares",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso para facturar tus clases",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra abierta. Para poder emitir facturas por tus clases te queda completar los datos de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir.\n\nEs sencillo: entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCon esos datos completos ya podrás facturar, por ejemplo, a la familia de un alumno al que preparas cada semana para el examen de matemáticas.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -579,13 +989,23 @@
       "actividad": "clases particulares",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en el punto en el que estabas. Antes de emitir facturas solo te falta completar los datos de tu empresa.\n\nEntra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal. Sin esos datos, Cuadra no te deja emitir.\n\nCon eso completo, ya podrás facturar, por ejemplo, a la familia de un alumno al que das clases de matemáticas cada semana.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -593,13 +1013,23 @@
       "actividad": "clínica dental",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Falta el NIF de tu clínica para poder facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa has empezado a poner en marcha Cuadra, pero te falta un paso: completar el NIF y la dirección fiscal de tu clínica. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena el **NIF** y la dirección fiscal de la clínica.\n\nCon eso hecho, tendrás la base lista para facturar, por ejemplo, una limpieza dental o un empaste a un paciente.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -607,13 +1037,23 @@
       "actividad": "clínica dental",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto.\n\nSolo te falta un paso: completar el **NIF** y la dirección fiscal de tu clínica. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena el **NIF** y la dirección fiscal de tu empresa.\n\nCon eso hecho, ya podrás facturar, por ejemplo, la limpieza dental o el empaste de un paciente.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -621,13 +1061,23 @@
       "actividad": "construcción",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta el NIF y la dirección fiscal para facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra en marcha y te queda un paso para poder facturar: completar los datos de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara completarlos:\n1. Entra en **Configuración > Empresa**.\n2. Rellena el **NIF** y la dirección fiscal de tu empresa.\n\nAsí tendrás la empresa preparada para cuando toque facturar, por ejemplo, la reforma de un local a un cliente o una certificación de obra a una promotora.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -635,13 +1085,23 @@
       "actividad": "construcción",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto. Solo te falta completar los datos fiscales de tu empresa. Sin el NIF y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara hacerlo:\n1. Entra en **Configuración > Empresa**.\n2. Completa el **NIF** y la dirección fiscal de tu empresa.\n\nCon esos datos completos, tu cuenta estará lista para facturar trabajos como la reforma de un portal para una comunidad de propietarios o el alicatado de una cocina para un particular.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -649,13 +1109,23 @@
       "actividad": "consultoría",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta el NIF para emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra creada, pero te faltan dos datos para poder facturar: el **NIF** y la dirección fiscal de tu empresa. Sin ellos, Cuadra no te deja emitir facturas.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCon eso listo, cuando termines un encargo de consultoría, como unas sesiones de asesoría a una pyme para ordenar sus procesos, podrás facturarlo desde Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -663,13 +1133,23 @@
       "actividad": "consultoría",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto.\n\nSolo te falta un paso: completar los datos fiscales de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara completarlos:\n1. Entra en **Configuración > Empresa**.\n2. Rellena tu **NIF** y tu dirección fiscal.\n\nCon esos datos completos, ya podrás facturar, por ejemplo, las horas de asesoría que dedicaste a revisar los procesos de una pyme cliente.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de su empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -677,13 +1157,23 @@
       "actividad": "diseño gráfico",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta tu NIF y dirección fiscal para poder facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra en marcha, pero aún te falta un paso. Cuadra no te deja emitir facturas hasta que tu empresa tenga el **NIF** y la dirección fiscal completos.\n\nCompleta esos datos hoy. Entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCon eso hecho, tus datos ya estarán listos para cuando quieras facturar ese logotipo para la panadería de tu barrio o el diseño del catálogo de temporada de una tienda de ropa.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -691,13 +1181,23 @@
       "actividad": "diseño gráfico",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto.\n\nTe falta un solo paso: completar el **NIF** y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCon eso hecho, ya podrás facturar, por ejemplo, el diseño del logotipo de una cafetería o la maquetación del catálogo de una tienda.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -705,13 +1205,23 @@
       "actividad": "distribuidora",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un dato para poder facturar con Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra abierta y te queda un paso para poder facturar. Cuadra no deja emitir facturas hasta que tu empresa tenga el NIF y la dirección fiscal completos.\n\nPara completarlos:\n\n1. Entra en **Configuración > Empresa**.\n2. Rellena el **NIF** y la dirección fiscal de tu empresa.\n\nCon eso hecho, cuando tengas que facturar un pedido, por ejemplo unas cajas de refrescos para un bar o una tienda de alimentación a la que sirves, no tendrás que pararte en este paso.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -719,13 +1229,23 @@
       "actividad": "distribuidora",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto.\n\nSolo te falta completar los datos de tu empresa: el **NIF** y la dirección fiscal. Sin ellos, Cuadra no te deja emitir facturas.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena esos dos datos.\n\nCon eso completo, ya no habrá nada que te frene para facturar, por ejemplo, el pedido de cajas de bebida que sirves a un restaurante o la reposición semanal de una tienda de tu zona.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -733,13 +1253,23 @@
       "actividad": "electricidad",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un dato para emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nHace unos días abriste tu cuenta en Cuadra y ya tienes parte de la puesta en marcha hecha. Para poder facturar te falta completar los datos fiscales de tu empresa. Sin ellos, Cuadra no te deja emitir facturas.\n\nEntra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nAsí, cuando quieras facturar tu próximo trabajo, como el cambio del cuadro eléctrico de una vivienda o la revisión de la instalación de un local, tus datos estarán completos.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -747,13 +1277,23 @@
       "actividad": "electricidad",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
-    "intentos": 1,
-    "veredicto": null
+    "correo": {
+      "asunto": "Te falta un dato para poder facturar en Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nCuando te registraste en Cuadra, te quedaste a un paso de poder facturar: faltan el NIF y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nAsí, la próxima vez que cambies el cuadro eléctrico de una vivienda o revises la iluminación del portal de una comunidad de propietarios, esos datos no te frenarán a la hora de facturarlo.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
+    "intentos": 2,
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -761,13 +1301,23 @@
       "actividad": "fisioterapia",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te faltan tus datos fiscales para empezar a facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra en marcha, pero te faltan dos datos para emitir tu primera factura: el NIF y la dirección fiscal de tu negocio. Sin ellos, Cuadra no te deja emitir.\n\nPara completarlos:\n1. Entra en **Configuración > Empresa**.\n2. Rellena tu **NIF** y tu dirección fiscal.\n\nCon esos datos completos, ya podrás facturar, por ejemplo, el bono de sesiones de un paciente que está recuperándose de un esguince de tobillo.\n\nSi lo dejas listo hoy, la próxima vez que entres podrás ir directo a tu primera factura.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -775,13 +1325,23 @@
       "actividad": "fisioterapia",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en el punto en que te quedaste.\n\nTe falta un solo paso: completar los datos de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara hacerlo, entra en **Configuración > Empresa** y completa tu **NIF** y tu dirección fiscal.\n\nCon esos datos completos, tu cuenta quedará preparada para cuando quieras facturar, por ejemplo, la sesión de rehabilitación de rodilla de un paciente o el tratamiento de una contractura.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -789,13 +1349,23 @@
       "actividad": "fontanería",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta tu NIF para emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra creada y estás a mitad de ponerla en marcha. Antes de emitir tu primera factura te falta un paso: completar el **NIF** y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal completa.\n\nAsí, cuando termines de cambiar el calentador en casa de un cliente o de arreglar una fuga en un portal, no tendrás nada pendiente a la hora de facturarlo.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -803,13 +1373,23 @@
       "actividad": "fontanería",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en el punto en que te quedaste.\n\nTe falta un paso antes de poder facturar: completar los datos de tu empresa. Sin el NIF y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara hacerlo:\n1. Entra en **Configuración > Empresa**.\n2. Completa tu **NIF** y tu dirección fiscal.\n\nCon eso hecho, la próxima vez que cambies un termo o arregles una fuga en casa de un cliente, tendrás la cuenta preparada para facturarle.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -817,13 +1397,23 @@
       "actividad": "fotografía",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Completa el NIF de tu empresa en Cuadra",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra creada, pero aún faltan los datos fiscales de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCon eso hecho, la próxima vez que termines un trabajo, como el reportaje de una boda o una sesión de fotos de producto para una tienda, tendrás la cuenta preparada para facturarlo.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -831,13 +1421,23 @@
       "actividad": "fotografía",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto. Antes de emitir tu primera factura solo te falta una cosa: completar el **NIF** y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir.\n\nLo tienes en **Configuración > Empresa**. Entra ahí y rellena tu **NIF** y tu dirección fiscal.\n\nCon eso hecho, cuando quieras facturar el reportaje de una boda o las fotos de producto para la tienda online de un cliente, tendrás ese paso resuelto.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -845,13 +1445,23 @@
       "actividad": "peluquería",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Un paso antes de emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra en marcha. Para poder emitir tu primera factura, solo falta completar los datos fiscales de tu negocio: sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCon esto listo, cuando una clienta te pida factura por un corte y color, o una agencia te encargue los peinados de una sesión de fotos, ya tendrás hecha esta parte.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -859,13 +1469,23 @@
       "actividad": "peluquería",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal y como la dejaste, así que puedes retomarla justo en ese punto.\n\nTe falta un solo paso: completar el **NIF** y la dirección fiscal de tu negocio. Sin esos datos, Cuadra no te deja emitir facturas.\n\nEntra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCuando lo tengas, tu cuenta quedará lista para facturar, por ejemplo, el peinado de una novia el día de su boda.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -873,13 +1493,23 @@
       "actividad": "reformas",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Completa tu NIF y dirección fiscal para poder facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra creada, pero te falta un paso antes de poder facturar: completar los datos fiscales de tu negocio. Sin el NIF y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara hacerlo:\n\n1. Entra en **Configuración > Empresa**.\n2. Rellena tu **NIF** y tu dirección fiscal completa.\n\nCon esos datos completos, cuando termines un trabajo, como la reforma del baño de un cliente particular o el alicatado de una cocina, ya podrás facturarlo desde Cuadra.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -887,13 +1517,23 @@
       "actividad": "reformas",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto.\n\nSolo te falta completar el **NIF** y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nAsí, cuando termines tu próximo trabajo, como la reforma del baño de un cliente o el alicatado de una cocina, tendrás la cuenta lista para facturarlo.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -901,13 +1541,23 @@
       "actividad": "restaurante",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Completa los datos de tu restaurante para facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra abierta, pero te falta completar los datos de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena el **NIF** y la dirección fiscal de tu restaurante.\n\nPiensa, por ejemplo, en esa empresa de la zona que reserva una cena para su equipo y te pide la factura a nombre de su sociedad. Para hacérsela desde Cuadra, primero tu restaurante tiene que tener sus datos fiscales completos.\n\nPor ahora es lo único que te pedimos.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -915,13 +1565,23 @@
       "actividad": "restaurante",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en el punto en que estabas.\n\nSolo te falta un paso: completar el **NIF** y la dirección fiscal de tu restaurante. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena esos dos datos.\n\nAsí, la próxima vez que una empresa te pida factura por la comida de su equipo o por el menú de una celebración, tendrás la cuenta preparada para emitirla.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -929,13 +1589,23 @@
       "actividad": "taller mecánico",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta el NIF de tu taller para poder facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra abierta y estás a mitad de la puesta en marcha. Antes de facturar te falta un paso: completar el NIF y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara completarlos, entra en **Configuración > Empresa** y rellena el **NIF** y la dirección fiscal de tu taller.\n\nAsí, cuando un cliente venga a recoger su coche después de un cambio de pastillas de freno o de la revisión de los 30.000 km, ya tendrás lo necesario para hacerle su factura.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -943,13 +1613,23 @@
       "actividad": "taller mecánico",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto.\n\nTe falta un solo paso para poder emitir facturas: completar el **NIF** y la dirección fiscal de tu taller. Sin esos datos, Cuadra no te deja emitir.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena el **NIF** y la dirección fiscal de tu empresa.\n\nCon eso completo, tendrás la cuenta lista para facturar, por ejemplo, el cambio de pastillas de freno y la revisión de un cliente que pasa a recoger su coche.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -957,13 +1637,23 @@
       "actividad": "tienda de ropa",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso para facturar desde tu tienda",
+      "cuerpo": "Hola, {nombre}:\n\nHace unos días diste de alta tu tienda en Cuadra, y ya tienes parte del camino hecho. Antes de poder facturar te falta un paso: completar los datos fiscales de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPara completarlos:\n1. Entra en **Configuración > Empresa**.\n2. Rellena el **NIF** y la dirección fiscal de tu empresa.\n\nCon eso hecho, la próxima vez que alguien te pida factura ya podrás hacérsela desde Cuadra. Por ejemplo, una empresa del barrio que te compra camisas para su equipo.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -971,13 +1661,23 @@
       "actividad": "tienda de ropa",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra: faltan el NIF y la dirección fiscal",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en el punto en que te quedaste.\n\nTe falta un paso: completar el **NIF** y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir facturas.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena el **NIF** y la dirección fiscal de tu tienda.\n\nCon eso hecho, la cuenta quedará lista para cuando tengas que facturar, por ejemplo, los polos y pantalones que te encarga un restaurante del barrio para su plantilla.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de la empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -985,13 +1685,23 @@
       "actividad": "traducción",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Completa tu NIF y dirección fiscal para poder facturar",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu cuenta de Cuadra creada, pero antes de facturar te falta un paso: completar los datos de tu empresa. Sin el **NIF** y la dirección fiscal, Cuadra no te deja emitir facturas.\n\nPuedes hacerlo en **Configuración > Empresa**. Entra ahí y rellena tu **NIF** y tu dirección fiscal completa.\n\nAsí, cuando entregues la traducción de un contrato a una agencia o la de una web a una tienda online, ya no te faltará este paso para facturarla.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de tu empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -999,13 +1709,23 @@
       "actividad": "traducción",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta de Cuadra sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, así que puedes retomarla justo en ese punto.\n\nAntes de emitir tu primera factura te falta una cosa: completar el **NIF** y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir.\n\nPara hacerlo, entra en **Configuración > Empresa** y rellena tu **NIF** y tu dirección fiscal.\n\nCon eso hecho, tendrás la cuenta lista para cuando quieras facturar, por ejemplo, la traducción de un contrato a una agencia o la de un manual técnico a una editorial.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Completar el NIF y la dirección fiscal de su empresa",
+      "ruta_menu": "configuración > empresa",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1013,13 +1733,23 @@
       "actividad": "academia",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu academia está a un paso de su primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada en Cuadra y tu primer cliente creado. Solo te falta emitir tu primera factura, por ejemplo, la de las clases de inglés de este mes a la familia de uno de tus alumnos.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: elige el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nUna factura emitida ya no se puede editar. Si prefieres repasarla con calma antes, pulsa **Guardar como borrador** en lugar de emitirla: los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1027,13 +1757,23 @@
       "actividad": "academia",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo ahí.\n\nPor ejemplo, puedes facturar a una familia la mensualidad de octubre de su hijo en tu academia.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade la línea: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1041,13 +1781,23 @@
       "actividad": "agencia de marketing",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado en Cuadra. Solo te falta un paso: emitir tu primera factura.\n\nPiensa, por ejemplo, en la campaña de lanzamiento que hiciste para una tienda online o en la gestión de redes sociales de un restaurante.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir la primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1055,13 +1805,23 @@
       "actividad": "agencia de marketing",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste, con la empresa configurada y tu primer cliente creado. Solo te falta emitir la primera factura, y puedes retomarlo justo ahí.\n\nPor ejemplo, la gestión mensual de redes sociales de ese cliente o el diseño de una campaña de lanzamiento.\n\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1069,13 +1829,23 @@
       "actividad": "clases particulares",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te queda un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te falta emitir tu primera factura, por ejemplo la de las clases de refuerzo de matemáticas que has dado este mes a un alumno.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1083,13 +1853,23 @@
       "actividad": "clases particulares",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura te espera donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPor ejemplo, la factura a la familia de un alumno por las clases de matemáticas del mes:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**: los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1097,13 +1877,23 @@
       "actividad": "clínica dental",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu clínica ya está lista para su primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te falta un paso: emitir tu primera factura. Por ejemplo, la de un paciente al que le hiciste una limpieza o un empaste.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nCuadra le asigna solo un número correlativo.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1111,13 +1901,23 @@
       "actividad": "clínica dental",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura de la clínica, a un paso",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa está configurada y ya tienes un cliente creado, así que puedes retomarlo justo donde lo dejaste: emitir tu primera factura. Por ejemplo, la de una limpieza dental o una revisión a uno de tus pacientes.\n\nAsí se hace:\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir la primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1125,13 +1925,23 @@
       "actividad": "construcción",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te queda un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te falta emitir tu primera factura; por ejemplo, la de la reforma de una cocina o la de un alicatado para un particular.\n\nAsí se hace:\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites, y una factura emitida ya no se puede editar.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1139,13 +1949,23 @@
       "actividad": "construcción",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta sigue lista para tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPiensa, por ejemplo, en la reforma de cocina que acabas de entregar o en los trabajos de albañilería de una obra en curso.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**: no tendrá número hasta que la emitas.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir su primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1153,13 +1973,23 @@
       "actividad": "consultoría",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te queda emitir tu primera factura. Por ejemplo, las horas de consultoría que dedicaste este mes a revisar los procesos de una pyme.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1167,13 +1997,23 @@
       "actividad": "consultoría",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura, justo donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: tu empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura. Por ejemplo, la de las sesiones de consultoría que hiciste para una pyme del sector comercio.\n\nPuedes retomarlo justo en ese punto:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF de tu cliente.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1181,13 +2021,23 @@
       "actividad": "diseño gráfico",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, tu primera factura está a un paso",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te queda emitir tu primera factura; por ejemplo, la del logotipo que diseñaste para una cafetería de tu barrio.\n\nAsí se hace:\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi te da reparo equivocarte, pulsa **Guardar como borrador** en lugar de emitirla. Los borradores no tienen número hasta que los emites, así que puedes revisarla con calma antes de dar el paso.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1195,13 +2045,23 @@
       "actividad": "diseño gráfico",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura de diseño, justo donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: tu empresa está configurada y tu primer cliente ya está creado. Puedes retomarla justo en ese punto y emitir tu primera factura, por ejemplo la del diseño de logotipo para una cafetería del barrio.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes, pulsa **Guardar como borrador**: los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1209,13 +2069,23 @@
       "actividad": "distribuidora",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, te queda un paso: tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te falta emitir tu primera factura. Por ejemplo, la de un pedido de cajas de agua y refrescos que sirves a un bar de tu zona.\n\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: producto o servicio, cantidad y precio. El **IVA** se aplica según lo que tenga configurado cada producto.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1223,13 +2093,23 @@
       "actividad": "distribuidora",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta sigue lista para tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa está configurada y ya tienes un cliente creado. Te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPor ejemplo, la del pedido de cajas de agua y refrescos que sirves a un bar de tu zona.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. No tendrá número hasta que la emitas.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1237,13 +2117,23 @@
       "actividad": "electricidad",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado en Cuadra. Solo te falta emitir tu primera factura, por ejemplo la de la revisión de un cuadro eléctrico o la instalación de enchufes en una cocina.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1251,13 +2141,23 @@
       "actividad": "electricidad",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura en Cuadra está a un paso",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: con la empresa configurada y tu primer cliente creado. Puedes retomarla justo ahí y emitir tu primera factura, por ejemplo la del cambio de cuadro eléctrico que hiciste en casa de un cliente.\n\nPara hacerlo:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1265,13 +2165,23 @@
       "actividad": "fisioterapia",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te falta emitir tu primera factura, por ejemplo, la de las sesiones de rehabilitación de un paciente con una lesión de rodilla.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: elige el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi te da reparo equivocarte, pulsa **Guardar como borrador** en lugar de emitirla. Los borradores no tienen número hasta que los emites, así que puedes emitirla cuando lo tengas claro. Ten en cuenta que una factura emitida ya no se puede editar.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1279,13 +2189,23 @@
       "actividad": "fisioterapia",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura, justo donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPor ejemplo, la de las cinco sesiones de tratamiento de espalda de un paciente.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**: los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1293,13 +2213,23 @@
       "actividad": "fontanería",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, te falta un paso: tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te queda emitir tu primera factura, por ejemplo, la de la reparación de una fuga bajo el fregadero o el cambio de un grifo en casa de un cliente.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1307,13 +2237,23 @@
       "actividad": "fontanería",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma tu primera factura justo donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPor ejemplo, la reparación de una fuga bajo el fregadero o el cambio de un calentador en casa de ese cliente.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador** y emítela cuando lo tengas claro.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1321,13 +2261,23 @@
       "actividad": "fotografía",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te queda un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado en Cuadra. Solo te queda emitir tu primera factura, por ejemplo la del reportaje de producto que hiciste para una tienda de tu barrio.\n\nAsí se hace:\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas con el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1335,13 +2285,23 @@
       "actividad": "fotografía",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Retoma Cuadra: te falta emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa está configurada y ya tienes un cliente creado. Puedes retomarlo justo ahí: solo te falta emitir tu primera factura. Puede ser la del reportaje de boda de una pareja o la de las fotos de producto para la web de una tienda.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: elige un producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1349,13 +2309,23 @@
       "actividad": "peluquería",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, solo te falta emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado en Cuadra. Solo te queda emitir tu primera factura; por ejemplo, la de un corte y color a una clienta habitual.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: elige el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1363,13 +2333,23 @@
       "actividad": "peluquería",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPiensa, por ejemplo, en un corte y color para una clienta habitual. Para facturarlo:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1377,13 +2357,23 @@
       "actividad": "reformas",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te queda emitir tu primera factura, por ejemplo la del alicatado de un baño que acabas de terminar.\n\nAsí se hace:\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1391,13 +2381,23 @@
       "actividad": "reformas",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura te espera donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPor ejemplo, la de una reforma de baño o un cambio de suelo para un particular:\n\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe su nombre o su NIF.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1405,13 +2405,23 @@
       "actividad": "restaurante",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "{nombre}, te falta emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado en Cuadra. Te falta lo principal: emitir tu primera factura. Por ejemplo, la de la comida de empresa que una oficina del barrio celebró en tu restaurante.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: producto o servicio, cantidad y precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi te frena el miedo a equivocarte, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites, así que puedes revisarla y emitirla cuando lo tengas claro.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1419,13 +2429,23 @@
       "actividad": "restaurante",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura, justo donde lo dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPiensa, por ejemplo, en la empresa que reservó una comida de equipo en tu restaurante y te pidió factura.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF de tu cliente.\n4. Añade las líneas: el producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**: los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1433,13 +2453,23 @@
       "actividad": "taller mecánico",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura del taller, a un paso",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te falta emitir tu primera factura, por ejemplo la de un cambio de aceite y pastillas de freno que le hiciste a la furgoneta de un cliente.\n\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1447,13 +2477,23 @@
       "actividad": "taller mecánico",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura del taller, justo donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, por ejemplo la de un cambio de aceite y pastillas de freno a uno de tus clientes.\n\nPara hacerlo:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto o servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1461,13 +2501,23 @@
       "actividad": "tienda de ropa",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te queda un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Solo te falta emitir tu primera factura. Por ejemplo, la de un restaurante del barrio que te ha encargado camisetas para su plantilla.\n\nAsí se hace:\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres repasarla con calma antes, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1475,13 +2525,23 @@
       "actividad": "tienda de ropa",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu primera factura sigue donde la dejaste",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste. La empresa está configurada y ya tienes un cliente creado. Solo te falta emitir tu primera factura, y puedes retomarlo justo en ese punto.\n\nPor ejemplo, la factura de un pedido de camisetas para el equipo de un bar del barrio.\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el producto, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**. Los borradores no tienen número hasta que los emites.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1489,13 +2549,23 @@
       "actividad": "traducción",
       "tramo": "reciente"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Te falta un paso: emitir tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nYa tienes tu empresa configurada y tu primer cliente creado. Te queda un paso: emitir tu primera factura. Por ejemplo, la traducción de un contrato para una agencia o la de un manual técnico para una empresa.\n\nAsí se hace:\n1. Entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi te da reparo equivocarte, pulsa **Guardar como borrador** en lugar de emitirla. Los borradores no tienen número hasta que los emites, así que puedes revisarla antes de dar el paso.\n\nUn saludo,\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   },
   {
     "variante": {
@@ -1503,12 +2573,22 @@
       "actividad": "traducción",
       "tramo": "rezagado"
     },
-    "correo": null,
-    "estado": "revision",
-    "motivos": [
-      "sin caché y sin clave"
-    ],
+    "correo": {
+      "asunto": "Tu cuenta sigue lista para tu primera factura",
+      "cuerpo": "Hola, {nombre}:\n\nTu cuenta de Cuadra sigue tal como la dejaste: la empresa configurada y tu primer cliente creado. Solo te queda emitir tu primera factura, por ejemplo, la de la traducción de un contrato para una agencia.\n\nPuedes retomarlo justo en ese punto:\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF del cliente que ya creaste.\n4. Añade las líneas: el servicio, la cantidad y el precio.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nSi prefieres revisarla con calma antes de emitirla, pulsa **Guardar como borrador**: los borradores no tienen número hasta que los emites.\n\nEl equipo de Cuadra",
+      "paso_siguiente": "Emitir tu primera factura",
+      "ruta_menu": "ventas > facturas",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "estado": "aprobada",
+    "motivos": [],
     "intentos": 1,
-    "veredicto": null
+    "veredicto": {
+      "respaldado": true,
+      "responde_al_paso": true,
+      "tono_adecuado": true,
+      "un_solo_paso": true,
+      "motivos": []
+    }
   }
 ]
