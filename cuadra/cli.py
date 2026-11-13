@@ -54,10 +54,12 @@ def _correr(args) -> int:
     for clave, etiqueta in ETIQUETAS:
         valor = resumen[clave]
         if clave == "efecto_minimo_detectable":
-            valor = "no calculable con estos datos" if valor is None else f"{valor * 100:.1f} puntos porcentuales"
+            valor = "no calculable con estos datos" if valor is None else (
+                f"{valor * 100:.1f} puntos porcentuales".replace(".", ",")
+            )
         if clave == "tasa_base_estimada":
             valor = "sin historia suficiente" if valor is None else (
-                f"{valor:.1%} ({resumen['base_convertidos']} de {resumen['base_observaciones']})"
+                f"{valor:.2%}".replace(".", ",") + f" ({resumen['base_convertidos']} de {resumen['base_observaciones']})"
             )
         print(f"{etiqueta:<40} {valor}")
     print(f"\nResultados en {flujo.DIR_SALIDA}")

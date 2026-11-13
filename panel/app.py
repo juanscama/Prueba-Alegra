@@ -432,7 +432,10 @@ with tab_mensajes:
                 for i, f in vista.iterrows()
             }
             st.caption(f"{miles(len(vista))} correos con estos filtros, de {miles(len(bandeja))} en la bandeja.")
-            fila = bandeja.loc[opciones[st.selectbox("Persona", list(opciones))]]
+            # Por defecto se muestra a alguien que no creó su primer cliente: es el caso que explica la fuga.
+            pasos_en_vista = list(vista.paso)
+            inicial = pasos_en_vista.index("sin_cliente") if "sin_cliente" in pasos_en_vista else 0
+            fila = bandeja.loc[opciones[st.selectbox("Persona", list(opciones), index=inicial)]]
             izquierda, derecha = st.columns([3, 2], gap="large")
             with izquierda:
                 bloque(correo_html(fila.email, fila.asunto, fila.cuerpo))

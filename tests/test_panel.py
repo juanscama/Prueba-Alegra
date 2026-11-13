@@ -96,3 +96,12 @@ def test_panel_no_afirma_que_la_aa_pasa_si_no_pasa(tmp_path, monkeypatch):
     textos = " ".join(m.value for m in list(at.markdown) + list(at.caption))
     assert "esperable por azar" not in textos
     assert any("prueba A/A" in w.value for w in at.warning)
+
+
+def test_panel_abre_con_el_caso_de_la_fuga():
+    """Al entrar, el correo de ejemplo es el de alguien que no creó su primer cliente: el caso que explica la fuga."""
+    at = AppTest.from_file(PANEL, default_timeout=60).run()
+    persona = next(s for s in at.selectbox if s.label == "Persona")
+    assert "Sin crear un cliente" in persona.value
+    porque = next(m.value for m in at.markdown if "Por qué recibe este correo" in m.value)
+    assert "sin crear un cliente" in porque
