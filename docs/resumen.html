@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Cuadra: de registrarse a facturar · Resumen de la entrega</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { width: 210mm; height: 297mm; overflow: hidden; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+         color: #0f172a; font-size: 9pt; line-height: 1.38; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .portada { background: linear-gradient(135deg, #0b1f3a 0%, #14315c 100%); color: #fff; padding: 9mm 14mm 7mm; }
+  .marca { font-size: 7.4pt; letter-spacing: 0.14em; text-transform: uppercase; color: #9ec5f4; font-weight: 600; }
+  h1 { font-size: 22pt; margin: 2mm 0 2.5mm; line-height: 1.1; }
+  .portada p { margin: 0; font-size: 10pt; color: #dbe7f7; max-width: 182mm; line-height: 1.4; }
+  .cuerpo { padding: 5mm 14mm 0; }
+  .tarjetas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3.5mm; }
+  .tarjeta { border: 1px solid #e2e8f0; border-radius: 3mm; padding: 3.2mm 3.8mm; }
+  .tarjeta.destacada { background: #eef5fd; border-color: #b7d3f6; }
+  .cifra { font-size: 19pt; font-weight: 700; line-height: 1; }
+  .destacada .cifra { color: #1c5cab; }
+  .titulo { font-weight: 600; margin-top: 1.4mm; font-size: 8.8pt; }
+  .nota { color: #52514e; font-size: 7.8pt; margin-top: 0.6mm; line-height: 1.3; }
+  h2 { font-size: 7.8pt; letter-spacing: 0.1em; text-transform: uppercase; color: #1c5cab; margin: 4.2mm 0 1.4mm; }
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm; }
+  ul, ol { margin: 0; padding-left: 4.4mm; }
+  li { margin-bottom: 1.1mm; }
+  b { color: #0b1f3a; }
+  img { width: 100%; display: block; border: 1px solid #e2e8f0; border-radius: 2.5mm; }
+  .pie-imagen { font-size: 7.4pt; color: #52514e; margin-top: 1mm; }
+  .ia { display: inline-block; font-size: 6.6pt; font-weight: 700; color: #1c5cab; background: #dcebfc; border-radius: 99px;
+        padding: 0.2mm 1.8mm; margin-left: 1mm; vertical-align: 0.3mm; }
+  .cierre { position: absolute; left: 0; right: 0; bottom: 0; background: #f8fafc; border-top: 1px solid #e2e8f0;
+            padding: 4mm 14mm 4.5mm; display: grid; grid-template-columns: 1.15fr 1fr; gap: 7mm; font-size: 8.4pt; }
+  .cierre .etq { font-size: 7pt; letter-spacing: 0.1em; text-transform: uppercase; color: #52514e; font-weight: 700; }
+  code { font-family: Menlo, monospace; font-size: 7.8pt; background: #e9edf2; border-radius: 1mm; padding: 0.2mm 1.2mm; }
+</style>
+</head>
+<body>
+  <div class="portada">
+    <div class="marca">Reto técnico Growth con IA · resumen de la entrega</div>
+    <h1>Cuadra: de registrarse a facturar</h1>
+    <p>Un flujo con IA que encuentra a quienes se quedaron antes de su primera factura, le escribe a cada uno el
+    correo exacto que necesita y deja un grupo de control para demostrar si funcionó.</p>
+  </div>
+
+  <div class="cuerpo">
+    <div class="tarjetas">
+      <div class="tarjeta"><div class="cifra">912</div><div class="titulo">personas atascadas</div>
+        <div class="nota">3 días o más sin avanzar. Solo el 0,15% vuelve sola.</div></div>
+      <div class="tarjeta destacada"><div class="cifra">457</div><div class="titulo">correos listos</div>
+        <div class="nota">Uno por persona del grupo que recibe mensaje.</div></div>
+      <div class="tarjeta"><div class="cifra">108 de 108</div><div class="titulo">correos aprobados</div>
+        <div class="nota">Redactados por Claude; 8 reglas fijas y un juez.</div></div>
+      <div class="tarjeta"><div class="cifra">455</div><div class="titulo">personas de control</div>
+        <div class="nota">No reciben correo: la vara para medir el efecto.</div></div>
+    </div>
+
+    <h2>Dónde se pierde la gente</h2>
+    <img src="img/fuga.png" alt="Embudo y fuga por grupo" style="width: 86%; margin: 0 auto;">
+    <div class="pie-imagen" style="text-align:center">Izquierda: cuántos llegan a cada paso. Derecha: qué parte crea un
+    cliente tras configurar su empresa. En azul, la fuga.</div>
+
+    <div class="dos">
+      <div>
+        <h2>Qué encontré</h2>
+        <ul>
+          <li><b>La fuga tiene nombre.</b> De 590 autónomos de canal orgánico, solo el 42% crea su primer cliente.
+          En los demás grupos, entre el 72% y el 84%.</li>
+          <li><b>Quien se para, no vuelve solo.</b> Nadie facturó más de 8 días después de registrarse.</li>
+          <li><b>Facturar predice pagar.</b> 197 de 205 pagadores habían emitido una factura.</li>
+          <li><b>La ayuda estaba desactualizada.</b> Un cambio de esta semana contradice un artículo: repetirlo
+          mandaría a la gente a un botón que ya no existe.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Qué construí</h2>
+        <ol>
+          <li>Lee y valida CRM, producto y pagos.</li>
+          <li>Ubica a cada persona en el paso donde se atascó.</li>
+          <li>Pone la ayuda al día con las notas de cambios.<span class="ia">IA</span></li>
+          <li>Redacta un correo por paso, oficio y antigüedad, y lo verifica con 8 reglas y un juez.<span class="ia">IA</span></li>
+          <li>Reparte al azar en dos grupos y deja la bandeja lista.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="dos">
+      <div>
+        <h2>Un correo de la bandeja</h2>
+        <img src="img/correo-ejemplo.png" alt="Correo de ejemplo">
+      </div>
+      <div>
+        <h2>Cómo sabría si funcionó</h2>
+        <ul>
+          <li><b>Comparación:</b> 457 reciben correo y 455 no, al azar.</li>
+          <li><b>Métrica:</b> quién emite su primera factura en 14 días.</li>
+          <li><b>Regla fijada antes:</b> si el margen de error queda entero sobre cero, se extiende a todos.</li>
+          <li><b>Prueba A/A:</b> detectó un reparto desbalanceado por azar; se corrigió con una regla fija.</li>
+        </ul>
+        <h2>Qué no cubre</h2>
+        <ul>
+          <li>No envía correos reales ni mide aperturas.</li>
+          <li>Dice dónde se atasca la gente, no por qué.</li>
+          <li>El efecto real se conoce 14 días después de un envío; el resultado del panel es simulado.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cierre">
+    <div><div class="etq">Para correrlo, sin claves ni cuentas</div>
+      <code>uv sync</code> &nbsp; <code>uv run cuadra correr</code> &nbsp; <code>uv run cuadra panel</code></div>
+    <div><div class="etq">Repositorio</div>github.com/juanscama/Prueba-Alegra &nbsp;·&nbsp; 134 pruebas automáticas</div>
+  </div>
+</body>
+</html>

@@ -6,7 +6,9 @@ un correo verificado para cada una, con un grupo de control para saber si el cor
 
 El enunciado del caso está en [`ENUNCIADO.md`](ENUNCIADO.md).
 
-![Panel del flujo: portada, cifras clave, los cinco pasos y el diagnóstico](docs/img/panel-1-problema.png)
+![El flujo corriendo en la terminal y un recorrido por el panel](docs/img/demo.gif)
+
+Resumen de una página: [`docs/resumen-entrega.pdf`](docs/resumen-entrega.pdf).
 
 ## En 30 segundos
 
@@ -82,6 +84,8 @@ De 1500 personas registradas entre julio y octubre, 548 (37%) emitieron su prime
 4. **El Centro de Ayuda está desactualizado en un punto.** Una nota de cambios de esta semana contradice el
    artículo «Enviar una factura por correo». Un flujo que repitiera ese artículo mandaría a la gente a un
    botón que ya no está ahí.
+
+![Portada del panel y diagnóstico: el embudo y el grupo donde está la fuga](docs/img/panel-1-problema.png)
 
 Detalle en [`salida/diagnostico.md`](salida/diagnostico.md).
 
