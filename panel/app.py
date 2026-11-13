@@ -13,7 +13,7 @@ from cuadra import config
 from cuadra.conocimiento import BaseVigente
 from cuadra.modelo import Modelo, hay_clave
 from cuadra.redaccion import Variante, personalizar
-from cuadra.verificacion import ETIQUETAS, procesar
+from cuadra.verificacion import procesar
 
 DIR = Path(os.environ.get("CUADRA_DIR_SALIDA") or config.DIR_SALIDA)
 
@@ -27,6 +27,12 @@ NOMBRE_PASO = {
     "emitio_primera_factura": "Emitió su primera factura",
     "emitio_5_facturas": "Emitió 5 facturas",
     "pago": "Pagó",
+}
+CRITERIOS_JUEZ = {
+    "respaldado": "todo está respaldado por la ayuda vigente",
+    "responde_al_paso": "pide el paso que le falta",
+    "tono_adecuado": "tono adecuado",
+    "un_solo_paso": "una sola acción",
 }
 NOMBRE_ATASCO = {
     "sin_configurar": "Sin configurar la empresa",
@@ -103,13 +109,16 @@ with tab_diagnostico:
             embudo["etiqueta"] = [f"{c}  ({p:.0%})" for c, p in zip(embudo.contactos, embudo.pct_registro)]
             base = alt.Chart(embudo).encode(
                 y=alt.Y("Paso:N", sort=None, title=None, axis=alt.Axis(labelLimit=220)),
-                x=alt.X("contactos:Q", title="Personas", scale=alt.Scale(domain=[0, 1800])),
+                x=alt.X("contactos:Q", title="Personas", scale=alt.Scale(domain=[0, 1800]),
+                        axis=alt.Axis(format="d", values=[0, 300, 600, 900, 1200, 1500])),
                 tooltip=[alt.Tooltip("Paso:N"), alt.Tooltip("contactos:Q", title="Personas"),
                          alt.Tooltip("pct_registro:Q", title="Del registro", format=".0%")],
             )
             st.altair_chart(
-                base.mark_bar(color=AZUL, cornerRadiusEnd=4, size=22)
-                + base.mark_text(align="left", dx=6, color="#52514e").encode(text="etiqueta:N"),
+                (
+                    base.mark_bar(color=AZUL, cornerRadiusEnd=4, size=20)
+                    + base.mark_text(align="left", dx=6, color="#52514e").encode(text="etiqueta:N")
+                ).properties(height=alt.Step(34)),
                 use_container_width=True,
             )
 
@@ -124,12 +133,13 @@ with tab_diagnostico:
             base = alt.Chart(cruce).encode(
                 y=alt.Y("Grupo:N", sort=None, title=None, axis=alt.Axis(labelLimit=220)),
                 x=alt.X("pct_config_a_cliente:Q", title="Pasa de configurar a crear cliente",
-                        axis=alt.Axis(format=".0%"), scale=alt.Scale(domain=[0, 1.15])),
+                        axis=alt.Axis(format=".0%", values=[0, 0.2, 0.4, 0.6, 0.8, 1]),
+                        scale=alt.Scale(domain=[0, 1.2])),
                 tooltip=[alt.Tooltip("Grupo:N"), alt.Tooltip("n:Q", title="Registrados"),
                          alt.Tooltip("pct_config_a_cliente:Q", title="Configura → cliente", format=".0%"),
                          alt.Tooltip("pct_emitio_primera_factura:Q", title="Llega a facturar", format=".0%")],
             )
-            barras = base.mark_bar(cornerRadiusEnd=4, size=22).encode(
+            barras = base.mark_bar(cornerRadiusEnd=4, size=20).encode(
                 color=alt.Color(
                     "Destacado:N", title=None,
                     scale=alt.Scale(domain=["La fuga", "Resto"], range=[AZUL, GRIS]),
@@ -137,7 +147,9 @@ with tab_diagnostico:
                 )
             )
             st.altair_chart(
-                barras + base.mark_text(align="left", dx=6, color="#52514e").encode(text="etiqueta:N"),
+                (
+                    barras + base.mark_text(align="left", dx=6, color="#52514e").encode(text="etiqueta:N")
+                ).properties(height=alt.Step(34)),
                 use_container_width=True,
             )
 
@@ -227,7 +239,7 @@ with tab_mensajes:
             st.info("Nadie del grupo que recibe correo cumple estos filtros.")
         else:
             opciones = {
-                f"{f.id_contacto} · {f.nombre} · {f.actividad} · {f.paso} · {f.dias_quieto} días quieta": i
+                f"{f.id_contacto} · {f.nombre} · {f.actividad} · {f.paso} · {f.dias_quieto} días sin avanzar": i
                 for i, f in vista.iterrows()
             }
             fila = bandeja.loc[opciones[st.selectbox("Persona", list(opciones))]]
@@ -251,8 +263,8 @@ with tab_mensajes:
                     st.markdown(f"- Reglas fijas: pasa las 8\n- Intentos de redacción: {procesada['intentos']}")
                     veredicto = procesada.get("veredicto")
                     if veredicto:
-                        for campo, etiqueta in ETIQUETAS.items():
-                            st.markdown(f"- Juez, «{campo}»: {'cumple' if veredicto[campo] else 'no cumple: ' + etiqueta}")
+                        for campo, criterio in CRITERIOS_JUEZ.items():
+                            st.markdown(f"- Juez · {criterio}: {'cumple' if veredicto[campo] else 'no cumple'}")
 
             if hay_clave() and base_vigente is not None:
                 st.divider()
@@ -302,7 +314,9 @@ with tab_experimento:
     cifras[0].metric("Tratamiento", resumen["tratamiento"])
     cifras[1].metric("Control", resumen["control"])
     cifras[2].metric("Conversión natural estimada", pct(resumen["tasa_base_estimada"]))
-    cifras[3].metric("Efecto mínimo detectable", f"{resumen['efecto_minimo_detectable'] * 100:.1f} puntos")
+    cifras[3].metric(
+        "Efecto mínimo detectable", f"{resumen['efecto_minimo_detectable'] * 100:.1f} puntos".replace(".", ",")
+    )
     st.caption(
         "Conversión natural: entre quienes llevaban 3 días o más quietos, del 0% al 3% facturó en los 14 días "
         "siguientes (cinco fechas de corte históricas). Con estos tamaños, una mejora menor que el efecto "
@@ -317,33 +331,13 @@ with tab_experimento:
     equilibrio = leer_csv("equilibrio.csv")
     if equilibrio is not None:
         st.markdown("**¿Los dos grupos se parecen?**")
-        largo = equilibrio.melt(
-            id_vars=["dimension", "valor"], value_vars=["tratamiento", "control"],
-            var_name="Grupo", value_name="Personas",
+        tabla = equilibrio.assign(
+            dimension=equilibrio.dimension.str.capitalize(),
+            pct_tratamiento=equilibrio.pct_tratamiento.map(pct),
         )
-        largo["Grupo"] = largo.Grupo.str.capitalize()
-        largo["Dimensión"] = largo.dimension.str.capitalize()
-        grafico = (
-            alt.Chart(largo)
-            .mark_bar(cornerRadiusEnd=3, size=9)
-            .encode(
-                y=alt.Y("valor:N", title=None, sort=None),
-                yOffset=alt.YOffset("Grupo:N", sort=["Tratamiento", "Control"]),
-                x=alt.X("Personas:Q", title="Personas"),
-                color=alt.Color("Grupo:N", title=None, sort=["Tratamiento", "Control"],
-                                scale=alt.Scale(domain=["Tratamiento", "Control"], range=[AZUL, NARANJA]),
-                                legend=alt.Legend(orient="bottom")),
-                tooltip=["Dimensión:N", alt.Tooltip("valor:N", title="Valor"), "Grupo:N", "Personas:Q"],
-            )
-            .properties(height=alt.Step(26))
-            .facet(row=alt.Row("Dimensión:N", title=None, header=alt.Header(labelAngle=0, labelAlign="left")))
-            .resolve_scale(y="independent")
-        )
-        st.altair_chart(grafico, use_container_width=True)
-        with st.expander("Ver la tabla"):
-            tabla = equilibrio.assign(pct_tratamiento=equilibrio.pct_tratamiento.map(pct))
-            tabla.columns = ["Dimensión", "Valor", "Tratamiento", "Control", "% en tratamiento"]
-            st.dataframe(tabla, hide_index=True, use_container_width=True)
+        tabla.columns = ["Dimensión", "Valor", "Tratamiento", "Control", "% en tratamiento"]
+        st.dataframe(tabla, hide_index=True, use_container_width=True)
+        st.caption("Un reparto sano deja cerca del 50% de cada tipo de persona en cada grupo.")
 
     aa = leer_json("prueba_aa.json")
     if aa:
