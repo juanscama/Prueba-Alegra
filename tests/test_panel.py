@@ -145,11 +145,11 @@ def test_automatizacion_corre_desde_el_boton_sin_tocar_salida(monkeypatch):
     assert {r.name: r.stat().st_mtime for r in DIR_SALIDA.iterdir() if r.is_file()} == antes
 
     # Con «No ayuda nada», el flujo no recomienda extender; con «Ayuda mucho», sí.
-    at.radio[0].set_value("No ayuda nada").run()
+    at.radio(key="efecto").set_value("No ayuda nada").run()
     next(b for b in at.button if "Avanzar" in b.label).click().run()
     assert any("SIMULADO" in w.value for w in at.warning)
     assert "No extenderlo" in " ".join(m.value for m in at.markdown)
-    at.radio[0].set_value("Ayuda mucho").run()
+    at.radio(key="efecto").set_value("Ayuda mucho").run()
     next(b for b in at.button if "Avanzar" in b.label).click().run()
     assert "Enviar el correo a todos" in " ".join(m.value for m in at.markdown)
 
@@ -167,3 +167,15 @@ def test_resumen_muestra_las_cuentas_completas():
     tabla = next(m.value for m in at.markdown if 'class="cuentas"' in m.value)
     for cifra in ["1.500", "548", "944", "292", "427", "225", "912", "457", "455"]:
         assert f">{cifra}<" in tabla, cifra
+
+
+def test_automatizacion_explica_la_ayuda_vieja_y_prueba_el_candado():
+    at = AppTest.from_file(AUTOMATIZACION, default_timeout=60).run()
+    assert not at.exception
+    textos = " ".join(m.value for m in at.markdown)
+    assert "El paso 5 por dentro" in textos
+    assert "Más acciones > Enviar por correo" in textos and "arriba a la derecha" in textos
+    assert "RECHAZADO" in textos and "Regla 4" in textos
+    at.radio(key="trampa").set_value("Correo correcto, con la ayuda al día").run()
+    textos = " ".join(m.value for m in at.markdown)
+    assert "APROBADO" in textos and "RECHAZADO" not in textos

@@ -19,9 +19,13 @@ import pandas as pd  # noqa: E402
 import streamlit as st  # noqa: E402
 
 from comun import (  # noqa: E402
-    AZUL, NARANJA, NOMBRE_ATASCO, TINTA, bloque, correo_html, decimal, estilos, miles, pct,
+    AZUL, NARANJA, NOMBRE_ATASCO, TINTA, bloque, correo_html, cuerpo_html, decimal, estilos, leer_json, miles,
+    pasos_del_articulo, pct,
 )
 from cuadra import config, flujo  # noqa: E402
+from cuadra.conocimiento import BaseVigente  # noqa: E402
+from cuadra.redaccion import Correo  # noqa: E402
+from cuadra.verificacion import verificar_reglas  # noqa: E402
 from cuadra.medicion import medir  # noqa: E402
 from cuadra.simulador import simular_eventos  # noqa: E402
 
@@ -39,6 +43,29 @@ PASOS = [
 ]
 QUIEN = {"ia": '<span class="quien ia">LO HACE LA IA</span>', "codigo": '<span class="quien codigo">LO HACE EL PROGRAMA</span>'}
 EFECTOS = {"No ayuda nada": 0.0, "Ayuda un poco": 0.03, "Ayuda mucho": 0.08}
+
+# Correos con trampa para probar el candado. Se pasan por las reglas reales (cuadra/verificacion.py), sin IA.
+_FIRMA = "\n\nUn saludo,\nEl equipo de Cuadra"
+TRAMPAS = {
+    "Usa la instrucción vieja del artículo 04": (
+        "Hola, {nombre}:\n\nYa tienes tu primera factura. Para mandársela a tu cliente:\n\n"
+        "1. Entra en **Ventas > Facturas** y abre la factura.\n2. Pulsa **Más acciones > Enviar por correo**." + _FIRMA
+    ),
+    "Ofrece una función que solo tiene el plan Pro": (
+        "Hola, {nombre}:\n\nSi cobras siempre lo mismo, crea una factura recurrente y Cuadra la emitirá sola cada "
+        "mes.\n\n1. Entra en **Ventas > Facturas** y elige la opción de factura recurrente." + _FIRMA
+    ),
+    "Inventa un botón que no existe": (
+        "Hola, {nombre}:\n\nCrear tu primer cliente lleva un minuto.\n\n1. Entra en **Contactos > Nuevo cliente**."
+        "\n2. Escribe su nombre y su NIF." + _FIRMA
+    ),
+    "Correo correcto, con la ayuda al día": (
+        "Hola, {nombre}:\n\nTu primera factura está a un paso.\n\n1. Entra en **Ventas > Facturas**.\n"
+        "2. Pulsa **Nueva factura** y rellena los datos de tu cliente." + _FIRMA
+    ),
+}
+REGLA = {"R3": "Regla 3 · el botón no existe en la ayuda actual", "R4": "Regla 4 · instrucción vieja",
+         "R5": "Regla 5 · función que la persona no tiene"}
 
 estilos()
 bloque(
@@ -110,6 +137,98 @@ def linea_de_tiempo(hechos: dict[str, str], actual: str | None = None) -> str:
     return f'<div class="tiempo">{etapas}</div>'
 
 
+def seccion_ayuda() -> None:
+    """El paso 5 por dentro: el hallazgo del artículo 04 y cómo se evita que un correo mande a un botón viejo."""
+    datos = leer_json("base_vigente.json")
+    if datos is None:
+        return
+    base = BaseVigente(**datos)
+    viejos = [a for a in base.articulos if not a.vigente]
+    st.divider()
+    st.markdown("#### El paso 5 por dentro: que ningún correo mande a alguien a un botón que ya no existe")
+    st.markdown(
+        f"Los correos copian las instrucciones de los **{len(base.articulos)} artículos de ayuda** de Cuadra. Pero "
+        "el producto cambia cada semana y el equipo lo avisa en **notas de cambios**, sin actualizar siempre la "
+        "ayuda. Si un correo copia una instrucción vieja, la persona busca un botón que ya se movió, se frustra y "
+        "abandona: justo lo contrario de lo que se busca."
+    )
+    for articulo in viejos:
+        original = (config.DIR_AYUDAS / articulo.archivo).read_text(encoding="utf-8")
+        notas = ", ".join(n.split("-")[1] for n in articulo.notas_que_lo_cambian)
+        st.markdown(
+            f"**Lo que encontró la IA:** el artículo «{articulo.titulo}» quedó viejo por la nota de cambios {notas}, "
+            f"de esta semana. Tenía **{len(articulo.frases_obsoletas)} frases** que ya no son ciertas."
+        )
+        antes, despues = st.columns(2, gap="medium")
+        with antes:
+            bloque(f'<div class="caja antes"><h4>Antes: lo que decía la ayuda</h4>'
+                   f'<div class="dato">{cuerpo_html(pasos_del_articulo(original))}</div></div>')
+        with despues:
+            bloque(f'<div class="caja despues"><h4>Después: corregido por la IA según la nota</h4>'
+                   f'<div class="dato">{cuerpo_html(pasos_del_articulo(articulo.texto_vigente))}</div></div>')
+        with st.expander(f"Las {len(articulo.frases_obsoletas)} frases que la IA marcó como viejas, copiadas tal cual"):
+            for frase in articulo.frases_obsoletas:
+                st.markdown(f"- ~~{frase.replace('**', '')}~~")
+    restringidas = ", ".join(f"«{f.nombre}» (solo plan {f.plan})" for f in base.funciones_restringidas)
+    vigentes = len(base.articulos) - len(viejos)
+    st.markdown(
+        f"Los otros {vigentes} artículos siguen siendo ciertos. De las notas también sacó las funciones que no todos "
+        f"tienen: {restringidas or 'ninguna'}."
+    )
+
+    st.markdown("**Cómo evita equivocarse en este paso**")
+    obsoletas = ", ".join(f"«{r}»" for r in base.rutas_obsoletas) or "ninguno"
+    bloque(
+        f"""<div class="pasos">
+<div class="paso"><span class="n">1</span><span class="t">Lee y cita</span>
+  <div class="d">La IA lee cada artículo junto a las notas. Si algo cambió, tiene que <b>copiar tal cual</b> la frase
+  vieja y reescribir solo esa frase. No puede inventar lo que la nota no dice.</div>
+  <span class="quien ia">LO HACE LA IA</span></div>
+<div class="paso"><span class="n">2</span><span class="t">Lo que está bien no se toca</span>
+  <div class="d">Si la IA dice que un artículo sigue vigente, el programa guarda el original <b>letra por letra</b>.
+  La IA no puede cambiarlo por descuido.</div>
+  <span class="quien codigo">LO HACE EL PROGRAMA</span></div>
+<div class="paso"><span class="n">3</span><span class="t">Lista de botones</span>
+  <div class="d">El programa compara antes y después y saca qué botones existen y cuáles desaparecieron:
+  {html.escape(obsoletas)}.</div>
+  <span class="quien codigo">LO HACE EL PROGRAMA</span></div>
+<div class="paso"><span class="n">4</span><span class="t">El candado</span>
+  <div class="d">Quien escribe los correos solo recibe la ayuda corregida. Y si un correo nombra un botón que no
+  existe, usa una frase vieja u ofrece algo del plan Pro, <b>se rechaza</b>.</div>
+  <span class="quien codigo">LO HACE EL PROGRAMA</span></div>
+</div>"""
+    )
+
+    st.markdown("**Pruébalo tú:** elige un correo con trampa y pásalo por el candado. Son las mismas reglas que "
+                "revisaron los correos de verdad.")
+    eleccion = st.radio("Correo de prueba", list(TRAMPAS), horizontal=True, label_visibility="collapsed", key="trampa")
+    cuerpo = TRAMPAS[eleccion]
+    correo = Correo(asunto="Tu factura en Cuadra", cuerpo=cuerpo, paso_siguiente="-", ruta_menu="Ventas > Facturas",
+                    articulo_fuente="-")
+    motivos = verificar_reglas(correo, base)
+    izquierda, derecha = st.columns([3, 2], gap="large")
+    with izquierda:
+        bloque(correo_html("persona@correo.example", correo.asunto, cuerpo.replace("{nombre}", "Lucía")))
+    with derecha:
+        if motivos:
+            lineas = "".join(
+                f'<div class="dato"><b>{REGLA.get(m.split(":")[0], m.split(":")[0])}</b><br>'
+                f'{html.escape(m.split(":", 1)[1].strip().replace("**", ""))}</div>' for m in motivos
+            )
+            bloque(f'<div class="caja antes"><h4><span class="etiqueta mal">RECHAZADO</span> &nbsp;No sale</h4>'
+                   f'{lineas}<div class="dato" style="color:#52514e">Se le devuelve a la IA con el motivo para que lo '
+                   "corrija. Si falla dos veces, lo revisa una persona.</div></div>")
+        else:
+            bloque('<div class="caja despues"><h4><span class="etiqueta ok">APROBADO</span> &nbsp;Pasa el candado</h4>'
+                   '<div class="dato">Todos los botones existen en la ayuda actual y no hay frases viejas ni '
+                   "funciones de pago. Ahora lo lee una segunda IA antes de salir.</div></div>")
+    st.caption(
+        "Con honestidad: hoy ningún correo necesitaba el artículo de enviar facturas, porque todos tratan de "
+        "configurar la empresa, crear un cliente o emitir la primera factura. El candado protege los correos que "
+        "se escriban mañana sin que nadie tenga que acordarse de revisar la ayuda a mano."
+    )
+
+
 if st.button("▶  Correr el flujo ahora", type="primary"):
     carpeta = Path(tempfile.mkdtemp(prefix="cuadra_demo_"))
     lienzo = st.empty()
@@ -164,6 +283,8 @@ if demo:
         icon=":material/download:",
     )
 
+    seccion_ayuda()
+
     # --- Avanzar 14 días ------------------------------------------------------------------------------------
     st.divider()
     st.markdown(f"#### ¿Y si avanzamos {config.VENTANA_DIAS} días?")
@@ -171,7 +292,7 @@ if demo:
         f"Todavía no se ha enviado nada, así que no hay resultado real. Aquí puedes **inventar** cuánto ayuda el "
         f"correo y ver cómo el flujo decidiría, pasados {config.VENTANA_DIAS} días, si vale la pena enviarlo a todos."
     )
-    eleccion = st.radio("En esta simulación, el correo…", list(EFECTOS), index=2, horizontal=True)
+    eleccion = st.radio("En esta simulación, el correo…", list(EFECTOS), index=2, horizontal=True, key="efecto")
     if st.button(f"⏩  Avanzar {config.VENTANA_DIAS} días (simulado)"):
         asignacion = pd.read_csv(carpeta / "asignacion_experimento.csv")
         with st.spinner("Contando quién emitió su primera factura en cada grupo…"):
@@ -228,3 +349,5 @@ if demo:
                 <div class="dato" style="color:#52514e">La regla se fijó antes de mirar los resultados, para que nadie
                 pueda acomodarla después.</div></div>"""
             )
+else:
+    seccion_ayuda()
