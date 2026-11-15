@@ -270,5 +270,5 @@ datos/ ayudas/ notas/   material del caso
 cache/       respuestas de Claude guardadas
 salida/      resultados de la última corrida
 tests/       pruebas
-docs/        diseño y plan
+docs/        diseño, plan y evolución del proyecto
 ```
