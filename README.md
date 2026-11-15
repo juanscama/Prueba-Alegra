@@ -75,7 +75,9 @@ negocio), después de `cuadra correr`:
 uv run cuadra analizar   # escribe salida/inteligencia/; sin clave, desde cache/
 ```
 
-El panel la muestra en la página **Inteligencia de Growth** (barra lateral).
+El panel tiene cuatro páginas en el menú de arriba: **Resumen** (la historia en lenguaje simple, para cualquier
+lector), **Ver la automatización** (corre el flujo completo desde un botón, sin costo, y simula el día 14),
+**Los correos** (la bandeja, persona por persona) y **Detalle técnico** (este análisis, con glosario).
 
 Pruebas: `uv run pytest` (sin red ni clave).
 
@@ -235,7 +237,7 @@ El razonamiento completo está en [`docs/2026-11-12-diseno-flujo-activacion.md`]
 ```
 cuadra/      el flujo: un módulo por etapa, más cli.py y modelo.py (cliente de Claude con caché);
              inteligencia.py orquesta los módulos de `cuadra analizar`
-panel/       panel web (Streamlit); pages/ tiene la página de Inteligencia de Growth
+panel/       panel web (Streamlit); app.py arma el menú y vistas/ tiene sus cuatro páginas
 datos/ ayudas/ notas/   material del caso
 cache/       respuestas de Claude guardadas
 salida/      resultados de la última corrida

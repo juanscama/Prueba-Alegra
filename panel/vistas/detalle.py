@@ -1,9 +1,15 @@
-"""Inteligencia de Growth: lee salida/inteligencia/ (de `cuadra analizar`). No recalcula nada."""
+"""Detalle técnico: el análisis completo de Growth (de `cuadra analizar`) y las pruebas del experimento.
+
+Lee salida/ y salida/inteligencia/. No recalcula nada.
+"""
 
 import html
 import json
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import altair as alt
 import pandas as pd
@@ -11,6 +17,8 @@ import streamlit as st
 
 from cuadra import config
 from cuadra.intervenciones import CANALES
+
+import comun  # noqa: E402
 
 DIR = Path(os.environ.get("CUADRA_DIR_SALIDA") or config.DIR_SALIDA) / config.DIR_INTELIGENCIA_NOMBRE
 AZUL, NARANJA, GRIS, TINTA = "#2a78d6", "#eb6834", "#cbd5e1", "#0f172a"
@@ -33,7 +41,7 @@ SELLOS = {
     "hecho": ("HECHO", "#dcebfc", "#1c5cab"),
 }
 
-st.set_page_config(page_title="Cuadra · Inteligencia de Growth", layout="wide")
+comun.estilos()
 st.markdown(
     """<style>
 .block-container {padding-top: 2.2rem; max-width: 1240px;}
@@ -98,13 +106,33 @@ def barras(tabla, y, x, etiqueta, formato=".0%", color=AZUL, dominio=None):
     st.altair_chart(grafico.properties(height=alt.Step(34)).configure_view(strokeWidth=0), width="stretch")
 
 
-st.title("Inteligencia de Growth")
+st.title("Detalle técnico")
 st.markdown(
-    '<p class="leyenda">Diagnóstico, priorización, intervenciones, medición y negocio sobre los datos del caso. '
-    f"Cada cifra lleva su naturaleza: {sello('dato')}{sello('calculado')}{sello('estimacion')}"
+    '<p class="leyenda">El análisis completo detrás del resumen, para quien quiera revisar cada cifra. Cada una '
+    f"lleva una etiqueta que dice de dónde sale: {sello('dato')}{sello('calculado')}{sello('estimacion')}"
     f"{sello('hipotesis')}{sello('simulado')}{sello('ia')}</p>",
     unsafe_allow_html=True,
 )
+with st.expander("Glosario: los términos técnicos de esta página, en palabras simples"):
+    st.markdown(
+        """<div class="glosario">
+<div><b>Embudo:</b> los pasos de registrarse a facturar y cuánta gente llega a cada uno.</div>
+<div><b>Conversión:</b> qué parte de la gente pasa de un paso al siguiente.</div>
+<div><b>Cohorte:</b> el grupo de personas que se registró en la misma semana o mes.</div>
+<div><b>Cohorte madura:</b> la que ya tuvo tiempo de avanzar, para no contar como perdido a quien aún está a tiempo.</div>
+<div><b>Tratamiento:</b> el grupo que recibe el correo.</div>
+<div><b>Control:</b> el grupo que no recibe nada y sirve de comparación.</div>
+<div><b>Prueba A/A:</b> repetir el sorteo sobre meses en que nadie recibió nada. Si los grupos salen distintos, el sorteo está mal.</div>
+<div><b>Valor p:</b> qué tan probable es ver esa diferencia por pura casualidad. Cuanto más bajo, menos probable.</div>
+<div><b>Margen de error (IC 95%):</b> el rango donde casi seguro está el efecto real.</div>
+<div><b>Efecto mínimo detectable:</b> la mejora más pequeña que el experimento puede distinguir de la casualidad.</div>
+<div><b>Diferencia estandarizada (SMD):</b> cuánto se parecen los dos grupos en una característica. Menos de 0,1 es parecido.</div>
+<div><b>Post-estratificación:</b> comparar dentro de cada subgrupo para corregir diferencias que dejó el azar.</div>
+<div><b>Hash:</b> una fórmula que asigna siempre el mismo grupo a la misma persona, para poder repetir el sorteo.</div>
+<div><b>Instrumentación:</b> los eventos que el producto debería registrar para entender por qué la gente se frena.</div>
+</div>""",
+        unsafe_allow_html=True,
+    )
 
 resumen = leer_json("resumen.json")
 if resumen is None:
@@ -113,8 +141,8 @@ if resumen is None:
 
 pestanas = st.tabs(
     [
-        "1 · Resumen ejecutivo", "2 · Embudo", "3 · Comportamiento", "4 · Priorización",
-        "5 · Intervenciones", "6 · Experimento", "7 · Negocio", "8 · Calidad y límites",
+        "1 · Informe de la IA", "2 · Embudo", "3 · Comportamiento", "4 · Prioridades",
+        "5 · Otros canales", "6 · Experimento", "7 · Negocio", "8 · Calidad y límites",
     ]
 )
 informe = leer_json("informe_ejecutivo.json") or {}
@@ -431,7 +459,7 @@ with pestanas[5]:
                     "invalidaría el experimento): se corrige en el análisis, comparando dentro de cada paso y ponderando "
                     "(post-estratificación). La medición por estrato ya existe en `cuadra medir`."
                 )
-        st.subheader("Resultado observado")
+        st.subheader("Resultado observado hasta hoy")
         st.markdown(salud["explicacion_observado"])
         if salud.get("simulado"):
             st.subheader("Demostración con datos simulados")
@@ -444,6 +472,86 @@ with pestanas[5]:
                 f"(IC 95%: {ajuste['ic95'][0] * 100:+.1f} a {ajuste['ic95'][1] * 100:+.1f}).".replace(".", ","),
                 unsafe_allow_html=True,
             )
+
+# 6 · Experimento (continuación): pruebas de confianza del reparto, del flujo original ----------------------
+with pestanas[5]:
+    st.subheader("¿Se puede confiar en la comparación?")
+    flujo = comun.leer_json("resumen.json") or {}
+    base_natural, minimo = flujo.get("tasa_base_estimada"), flujo.get("efecto_minimo_detectable")
+    aa = comun.leer_json("prueba_aa.json")
+    columnas = st.columns(3)
+    with columnas[0]:
+        natural = "sin historia" if base_natural is None else comun.pct(base_natural, 2)
+        comun.bloque(
+            f"""<div class="caja"><h4>Sin correo, casi nadie factura</h4><div class="dato"><b>{natural}</b> de los
+            atascados factura solo en 14 días ({flujo.get('base_convertidos', 0)} de
+            {comun.miles(flujo.get('base_observaciones', 0))} observaciones en {flujo.get('base_cortes', 0)} fechas
+            pasadas).</div></div>"""
+        )
+    with columnas[1]:
+        detectable = "no calculable" if minimo is None else comun.decimal(f"{minimo * 100:.1f} puntos")
+        comun.bloque(
+            f"""<div class="caja"><h4>Efecto mínimo detectable</h4><div class="dato">Con estos grupos, una mejora de
+            <b>{detectable}</b> o más se distingue del azar 8 de cada 10 veces (potencia del 80%).</div></div>"""
+        )
+    with columnas[2]:
+        if aa:
+            tasas = f"{comun.pct(aa['tasa_t'], 1)} contra {comun.pct(aa['tasa_c'], 1)}"
+            valor_p = comun.decimal(f"{aa['valor_p']:.2f}")
+            comun.bloque(
+                f"""<div class="caja"><h4>Prueba A/A del reparto</h4><div class="dato">El mismo reparto sobre julio y
+                agosto, cuando nadie recibió nada: {tasas} (p = {valor_p}).</div></div>"""
+            )
+    if aa:
+        if aa["valor_p"] > config.UMBRAL_AA:
+            st.caption(
+                "Sin intervención no debería haber diferencia entre los grupos, y la que se ve es la esperable por "
+                "azar. Esta prueba ya sirvió una vez: la primera semilla del reparto daba aquí 8,8 puntos de "
+                "diferencia (p = 0,01) porque, por azar, dejaba menos autónomos de canal orgánico en un grupo. Se "
+                f"cambió con una regla fija, la primera candidata con p > {comun.decimal(str(config.UMBRAL_AA))}, "
+                "cubierta por una prueba automática. Límite: compara a todos los registrados de esos meses, no solo "
+                "a los atascados."
+            )
+        else:
+            st.warning(
+                "La prueba A/A muestra una diferencia que no debería existir entre dos grupos que no recibieron "
+                "nada. Antes de enviar, hay que cambiar la semilla del reparto con la regla de `cuadra/config.py`."
+            )
+    simulado_flujo = comun.leer_json("SIMULADO_resultado_experimento.json")
+    if simulado_flujo:
+        ic = simulado_flujo["ic95"]
+        st.markdown(
+            f"**Lectura simulada del flujo** {sello('simulado')}: diferencia de "
+            f"{comun.decimal(f'{simulado_flujo['diferencia'] * 100:+.1f}')} puntos, margen de error (IC 95%) de "
+            f"{comun.decimal(f'{ic[0] * 100:+.1f}')} a {comun.decimal(f'{ic[1] * 100:+.1f}')} puntos. Regla: si todo el "
+            f"margen queda sobre cero, se extiende. Decisión: **{simulado_flujo['decision']}**.",
+            unsafe_allow_html=True,
+        )
+    por_estrato = comun.leer_csv("SIMULADO_resultado_por_estrato.csv")
+    if por_estrato is not None:
+        with st.expander("Ver el resultado simulado por paso y antigüedad"):
+            tabla = por_estrato[["dimension", "valor", "n_t", "conv_t", "n_c", "conv_c", "diferencia", "valor_p"]].copy()
+            tabla["diferencia"] = tabla.diferencia.map(lambda d: comun.decimal(f"{d * 100:+.1f} puntos"))
+            tabla["valor_p"] = tabla.valor_p.map(lambda p: comun.decimal(f"{p:.3f}"))
+            tabla.columns = ["Dimensión", "Valor", "Reciben", "Facturaron", "No reciben", "Facturaron ", "Diferencia", "p"]
+            st.dataframe(tabla, hide_index=True, width="stretch")
+    equilibrio = comun.leer_csv("equilibrio.csv")
+    if equilibrio is not None:
+        with st.expander("Ver si los dos grupos se parecen (debe haber cerca del 50% de cada tipo en cada uno)"):
+            tabla = equilibrio.assign(
+                dimension=equilibrio.dimension.str.capitalize(),
+                pct_tratamiento=equilibrio.pct_tratamiento.map(comun.pct),
+            )
+            tabla.columns = ["Dimensión", "Valor", "Reciben correo", "No reciben", "% que recibe"]
+            st.dataframe(tabla, hide_index=True, width="stretch")
+    tiempos_pasos = comun.leer_csv("tiempos_entre_pasos.csv")
+    if tiempos_pasos is not None:
+        with st.expander("Ver los días que pasan entre un paso y el siguiente"):
+            tabla = tiempos_pasos.assign(
+                desde=tiempos_pasos.desde.map(comun.NOMBRE_PASO), hasta=tiempos_pasos.hasta.map(comun.NOMBRE_PASO)
+            )
+            tabla.columns = ["Desde", "Hasta", "Personas", "Mediana (días)", "Percentil 90", "Máximo"]
+            st.dataframe(tabla, hide_index=True, width="stretch")
 
 # 7 · Negocio -------------------------------------------------------------------------------------------
 with pestanas[6]:

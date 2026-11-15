@@ -325,7 +325,7 @@ def test_analizar_sin_salida_avisa(tmp_path):
 
 # --- Panel ------------------------------------------------------------------------------------------
 
-PAGINA = str(DIR_SALIDA.parent / "panel" / "pages" / "2_Inteligencia_de_Growth.py")
+PAGINA = str(DIR_SALIDA.parent / "panel" / "vistas" / "detalle.py")
 
 
 def test_pagina_de_inteligencia():
@@ -334,8 +334,8 @@ def test_pagina_de_inteligencia():
     at = AppTest.from_file(PAGINA, default_timeout=60).run()
     assert not at.exception
     assert [t.label for t in at.tabs] == [
-        "1 · Resumen ejecutivo", "2 · Embudo", "3 · Comportamiento", "4 · Priorización",
-        "5 · Intervenciones", "6 · Experimento", "7 · Negocio", "8 · Calidad y límites",
+        "1 · Informe de la IA", "2 · Embudo", "3 · Comportamiento", "4 · Prioridades",
+        "5 · Otros canales", "6 · Experimento", "7 · Negocio", "8 · Calidad y límites",
     ]
     assert any("Informe verificado" in s.value for s in at.success)
     assert any("SIMULADO" in w.value and "No hay ganador" in w.value for w in at.warning)
