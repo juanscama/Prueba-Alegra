@@ -1,0 +1,212 @@
+{
+  "estado": "verificado",
+  "motivos": [],
+  "informe": {
+    "donde_se_pierde": [
+      {
+        "texto": "La etapa con más pérdidas es crear el primer cliente: 375 personas que configuraron su empresa no lo crearon (abandono del 35%).",
+        "tipo": "hecho",
+        "fuentes": [
+          "F2"
+        ]
+      },
+      {
+        "texto": "Entre quienes no facturaron, el 44% se detuvo justo después de configurar la empresa.",
+        "tipo": "hecho",
+        "fuentes": [
+          "F8"
+        ]
+      },
+      {
+        "texto": "Del registro a la primera factura llega el 38%; de la primera factura al pago, el 41% (cohortes con 45 días para pagar).",
+        "tipo": "hecho",
+        "fuentes": [
+          "F5"
+        ]
+      }
+    ],
+    "quien_tiene_dificultades": [
+      {
+        "texto": "En orgánico × autónomo solo el 43% de quienes configuran crea un cliente; la mediana del resto de grupos es 78%.",
+        "tipo": "hecho",
+        "fuentes": [
+          "F3"
+        ]
+      },
+      {
+        "texto": "Llega a la primera factura el 51% de las pymes y el 27% de los autónomos (cohortes maduras).",
+        "tipo": "hecho",
+        "fuentes": [
+          "F4"
+        ]
+      }
+    ],
+    "mayor_oportunidad": [
+      {
+        "texto": "Ayudar a crear el primer cliente, sobre todo a autónomos de canal orgánico, es el punto con más margen.",
+        "tipo": "hipotesis",
+        "fuentes": [
+          "F2",
+          "F3",
+          "H1"
+        ]
+      },
+      {
+        "texto": "Actuar pronto con quien se queda quieto: de quienes llevan 3 días o más quietos, solo el 0,15% factura por su cuenta en 14 días, y nadie emitió su primera factura más de 8 días después de registrarse.",
+        "tipo": "hecho",
+        "fuentes": [
+          "F6",
+          "F7"
+        ]
+      },
+      {
+        "texto": "Como estimación bajo supuestos, si el correo sumara 2 puntos de primera factura a los 912 atascados, serían unas 18 facturas y 7 pagos más; no es un resultado.",
+        "tipo": "hipotesis",
+        "fuentes": [
+          "S1"
+        ]
+      }
+    ],
+    "investigar_primero": [
+      {
+        "texto": "Entender por qué los autónomos de canal orgánico no crean su primer cliente tras configurar la empresa.",
+        "tipo": "recomendacion",
+        "fuentes": [
+          "F3",
+          "F9"
+        ]
+      },
+      {
+        "texto": "Actualizar el artículo de ayuda sobre enviar una factura por correo, que quedó desactualizado esta semana.",
+        "tipo": "recomendacion",
+        "fuentes": [
+          "F10"
+        ]
+      }
+    ],
+    "que_encontramos": [
+      {
+        "texto": "Analizamos 1500 personas registradas de julio a octubre; 1355 tienen al menos 14 días desde el registro.",
+        "tipo": "hecho",
+        "fuentes": [
+          "F1"
+        ]
+      },
+      {
+        "texto": "El mayor freno está en crear el primer cliente, con 375 personas perdidas (abandono del 35%).",
+        "tipo": "hecho",
+        "fuentes": [
+          "F2"
+        ]
+      },
+      {
+        "texto": "Quien se atasca casi nunca vuelve solo: solo el 0,15% de quienes llevan 3 días o más quietos factura en 14 días.",
+        "tipo": "hecho",
+        "fuentes": [
+          "F6"
+        ]
+      }
+    ],
+    "que_significa": [
+      {
+        "texto": "Sin intervención, quien se queda parado probablemente no llegará a facturar; la ventana para actuar parece corta.",
+        "tipo": "hipotesis",
+        "fuentes": [
+          "F6",
+          "F7"
+        ]
+      },
+      {
+        "texto": "Llevar a más gente a la primera factura podría aumentar los pagos, aunque eso aún no está probado.",
+        "tipo": "hipotesis",
+        "fuentes": [
+          "H3",
+          "F5"
+        ]
+      },
+      {
+        "texto": "Las pymes quizá no necesitan el mismo empujón que los autónomos.",
+        "tipo": "hipotesis",
+        "fuentes": [
+          "H4",
+          "F4"
+        ]
+      }
+    ],
+    "evidencia": [
+      {
+        "texto": "Los eventos solo registran 5 pasos con su fecha; no hay sesiones, clics ni errores, así que no sabemos por qué se frenan.",
+        "tipo": "hecho",
+        "fuentes": [
+          "F9"
+        ]
+      },
+      {
+        "texto": "La prioridad por reglas (56 alta, 419 media y 437 baja) ordena la atención, pero no mide a quién le sirve más el contacto.",
+        "tipo": "hecho",
+        "fuentes": [
+          "P1"
+        ]
+      }
+    ],
+    "hipotesis": [
+      {
+        "texto": "Una guía para crear el primer cliente podría subir la activación de los autónomos de canal orgánico.",
+        "tipo": "hipotesis",
+        "fuentes": [
+          "H1",
+          "F3"
+        ]
+      },
+      {
+        "texto": "Un correo con el paso exacto que falta podría reactivar a quien lleva 3 días o más quieto.",
+        "tipo": "hipotesis",
+        "fuentes": [
+          "H2",
+          "F6"
+        ]
+      }
+    ],
+    "experimento": [
+      {
+        "texto": "Experimento en curso: 457 personas con correo y 455 de control, midiendo primera factura en 14 días. Aún no hay resultados.",
+        "tipo": "hecho",
+        "fuentes": [
+          "E1"
+        ]
+      },
+      {
+        "texto": "El reparto es reproducible (912 de 912), pero el control tiene por azar más personas sin configurar la empresa; hay que analizarlo por paso.",
+        "tipo": "recomendacion",
+        "fuentes": [
+          "E2"
+        ]
+      },
+      {
+        "texto": "Medir también el pago a 45 días y analizar por segmento antes de diseñar mensajes distintos para pymes y autónomos.",
+        "tipo": "recomendacion",
+        "fuentes": [
+          "H3",
+          "H4"
+        ]
+      }
+    ],
+    "datos_adicionales": [
+      {
+        "texto": "Registrar sesiones, clics y errores para entender por qué se frena la gente en cada paso.",
+        "tipo": "recomendacion",
+        "fuentes": [
+          "F9"
+        ]
+      },
+      {
+        "texto": "Preparar una prueba de guía contextual dentro de la app frente a nada, solo en orgánico × autónomo, con reparto por hash.",
+        "tipo": "recomendacion",
+        "fuentes": [
+          "H1"
+        ]
+      }
+    ]
+  },
+  "intentos": 1
+}

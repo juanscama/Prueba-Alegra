@@ -99,6 +99,27 @@ def _medir(args) -> int:
     return 0
 
 
+def _analizar(args) -> int:
+    from cuadra.inteligencia import FaltaSalida, analizar
+
+    try:
+        resumen = analizar(fecha=args.fecha, modo=args.modo, forzar=args.forzar, avisar=print)
+    except (FaltaSalida, SinClave) as error:
+        print(f"No se puede analizar: {error}", file=sys.stderr)
+        return 2
+    print()
+    print(f"Etapa con más pérdidas         {resumen['etapa_con_mas_perdidos']} ({resumen['perdidos_en_esa_etapa']} personas)")
+    print(f"Mayor oportunidad (estimación) {resumen['mayor_oportunidad_grupo']} en {resumen['mayor_oportunidad_etapa']}")
+    prioridad = resumen["prioridad"]
+    print(f"Prioridad                      {prioridad.get('alta', 0)} alta · {prioridad.get('media', 0)} media · {prioridad.get('baja', 0)} baja")
+    print(f"Contenidos por canal aprobados {resumen['contenidos_aprobados']} de {resumen['contenidos_total']}")
+    print(f"Informe ejecutivo              {resumen['informe']}")
+    print(f"Problemas del experimento      {resumen['experimento_problemas']}")
+    print(f"Llamadas reales al modelo      {resumen['llamadas_reales']}")
+    print(f"\nResultados en {flujo.DIR_SALIDA / 'inteligencia'}")
+    return 0
+
+
 def _panel(args) -> int:
     url = f"http://localhost:{PUERTO_PANEL}"
     print(f"Panel en {url} (Ctrl+C para cerrarlo)")
@@ -137,6 +158,12 @@ def main(argv: list[str] | None = None) -> int:
     medicion = sub.add_parser("medir", help="Compara tratamiento y control con una exportación posterior de eventos")
     medicion.add_argument("--eventos", required=True, help="CSV con columnas id_contacto, evento, fecha")
     medicion.set_defaults(funcion=_medir)
+
+    analisis = sub.add_parser("analizar", help="Inteligencia de Growth sobre la salida del flujo (salida/inteligencia/)")
+    analisis.add_argument("--fecha", type=date.fromisoformat, default=FECHA_CORRIDA, help="AAAA-MM-DD; por defecto 2026-10-31")
+    analisis.add_argument("--modo", choices=["auto", "repeticion", "vivo"], default="auto")
+    analisis.add_argument("--forzar", action="store_true", help="Ignora el caché y vuelve a llamar al modelo")
+    analisis.set_defaults(funcion=_analizar)
 
     panel = sub.add_parser("panel", help="Abre el panel web local con los resultados de salida/")
     panel.set_defaults(funcion=_panel)

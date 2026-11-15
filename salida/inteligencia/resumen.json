@@ -1,0 +1,27 @@
+{
+  "fecha": "2026-10-31",
+  "registrados": 1500,
+  "maduras": 1355,
+  "fecha_madurez": "2026-10-17",
+  "etapa_con_mas_perdidos": "creo_cliente",
+  "perdidos_en_esa_etapa": 375,
+  "abandono_en_esa_etapa": 0.34594095940959413,
+  "pct_factura_autonomo": 0.274025974025974,
+  "pct_factura_pyme": 0.5145299145299145,
+  "mayor_oportunidad_grupo": "organico × autonomo",
+  "mayor_oportunidad_etapa": "creo_cliente",
+  "mayor_oportunidad_conversion": 0.43333333333333335,
+  "mayor_oportunidad_referencia": 0.784,
+  "mayor_oportunidad_personas_extra": 136.76000000000002,
+  "pagadores_sin_factura": 8,
+  "prioridad": {
+    "baja": 437,
+    "media": 419,
+    "alta": 56
+  },
+  "contenidos_aprobados": 15,
+  "contenidos_total": 15,
+  "informe": "verificado",
+  "experimento_problemas": 0,
+  "llamadas_reales": 0
+}

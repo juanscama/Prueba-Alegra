@@ -1,0 +1,92 @@
+[
+  {
+    "id": "F1",
+    "tipo": "observado",
+    "texto": "1500 personas registradas de julio a octubre; 1355 con al menos 14 días desde el registro (cohortes maduras)."
+  },
+  {
+    "id": "F2",
+    "tipo": "observado",
+    "texto": "La etapa con más personas perdidas es crear el primer cliente: 375 personas que configuraron su empresa no lo crearon (abandono del 35%)."
+  },
+  {
+    "id": "F3",
+    "tipo": "observado",
+    "texto": "En orgánico × autónomo solo el 43% de quienes configuran crea un cliente; la mediana del resto de grupos es 78%."
+  },
+  {
+    "id": "F4",
+    "tipo": "observado",
+    "texto": "Llega a la primera factura el 51% de las pymes y el 27% de los autónomos (cohortes maduras)."
+  },
+  {
+    "id": "F5",
+    "tipo": "observado",
+    "texto": "Registro a primera factura: 38%. Primera factura a pago: 41% (cohortes con 45 días para pagar)."
+  },
+  {
+    "id": "F6",
+    "tipo": "observado",
+    "texto": "De quienes llevan 3 días o más quietos, solo el 0,15% factura por su cuenta en 14 días."
+  },
+  {
+    "id": "F7",
+    "tipo": "observado",
+    "texto": "Nadie emitió su primera factura más de 8 días después de registrarse."
+  },
+  {
+    "id": "F8",
+    "tipo": "observado",
+    "texto": "Entre quienes no facturaron, el 44% se detuvo justo después de configurar la empresa."
+  },
+  {
+    "id": "F9",
+    "tipo": "observado",
+    "texto": "Los eventos solo registran 5 pasos con su fecha; no hay sesiones, clics ni errores, así que no se sabe por qué se frenan."
+  },
+  {
+    "id": "F10",
+    "tipo": "observado",
+    "texto": "Un artículo de ayuda (enviar una factura por correo) quedó desactualizado por una nota de cambios de esta semana."
+  },
+  {
+    "id": "E1",
+    "tipo": "experimento",
+    "texto": "Experimento en curso: 457 personas con correo y 455 de control. Métrica: primera factura en 14 días. Aún no hay resultados observados."
+  },
+  {
+    "id": "E2",
+    "tipo": "experimento",
+    "texto": "El reparto es reproducible (912 de 912) y sin descuadre, pero por azar el grupo de control tiene más personas sin configurar la empresa; se corrige analizando por paso."
+  },
+  {
+    "id": "P1",
+    "tipo": "calculado",
+    "texto": "Prioridad por reglas: 56 alta, 419 media y 437 baja. Ordena la atención; no mide a quién le sirve más el contacto."
+  },
+  {
+    "id": "S1",
+    "tipo": "estimación bajo supuestos",
+    "texto": "Si el correo sumara 2 puntos de primera factura a los 912 atascados, serían unas 18 facturas y 7 pagos más (supuesto, no resultado)."
+  },
+  {
+    "id": "H1",
+    "tipo": "hipótesis",
+    "texto": "Una guía para crear el primer cliente sube la activación de los autónomos de canal orgánico. Evidencia: En orgánico × autónomo solo el 43% de quienes configuran crea un cliente; la mediana del resto de grupos es 78%. Experimento: Guía contextual dentro de la app vs. nada, solo en ese grupo, con reparto por hash."
+  },
+  {
+    "id": "H2",
+    "tipo": "hipótesis",
+    "texto": "Un correo con el paso exacto que falta reactiva a quien lleva 3 días o más quieto. Evidencia: Sin intervención, solo el 0,15% de los atascados factura por su cuenta en 14 días. Experimento: En curso: 457 con correo y 455 de control, primera factura en 14 días."
+  },
+  {
+    "id": "H3",
+    "tipo": "hipótesis",
+    "texto": "Llevar a más gente a la primera factura aumenta los pagos. Evidencia: El 41% de quienes facturan termina pagando (cohortes maduras), y casi ningún pagador llegó a pagar sin facturar (8). Experimento: Medir el pago a 45 días en los grupos del experimento en curso (métrica secundaria)."
+  },
+  {
+    "id": "H4",
+    "tipo": "hipótesis",
+    "texto": "Las pymes no necesitan el mismo empujón que los autónomos. Evidencia: Llega a facturar el 51% de las pymes frente al 27% de los autónomos (cohortes maduras). Experimento: Analizar el experimento en curso por segmento antes de diseñar mensajes distintos."
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "metrica_primaria": {
+    "nombre": "Primera factura en 14 días",
+    "definicion": "Proporción de personas asignadas que emiten su primera factura en los 14 días siguientes a su fecha de entrada (después de ese día, no el mismo día).",
+    "unidad": "persona asignada (por intención de tratar: cuenta aunque no abra el correo)",
+    "comparacion": "tratamiento − control, en puntos porcentuales",
+    "criterio": "Intervalo de confianza del 95% para la diferencia de proporciones (aproximación normal). Se extiende a todos solo si el intervalo entero queda por encima de cero; si no, se itera.",
+    "fijada": "antes de enviar ningún correo (ver docs/2026-11-12-diseno-flujo-activacion.md)"
+  },
+  "tamanos": {
+    "tratamiento": 457,
+    "control": 455
+  },
+  "descuadre": {
+    "n_t": 457,
+    "n_c": 455,
+    "esperado_t": 456.0,
+    "valor_p": 0.947197405306911,
+    "alerta": false
+  },
+  "reproducibilidad": {
+    "personas": 912,
+    "coinciden": 912,
+    "distintos": []
+  },
+  "problemas": [],
+  "balance_max_smd": 0.1263243482253639,
+  "balance_todo_equilibrado": false,
+  "observado": null,
+  "explicacion_observado": "Todavía no hay resultados observados. Los correos no se han enviado de verdad y no ha pasado la ventana de 14 días. Cuando llegue la exportación de eventos posterior, se compara qué parte de cada grupo emitió su primera factura.",
+  "simulado": {
+    "resultado": {
+      "n_t": 457,
+      "conv_t": 49,
+      "tasa_t": 0.10722100656455143,
+      "n_c": 455,
+      "conv_c": 10,
+      "tasa_c": 0.02197802197802198,
+      "diferencia": 0.08524298458652944,
+      "ic95": [
+        0.05384041684957366,
+        0.11664555232348522
+      ],
+      "valor_p": 1.6712249051309414e-07,
+      "decision": "extender",
+      "simulado": true
+    },
+    "ajustado": {
+      "dimension": "paso",
+      "diferencia_ajustada": 0.08610547031410472,
+      "ic95": [
+        0.0543561550554061,
+        0.11785478557280334
+      ],
+      "simulado": true
+    },
+    "explicacion": "DEMOSTRACIÓN CON DATOS SIMULADOS: estas cifras son inventadas para mostrar cómo se leerá el resultado. No hay ganador. De 457 personas que recibieron correo, 49 emitieron su primera factura (10,7%). De 455 que no lo recibieron, 10 (2,2%). La diferencia es de 8,5 puntos. Con este tamaño de grupos, la diferencia real estaría, con un 95% de confianza, entre 5,4 y 11,7 puntos. "
+  }
+}

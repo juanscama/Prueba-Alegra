@@ -1,0 +1,38 @@
+[
+  {
+    "id": "H1",
+    "hipotesis": "Una guía para crear el primer cliente sube la activación de los autónomos de canal orgánico.",
+    "evidencia": "En orgánico × autónomo solo el 43% de quienes configuran crea un cliente; la mediana del resto de grupos es 78%.",
+    "tamano": "unas 137 personas más en ese paso (estimación)",
+    "confianza": "media: la brecha es grande y estable, pero no sabemos por qué se frenan",
+    "experimento": "Guía contextual dentro de la app vs. nada, solo en ese grupo, con reparto por hash.",
+    "dato_faltante": "formulario_cliente_abierto y formulario_cliente_error"
+  },
+  {
+    "id": "H2",
+    "hipotesis": "Un correo con el paso exacto que falta reactiva a quien lleva 3 días o más quieto.",
+    "evidencia": "Sin intervención, solo el 0,15% de los atascados factura por su cuenta en 14 días.",
+    "tamano": "912 personas atascadas hoy",
+    "confianza": "por medir: es el experimento en curso",
+    "experimento": "En curso: 457 con correo y 455 de control, primera factura en 14 días.",
+    "dato_faltante": "comunicacion_entregada / abierta / clic"
+  },
+  {
+    "id": "H3",
+    "hipotesis": "Llevar a más gente a la primera factura aumenta los pagos.",
+    "evidencia": "El 41% de quienes facturan termina pagando (cohortes maduras), y casi ningún pagador llegó a pagar sin facturar (8).",
+    "tamano": "condiciona el valor de todas las demás",
+    "confianza": "baja como causa: facturar y pagar pueden tener la misma causa (necesitar facturar)",
+    "experimento": "Medir el pago a 45 días en los grupos del experimento en curso (métrica secundaria).",
+    "dato_faltante": "ninguno nuevo: basta con esperar y cruzar pagos con la asignación"
+  },
+  {
+    "id": "H4",
+    "hipotesis": "Las pymes no necesitan el mismo empujón que los autónomos.",
+    "evidencia": "Llega a facturar el 51% de las pymes frente al 27% de los autónomos (cohortes maduras).",
+    "tamano": "orienta dónde poner el esfuerzo",
+    "confianza": "media: diferencia observada grande; la causa no se conoce",
+    "experimento": "Analizar el experimento en curso por segmento antes de diseñar mensajes distintos.",
+    "dato_faltante": "tamaño de la empresa y volumen de facturación esperado en el registro"
+  }
+]

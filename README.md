@@ -68,6 +68,15 @@ uv run cuadra simular --efecto 0.08
 uv run cuadra medir --eventos salida/SIMULADO_eventos_posteriores.csv
 ```
 
+Para la capa de inteligencia de Growth (diagnóstico, priorización, intervenciones, salud del experimento y
+negocio), después de `cuadra correr`:
+
+```bash
+uv run cuadra analizar   # escribe salida/inteligencia/; sin clave, desde cache/
+```
+
+El panel la muestra en la página **Inteligencia de Growth** (barra lateral).
+
 Pruebas: `uv run pytest` (sin red ni clave).
 
 ## Qué encontré
@@ -155,6 +164,38 @@ de eventos. Las métricas secundarias y las de protección están definidas pero
 datos después del 31 de octubre, `cuadra simular` inventa una para demostrar que el cálculo corre. **Ese resultado es simulado y
 no dice nada sobre el efecto real del flujo.**
 
+## Inteligencia de Growth
+
+`cuadra analizar` amplía el flujo sin tocarlo: lee lo que dejó `cuadra correr`, no modifica la asignación del
+experimento y escribe todo en `salida/inteligencia/`. Python calcula todas las cifras y Claude solo redacta.
+Detalle de la auditoría, las decisiones y lo pendiente en
+[`docs/2026-11-15-evolucion-growth.md`](docs/2026-11-15-evolucion-growth.md).
+
+| Módulo | Qué hace | Qué no afirma |
+|---|---|---|
+| Embudo completo | De registro a pago, abandono por etapa, por segmento, canal y mes. Ordena los cuellos de botella por personas que faltan frente al resto de grupos | Las «personas que faltan» son una estimación bajo un supuesto explícito |
+| Comportamiento | Secuencias, dónde se detiene la actividad, días hasta facturar, cohortes semanales e **instrumentación recomendada** | No supone clics, sesiones ni errores: no están en los datos |
+| Priorización | Alta, media o baja con reglas visibles y el motivo de cada caso | No mide a quién le sirve más el contacto. No hay modelo predictivo: entre los atascados solo hubo 5 casos positivos |
+| Intervenciones | Bloqueo, canal y contenido (app, guía, checklist, notificación, WhatsApp). El código decide la elegibilidad y Claude redacta 15 piezas verificadas | Nada se envía. El control no recibe nada y WhatsApp queda bloqueado porque no hay consentimiento |
+| Salud del experimento | Descuadre del reparto, reproducibilidad del hash, control contaminado, equilibrio (SMD), ajuste por estratos y explicación sencilla | No declara ganador con datos simulados |
+| Negocio | Registro a factura, factura a pago (con cohortes que tuvieron 45 días para pagar), escenarios e hipótesis priorizadas. Informe ejecutivo de Claude con cada cifra comprobada contra los hechos | Los escenarios no son ingresos |
+
+Lo que la capa nueva encontró:
+
+- **El reparto tiene un desequilibrio casual por paso.** El control tiene un 34% de personas sin configurar su
+  empresa y el tratamiento un 28% (diferencia estandarizada de 0,13). No se toca el reparto: el resultado se
+  corrige comparando dentro de cada paso (post-estratificación).
+- **Tasas medidas solo en cohortes maduras.** Con cohortes recientes, la conversión de factura a pago sale
+  artificialmente baja, porque el pago llega hasta 30 días después de facturar. Con cohortes que tuvieron
+  tiempo para pagar, el 41% de quienes facturan termina pagando.
+- **La velocidad no anticipa quién factura.** Entre quienes crearon un cliente, el ritmo de los pasos previos
+  es casi igual en quien facturó y en quien no.
+- **El embudo es estrictamente lineal.** Todas las secuencias siguen el orden del producto y quien activa da
+  siempre 3 pasos antes. Para saber por qué se frenan hacen falta eventos nuevos (ver instrumentación
+  recomendada).
+
+![Inteligencia de Growth: informe ejecutivo verificado](docs/img/panel-5-inteligencia.png)
+
 ## Qué decidí y por qué
 
 - **Escribir a quien lleva 3 días o más quieto, no antes.** Antes de eso la gente todavía avanza sola.
@@ -187,12 +228,14 @@ El razonamiento completo está en [`docs/2026-11-12-diseno-flujo-activacion.md`]
 - El flujo llama a Claude (`claude-opus-5-5`) con el SDK oficial de Anthropic y salidas estructuradas.
 - El caché guarda 228 respuestas de Claude. Generarlo costó aproximadamente 5 USD; durante el desarrollo se
   gastaron unos 3,5 USD más en una corrida repetida por error. Repetir la corrida desde el caché no cuesta nada.
+- `cuadra analizar` añade 16 respuestas (15 contenidos por canal y el informe ejecutivo), por unos 0,38 USD.
 
 ## Estructura
 
 ```
-cuadra/      el flujo: un módulo por etapa, más cli.py y modelo.py (cliente de Claude con caché)
-panel/       panel web (Streamlit)
+cuadra/      el flujo: un módulo por etapa, más cli.py y modelo.py (cliente de Claude con caché);
+             inteligencia.py orquesta los módulos de `cuadra analizar`
+panel/       panel web (Streamlit); pages/ tiene la página de Inteligencia de Growth
 datos/ ayudas/ notas/   material del caso
 cache/       respuestas de Claude guardadas
 salida/      resultados de la última corrida

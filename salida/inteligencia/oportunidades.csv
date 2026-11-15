@@ -1,0 +1,25 @@
+grupo,canal,segmento,etapa,llegan_a_etapa_anterior,conversion,referencia_resto,brecha,personas_extra,supuesto
+organico × autonomo,organico,autonomo,creo_cliente,390,0.43333333333333335,0.784,0.3506666666666667,136.76000000000002,si convirtiera como la mediana de los demás grupos en esa etapa
+organico × autonomo,organico,autonomo,emitio_primera_factura,169,0.48520710059171596,0.7894736842105263,0.30426658361881037,51.42105263157895,si convirtiera como la mediana de los demás grupos en esa etapa
+organico × autonomo,organico,autonomo,configuro_empresa,520,0.75,0.8303571428571429,0.0803571428571429,41.78571428571431,si convirtiera como la mediana de los demás grupos en esa etapa
+organico × pyme,organico,pyme,creo_cliente,174,0.735632183908046,0.784,0.04836781609195406,8.416000000000007,si convirtiera como la mediana de los demás grupos en esa etapa
+organico × pyme,organico,pyme,configuro_empresa,219,0.7945205479452054,0.8303571428571429,0.03583659491193747,7.848214285714306,si convirtiera como la mediana de los demás grupos en esa etapa
+organico × pyme,organico,pyme,emitio_primera_factura,128,0.75,0.7894736842105263,0.03947368421052633,5.05263157894737,si convirtiera como la mediana de los demás grupos en esa etapa
+referido × autonomo,referido,autonomo,configuro_empresa,71,0.7605633802816901,0.8303571428571429,0.06979376257545278,4.955357142857148,si convirtiera como la mediana de los demás grupos en esa etapa
+referido × autonomo,referido,autonomo,creo_cliente,54,0.7037037037037037,0.784,0.08029629629629631,4.336,si convirtiera como la mediana de los demás grupos en esa etapa
+contador × autonomo,contador,autonomo,emitio_primera_factura,76,0.75,0.7894736842105263,0.03947368421052633,3.000000000000001,si convirtiera como la mediana de los demás grupos en esa etapa
+referido × pyme,referido,pyme,configuro_empresa,122,0.8114754098360656,0.8303571428571429,0.018881733021077318,2.303571428571433,si convirtiera como la mediana de los demás grupos en esa etapa
+referido × pyme,referido,pyme,emitio_primera_factura,79,0.7721518987341772,0.7894736842105263,0.017321785476349105,1.3684210526315792,si convirtiera como la mediana de los demás grupos en esa etapa
+pago × autonomo,pago,autonomo,creo_cliente,60,0.7833333333333333,0.784,0.0006666666666667043,0.040000000000002256,si convirtiera como la mediana de los demás grupos en esa etapa
+contador × pyme,contador,pyme,configuro_empresa,143,0.8741258741258742,0.8114754098360656,-0.06265046428980858,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+pago × pyme,pago,pyme,creo_cliente,89,0.8314606741573034,0.7833333333333333,-0.04812734082397008,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+contador × pyme,contador,pyme,creo_cliente,125,0.784,0.7833333333333333,-0.0006666666666667043,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+referido × pyme,referido,pyme,creo_cliente,99,0.797979797979798,0.7833333333333333,-0.014646464646464685,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+contador × autonomo,contador,autonomo,creo_cliente,93,0.8172043010752689,0.7833333333333333,-0.03387096774193554,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+contador × pyme,contador,pyme,emitio_primera_factura,98,0.7959183673469388,0.7721518987341772,-0.02376646861276155,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+pago × pyme,pago,pyme,configuro_empresa,101,0.8811881188118812,0.8114754098360656,-0.06971270897581561,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+pago × autonomo,pago,autonomo,configuro_empresa,67,0.8955223880597015,0.8114754098360656,-0.08404697822363594,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+pago × autonomo,pago,autonomo,emitio_primera_factura,47,0.8936170212765957,0.7721518987341772,-0.12146512254241848,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+pago × pyme,pago,pyme,emitio_primera_factura,74,0.8918918918918919,0.7721518987341772,-0.11973999315771466,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+referido × autonomo,referido,autonomo,emitio_primera_factura,38,0.7894736842105263,0.7721518987341772,-0.017321785476349105,0.0,si convirtiera como la mediana de los demás grupos en esa etapa
+contador × autonomo,contador,autonomo,configuro_empresa,112,0.8303571428571429,0.8114754098360656,-0.018881733021077318,0.0,si convirtiera como la mediana de los demás grupos en esa etapa

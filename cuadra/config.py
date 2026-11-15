@@ -51,3 +51,10 @@ PASOS = [
     "emitio_primera_factura",
     "emitio_5_facturas",
 ]
+
+# Inteligencia de Growth (`cuadra analizar`). Una cohorte es «madura» si se registró al menos estos días antes
+# de la fecha de corrida: nadie tardó más de 8 días en facturar, así que con 14 su conversión ya no cambia.
+DIAS_MADUREZ = 14
+DIR_INTELIGENCIA_NOMBRE = "inteligencia"
+# El pago llega hasta 30 días después de la primera factura y esta, hasta 8 días después del registro.
+DIAS_MADUREZ_PAGO = 45

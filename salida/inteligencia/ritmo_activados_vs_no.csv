@@ -1,0 +1,5 @@
+grupo,tramo,n,mediana_dias,pct_mismo_dia
+no facturó,registro → configuro_empresa,197,1.0,0.467005076142132
+no facturó,configuro_empresa → creo_cliente,197,1.0,0.25380710659898476
+facturó,registro → configuro_empresa,512,1.0,0.4765625
+facturó,configuro_empresa → creo_cliente,512,1.0,0.275390625

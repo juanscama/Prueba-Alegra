@@ -1,0 +1,24 @@
+{
+  "peticion": {
+    "modelo": "claude-opus-5-5",
+    "tarea": "intervencion",
+    "sistema": "Escribes mensajes de activación para Cuadra, un software de facturación para autónomos y pymes de España.\nRecibes el bloqueo de la persona, el canal y la ayuda vigente. Escribe en español de España, cercano y\ndirecto, tuteando, y pide una sola acción: la que le falta.\n\nReglas:\n- Todo lo que digas sobre Cuadra tiene que estar en el material de ayuda que recibes.\n- Rutas de menú solo de la lista de rutas válidas, siempre en negrita (**Ventas > Facturas**).\n- No menciones precios, planes, descuentos, porcentajes, plazos, enlaces ni funciones de planes de pago.\n- No uses el nombre de la persona: el mensaje es igual para todos los que comparten bloqueo.\n- Respeta el límite de caracteres del canal para el cuerpo.\n",
+    "usuario": "<bloqueo>Se registró pero no ha completado los datos de su empresa. El paso que le falta: completar el NIF y la dirección fiscal de su empresa en la configuración, porque sin esos datos Cuadra no deja emitir facturas.</bloqueo>\n<canal>Checklist de activación. Límite del cuerpo: 700 caracteres.</canal>\n<material_de_ayuda_vigente>\n<articulo archivo=\"01-crear-tu-primera-factura.md\">\n# Crear tu primera factura\n\nAntes de empezar, revisa que tu empresa tenga el **NIF** y la dirección fiscal completos en\n**Configuración > Empresa**. Sin esos datos, Cuadra no te deja emitir.\n\n## Pasos\n\n1. En el menú lateral, entra en **Ventas > Facturas**.\n2. Pulsa **Nueva factura**.\n3. En **Cliente**, escribe el nombre o el NIF. Si el cliente no existe, pulsa **Crear cliente** y completa\n   sus datos fiscales.\n4. Añade las líneas: elige un producto o servicio, la cantidad y el precio. El **IVA** se aplica según lo\n   que tenga configurado cada producto.\n5. Revisa la fecha de emisión y la de vencimiento.\n6. Pulsa **Guardar y emitir**.\n\nLa factura queda con un número correlativo que Cuadra asigna solo. Una factura emitida ya no se puede\neditar: si hay un error, emite una **factura rectificativa** desde **Más acciones > Rectificar**.\n\n## Preguntas frecuentes\n\n**¿Puedo guardar una factura sin emitirla?** Sí: pulsa **Guardar como borrador**. Los borradores no tienen\nnúmero hasta que los emites.\n\n**¿Puedo cambiar la numeración?** Sí, en **Configuración > Numeración**, antes de emitir la primera factura\nde la serie.\n</articulo>\n</material_de_ayuda_vigente>\n<rutas_validas>\nconfiguración > empresa\nconfiguración > numeración\ninformes > impuestos\ninformes > tesorería\ninformes > ventas\ninventario > productos y servicios\nmás acciones > rectificar\nventas > facturas\nventas > facturas recurrentes > nueva recurrente\nventas > pagos recibidos\nventas > pagos recibidos > nuevo pago\n</rutas_validas>\n<funciones_que_no_debes_mencionar>\n- Facturas recurrentes\n</funciones_que_no_debes_mencionar>"
+  },
+  "respuesta": {
+    "titulo": "Completa los datos fiscales de tu empresa",
+    "cuerpo": "Antes de emitir tu primera factura, Cuadra necesita el **NIF** y la dirección fiscal de tu empresa. Sin esos datos no te deja emitir, así que es lo único que te falta para empezar a facturar. Entra en **Configuración > Empresa** y complétalos: en un momento lo tienes listo.",
+    "pasos": [
+      "Entra en **Configuración > Empresa**.",
+      "Escribe el **NIF** de tu empresa.",
+      "Completa la dirección fiscal.",
+      "Guarda los cambios."
+    ],
+    "boton": "Completar datos fiscales",
+    "articulo_fuente": "01-crear-tu-primera-factura.md"
+  },
+  "uso": {
+    "tokens_entrada": 1742,
+    "tokens_salida": 249
+  }
+}

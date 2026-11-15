@@ -1,0 +1,6 @@
+secuencia,personas,pasos,respeta_orden
+registro > configuro_empresa,427,2,True
+registro,300,1,True
+registro > configuro_empresa > creo_cliente > emitio_primera_factura,285,4,True
+registro > configuro_empresa > creo_cliente > emitio_primera_factura > emitio_5_facturas,263,5,True
+registro > configuro_empresa > creo_cliente,225,3,True

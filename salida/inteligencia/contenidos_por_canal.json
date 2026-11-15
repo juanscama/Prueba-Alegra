@@ -1,0 +1,259 @@
+[
+  {
+    "paso": "sin_configurar",
+    "canal": "in_app",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Te falta un paso para poder facturar",
+      "cuerpo": "Para emitir tu primera factura solo necesitas completar el NIF y la dirección fiscal de tu empresa en **Configuración > Empresa**. Sin esos datos, Cuadra no te deja emitir. En cuanto los tengas, podrás crear tu primera factura.",
+      "pasos": [
+        "Entra en **Configuración > Empresa**.",
+        "Completa el NIF y la dirección fiscal de tu empresa."
+      ],
+      "boton": "Completar datos fiscales",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_configurar",
+    "canal": "guia",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Completa los datos de tu empresa",
+      "cuerpo": "Te falta un paso para poder emitir tu primera factura: añadir el NIF y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir facturas. Lo tienes en **Configuración > Empresa**. En cuanto lo completes, podrás crear y emitir facturas desde **Ventas > Facturas**.",
+      "pasos": [
+        "Entra en **Configuración > Empresa**.",
+        "Escribe el NIF de tu empresa.",
+        "Completa la dirección fiscal.",
+        "Guarda los cambios."
+      ],
+      "boton": "Completar datos fiscales",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_configurar",
+    "canal": "checklist",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Completa los datos fiscales de tu empresa",
+      "cuerpo": "Antes de emitir tu primera factura, Cuadra necesita el **NIF** y la dirección fiscal de tu empresa. Sin esos datos no te deja emitir, así que es lo único que te falta para empezar a facturar. Entra en **Configuración > Empresa** y complétalos: en un momento lo tienes listo.",
+      "pasos": [
+        "Entra en **Configuración > Empresa**.",
+        "Escribe el **NIF** de tu empresa.",
+        "Completa la dirección fiscal.",
+        "Guarda los cambios."
+      ],
+      "boton": "Completar datos fiscales",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_configurar",
+    "canal": "notificacion",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Te falta un paso para facturar",
+      "cuerpo": "Completa el NIF y la dirección fiscal en **Configuración > Empresa**. Sin esos datos, Cuadra no te deja emitir facturas.",
+      "pasos": [],
+      "boton": "Completar datos",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_configurar",
+    "canal": "whatsapp",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Te falta un paso para facturar",
+      "cuerpo": "¡Hola! Ya tienes tu cuenta en Cuadra, pero te queda un paso para poder facturar: completar el NIF y la dirección fiscal de tu empresa. Sin esos datos, Cuadra no te deja emitir facturas. Entra en **Configuración > Empresa** y complétalos. Así tendrás todo listo para tu primera factura.",
+      "pasos": [],
+      "boton": "Completar datos fiscales",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_cliente",
+    "canal": "in_app",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Crea tu primer cliente en un momento",
+      "cuerpo": "Tu empresa ya está lista. Ahora entra en **Ventas > Facturas**, pulsa Nueva factura y, en Cliente, escribe su nombre o NIF. Si aún no existe, pulsa Crear cliente y completa sus datos fiscales. Si no vas a emitir todavía, guárdala como borrador.",
+      "pasos": [
+        "Entra en **Ventas > Facturas**.",
+        "Pulsa Nueva factura.",
+        "En Cliente, escribe el nombre o el NIF y pulsa Crear cliente.",
+        "Completa sus datos fiscales."
+      ],
+      "boton": "Crear mi primer cliente",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_cliente",
+    "canal": "guia",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Crea tu primer cliente desde una factura",
+      "cuerpo": "Tu empresa ya está configurada. Ahora falta lo que de verdad pone Cuadra a trabajar: tu primer cliente. No hace falta ir a otra sección, lo creas directamente al abrir una factura nueva en **Ventas > Facturas**. Escribe su nombre o NIF en el campo **Cliente** y, como aún no existe, pulsa **Crear cliente** y completa sus datos fiscales. Si todavía no quieres emitir nada, puedes dejar la factura con **Guardar como borrador**: el cliente se queda creado y la factura no tendrá número hasta que la emitas.",
+      "pasos": [
+        "Entra en **Ventas > Facturas** desde el menú lateral.",
+        "Pulsa **Nueva factura**.",
+        "En **Cliente**, escribe el nombre o el NIF y pulsa **Crear cliente**.",
+        "Completa sus datos fiscales y guarda."
+      ],
+      "boton": "Crear factura nueva",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_cliente",
+    "canal": "checklist",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Crea tu primer cliente",
+      "cuerpo": "Tu empresa ya está configurada. Ahora te falta tu primer cliente, y lo puedes crear sin salir de la factura: entra en **Ventas > Facturas**, abre una factura nueva y, en el campo Cliente, escribe su nombre o NIF. Como aún no existe, Cuadra te ofrecerá crearlo ahí mismo; solo tienes que completar sus datos fiscales. Si todavía no quieres emitir, puedes guardar la factura como borrador y terminarla más tarde.",
+      "pasos": [
+        "Entra en **Ventas > Facturas** desde el menú lateral.",
+        "Pulsa Nueva factura.",
+        "En Cliente, escribe el nombre o el NIF y pulsa Crear cliente.",
+        "Completa sus datos fiscales y guarda."
+      ],
+      "boton": "Crear mi primer cliente",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_cliente",
+    "canal": "notificacion",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Te falta tu primer cliente",
+      "cuerpo": "Entra en **Ventas > Facturas**, pulsa Nueva factura y, en Cliente, pulsa Crear cliente. Así das de alta el primero.",
+      "pasos": [],
+      "boton": "Abrir nueva factura",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_cliente",
+    "canal": "whatsapp",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Tu primer cliente, en un minuto",
+      "cuerpo": "¡Ya tienes tu empresa configurada! 🙌 Te falta un paso: crear tu primer cliente. Lo más fácil es hacerlo desde una factura nueva: entra en **Ventas > Facturas**, pulsa **Nueva factura** y, en **Cliente**, escribe su nombre o NIF. Si no existe, pulsa **Crear cliente** y completa sus datos fiscales. Si aún no quieres emitirla, pulsa **Guardar como borrador**.",
+      "pasos": [
+        "Entra en **Ventas > Facturas** y pulsa **Nueva factura**.",
+        "En **Cliente**, escribe el nombre o el NIF.",
+        "Pulsa **Crear cliente** y completa sus datos fiscales."
+      ],
+      "boton": "Crear mi primer cliente",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_factura",
+    "canal": "in_app",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Solo te falta tu primera factura",
+      "cuerpo": "Ya tienes tu empresa y tu cliente listos. Te queda lo más importante: emitir tu primera factura desde **Ventas > Facturas**. ¿Te da reparo equivocarte? Guárdala antes como borrador: no lleva número hasta que la emites.",
+      "pasos": [
+        "Entra en **Ventas > Facturas** y pulsa «Nueva factura».",
+        "Elige tu cliente y añade las líneas: producto o servicio, cantidad y precio.",
+        "Revisa la fecha de emisión y la de vencimiento.",
+        "Pulsa «Guardar y emitir» o, si quieres revisarla con calma, «Guardar como borrador»."
+      ],
+      "boton": "Crear mi factura",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_factura",
+    "canal": "guia",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Emite tu primera factura",
+      "cuerpo": "Ya tienes tu empresa configurada y tu primer cliente creado. Solo te falta emitir tu primera factura. Entra en **Ventas > Facturas**, pulsa **Nueva factura**, elige a tu cliente y añade las líneas: el **IVA** se aplica según lo que tenga configurado cada producto. ¿Te da miedo equivocarte? Pulsa **Guardar como borrador**: los borradores no tienen número hasta que los emites, así que puedes revisarla con calma. Cuando lo tengas claro, pulsa **Guardar y emitir**. Ten en cuenta que una factura emitida ya no se puede editar.",
+      "pasos": [
+        "Entra en **Ventas > Facturas** y pulsa **Nueva factura**.",
+        "En **Cliente**, escribe el nombre o el NIF de tu cliente.",
+        "Añade las líneas y revisa la fecha de emisión y la de vencimiento.",
+        "Pulsa **Guardar y emitir**, o **Guardar como borrador** si prefieres revisarla antes."
+      ],
+      "boton": "Crear mi factura",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_factura",
+    "canal": "checklist",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Emite tu primera factura",
+      "cuerpo": "Ya tienes tu empresa configurada y tu primer cliente creado. Solo te falta emitir tu primera factura. Si te da reparo equivocarte, guárdala antes como borrador: los borradores no llevan número hasta que los emites, así que puedes revisarla con calma. Cuando la emitas, Cuadra le asignará sola un número correlativo.",
+      "pasos": [
+        "Entra en **Ventas > Facturas** y pulsa «Nueva factura».",
+        "En «Cliente», escribe el nombre o el NIF del cliente que ya creaste.",
+        "Añade las líneas (producto o servicio, cantidad y precio) y revisa las fechas de emisión y vencimiento.",
+        "Pulsa «Guardar y emitir» o, si prefieres revisarla antes, «Guardar como borrador»."
+      ],
+      "boton": "Crear mi factura",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_factura",
+    "canal": "notificacion",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Te falta tu primera factura",
+      "cuerpo": "Tu cliente ya está listo. Entra en **Ventas > Facturas** y emite tu primera factura. ¿Dudas? Guárdala como borrador y revísala.",
+      "pasos": [],
+      "boton": "Crear mi factura",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  },
+  {
+    "paso": "sin_factura",
+    "canal": "whatsapp",
+    "estado": "aprobado",
+    "motivos": [],
+    "contenido": {
+      "titulo": "Te falta emitir tu primera factura",
+      "cuerpo": "Ya tienes tu empresa configurada y tu primer cliente creado. Solo te queda emitir tu primera factura: entra en **Ventas > Facturas**, pulsa Nueva factura, elige a tu cliente y añade las líneas. ¿Te da respeto equivocarte? Pulsa Guardar como borrador: no lleva número hasta que la emites, así que puedes emitirla cuando lo tengas claro.",
+      "pasos": [],
+      "boton": "Crear mi factura",
+      "articulo_fuente": "01-crear-tu-primera-factura.md"
+    },
+    "intentos": 1
+  }
+]
