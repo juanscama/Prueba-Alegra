@@ -231,9 +231,34 @@ El razonamiento completo está en [`docs/2026-11-12-diseno-flujo-activacion.md`]
 
 - Construido con Claude Code. El historial de commits sigue el plan de [`docs/2026-11-12-plan-construccion.md`](docs/2026-11-12-plan-construccion.md).
 - El flujo llama a Claude (`claude-opus-5-5`) con el SDK oficial de Anthropic y salidas estructuradas.
-- El caché guarda 228 respuestas de Claude. Generarlo costó aproximadamente 5 USD; durante el desarrollo se
-  gastaron unos 3,5 USD más en una corrida repetida por error. Repetir la corrida desde el caché no cuesta nada.
-- `cuadra analizar` añade 16 respuestas (15 contenidos por canal y el informe ejecutivo), por unos 0,38 USD.
+
+### Cuánto cuesta
+
+**Verlo o correrlo no cuesta nada.** Las 244 respuestas de Claude están guardadas en `cache/` y vienen en el
+repositorio. El panel en línea, el botón «Correr el flujo ahora» y `uv run cuadra correr` las leen de ahí:
+no hace falta clave de API y no se gasta un centavo, las veces que sea.
+
+**Lo que costó generarlo, una sola vez:**
+
+| Concepto | Llamadas | Costo aproximado |
+|---|---|---|
+| Revisar la ayuda y escribir y verificar los 108 correos modelo (`cuadra correr`) | 228 | 5 USD |
+| Análisis de Growth: contenidos por canal e informe ejecutivo (`cuadra analizar`) | 16 | 0,38 USD |
+| Corrida repetida por error durante el desarrollo | — | 3,5 USD |
+
+El gasto lo asumí yo; la corrida repetida fue un descuido, no una necesidad del flujo.
+
+**Por qué el costo se mantiene bajo:**
+
+- Se escriben **108 correos modelo** (paso pendiente × oficio × antigüedad), no un correo por persona. El
+  nombre se pone después, con código. Por eso el costo **no crece con el número de usuarios**: 457 o 45.000
+  personas cuestan lo mismo mientras no cambien los oficios.
+- La IA solo redacta y revisa. Las cuentas, el reparto y la medición son código, que no cuesta nada.
+- Elegí Opus, el modelo más capaz, porque el volumen era pequeño y cada correo tenía que salir bien. Para
+  producción, el modelo se cambia sin tocar código con la variable `CUADRA_MODELO` (por ejemplo, Sonnet), y
+  activar *prompt caching* abarataría la parte que se repite en cada llamada (la ayuda vigente y las reglas).
+- El botón «Redactar en vivo» del panel es lo único que llama a Claude en el momento, y solo aparece si hay
+  una clave configurada. En el panel publicado no la hay.
 
 ## Estructura
 
