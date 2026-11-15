@@ -158,3 +158,12 @@ def test_detalle_explica_por_que_tres_dias():
     at = AppTest.from_file(DETALLE, default_timeout=60).run()
     assert not at.exception
     assert any("Por qué escribir a los 3 días" in s.value for s in at.subheader)
+
+
+def test_resumen_muestra_las_cuentas_completas():
+    """Quien lee el resumen ve de dónde sale cada cifra: los totales cuadran de 1.500 a los dos grupos."""
+    at = AppTest.from_file(RESUMEN, default_timeout=60).run()
+    assert not at.exception
+    tabla = next(m.value for m in at.markdown if 'class="cuentas"' in m.value)
+    for cifra in ["1.500", "548", "944", "292", "427", "225", "912", "457", "455"]:
+        assert f">{cifra}<" in tabla, cifra

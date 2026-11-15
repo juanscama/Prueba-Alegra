@@ -97,6 +97,41 @@ if embudo is not None:
         {miles(perdidas[mayor])} personas.</div>"""
     )
 
+# Las cuentas completas: de los registrados a los dos grupos del sorteo, para que cada cifra tenga de dónde salir.
+estado = leer_csv("estado.csv")
+if embudo is not None and estado is not None:
+    total = int(camino.contactos.iloc[0])
+    facturaron = int(camino.contactos.iloc[-1])
+    sin_facturar = len(estado)
+    por_paso = estado.paso.value_counts()
+    en_espera = int((~estado.elegible).sum())
+    dias = config.DIAS_ATASCADO
+
+    def fila(texto: str, numero: int, clase: str = "", detalle: str = "") -> str:
+        nota = f'<span class="por">{detalle}</span>' if detalle else ""
+        return f'<tr class="{clase}"><td>{texto}{nota}</td><td class="n">{miles(numero)}</td></tr>'
+
+    filas = [
+        fila("Personas en los datos de Cuadra", total, "total", "Todas se registraron: son las del CRM."),
+        fila("Ya emitieron su primera factura", facturaron, "", f"{round(facturaron / total * 100)} de cada 100. Ya "
+             "están activas: no necesitan correo."),
+        fila("Pagaron sin emitir factura", total - facturaron - sin_facturar, "",
+             "Caso raro. Se dejan fuera para no escribir a quien ya paga."),
+        fila("Todavía no emiten su primera factura", sin_facturar, "grupo", "Dónde se quedó cada una:"),
+        fila("Se quedaron sin configurar su empresa", int(por_paso.get("sin_configurar", 0)), "sub"),
+        fila("Configuraron su empresa, pero no crearon un cliente", int(por_paso.get("sin_cliente", 0)), "sub",
+             "El tropiezo más grande."),
+        fila("Crearon un cliente, pero no emitieron la factura", int(por_paso.get("sin_factura", 0)), "sub"),
+        fila(f"De esas {miles(sin_facturar)}: avanzaron hace menos de {dias} días", en_espera, "",
+             "Todavía pueden seguir solas: se les deja tranquilas."),
+        fila(f"De esas {miles(sin_facturar)}: atascadas, llevan {dias} días o más sin avanzar", resumen["elegibles"], "clave",
+             "A ellas va dirigido el flujo. Se sortean en dos mitades:"),
+        fila("Reciben el correo", resumen["tratamiento"], "sub"),
+        fila("No reciben nada y sirven de comparación", resumen["control"], "sub"),
+    ]
+    st.markdown(f"**Las cuentas completas: de {miles(total)} personas a las {miles(resumen['elegibles'])} atascadas**")
+    bloque('<table class="cuentas">' + "".join(filas) + "</table>")
+
 izquierda, derecha = st.columns(2, gap="large")
 if embudo is not None:
     with izquierda:

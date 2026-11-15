@@ -116,6 +116,19 @@ ESTILOS = """
 .correo .cuerpo p {margin: 10px 0;}
 .correo .cuerpo ol {margin: 8px 0 8px 2px; padding-left: 22px;}
 .correo .cuerpo strong {color: #0b1f3a; background: #eef5fd; border-radius: 4px; padding: 0 3px;}
+table.cuentas {width: 100%; border-collapse: collapse; margin: 6px 0 18px; font-size: 0.98rem;}
+table.cuentas td {padding: 9px 14px; border-bottom: 1px solid #e2e8f0; color: #1f2937; line-height: 1.4;}
+table.cuentas td.n {text-align: right; font-weight: 700; color: #0f172a; white-space: nowrap; width: 110px;
+                    font-size: 1.05rem;}
+table.cuentas td .por {display: block; font-size: 0.84rem; color: #52514e; margin-top: 2px;}
+table.cuentas tr.total td {background: #0b1f3a; color: #ffffff; font-weight: 700;}
+table.cuentas tr.total td.n {color: #ffffff;}
+table.cuentas tr.total td .por {color: #dbe7f7;}
+table.cuentas tr.grupo td {background: #f1f5f9; font-weight: 700;}
+table.cuentas tr.clave td {background: #eef5fd; font-weight: 700;}
+table.cuentas tr.clave td.n {color: #1c5cab;}
+table.cuentas tr.sub td:first-child {padding-left: 38px;}
+table.cuentas tr.sub td.n {font-weight: 600;}
 .glosario {display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; font-size: 0.92rem; line-height: 1.45;}
 .glosario b {color: #0f172a;}
 [data-testid="stHeaderActionElements"] {display: none;}
