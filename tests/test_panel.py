@@ -152,3 +152,9 @@ def test_automatizacion_corre_desde_el_boton_sin_tocar_salida(monkeypatch):
     at.radio[0].set_value("Ayuda mucho").run()
     next(b for b in at.button if "Avanzar" in b.label).click().run()
     assert "Enviar el correo a todos" in " ".join(m.value for m in at.markdown)
+
+
+def test_detalle_explica_por_que_tres_dias():
+    at = AppTest.from_file(DETALLE, default_timeout=60).run()
+    assert not at.exception
+    assert any("Por qué escribir a los 3 días" in s.value for s in at.subheader)

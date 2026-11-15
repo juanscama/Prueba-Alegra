@@ -47,6 +47,22 @@ def acumular(previa: pd.DataFrame, nueva: pd.DataFrame) -> pd.DataFrame:
     return pd.concat([previa, recien_llegados], ignore_index=True)[list(nueva.columns)]
 
 
+def _cortes_pasados(datos: Datos, fecha: date, ventana_dias: int, cada_dias: int) -> list[date]:
+    """Fechas de corte pasadas con una ventana completa por delante, de la más reciente hacia atrás."""
+    primer_registro = datos.contactos.fecha_registro.min()
+    cortes, corte = [], fecha - timedelta(days=ventana_dias)
+    while corte >= primer_registro + timedelta(days=ventana_dias):
+        cortes.append(corte)
+        corte -= timedelta(days=cada_dias)
+    return cortes
+
+
+def _facturan_solos(datos: Datos, corte: date, personas: pd.Series, ventana_dias: int) -> int:
+    facturas = datos.eventos[datos.eventos.evento == "emitio_primera_factura"].set_index("id_contacto").fecha
+    limite = corte + timedelta(days=ventana_dias)
+    return int(personas.map(facturas).map(lambda f: pd.notna(f) and corte < f <= limite).sum())
+
+
 def conversion_natural(
     datos: Datos, fecha: date, ventana_dias: int = VENTANA_DIAS, cada_dias: int = 15
 ) -> tuple[int, int, list[date]]:
@@ -55,21 +71,43 @@ def conversion_natural(
     Recorre fechas de corte pasadas, toma a quienes ese día habrían sido elegibles y cuenta cuántos
     emitieron su primera factura en la ventana siguiente. Una misma persona cuenta en varios cortes.
     """
-    primer_registro = datos.contactos.fecha_registro.min()
-    facturas = datos.eventos[datos.eventos.evento == "emitio_primera_factura"].set_index("id_contacto").fecha
-    cortes, corte = [], fecha - timedelta(days=ventana_dias)
-    while corte >= primer_registro + timedelta(days=ventana_dias):
-        cortes.append(corte)
-        corte -= timedelta(days=cada_dias)
+    cortes = _cortes_pasados(datos, fecha, ventana_dias, cada_dias)
     convertidos = observaciones = 0
     for corte in cortes:
         estado = calcular_estado(datos, corte)
         elegibles = estado[estado.elegible.astype(bool)].id_contacto
-        fechas = elegibles.map(facturas)
-        limite = corte + timedelta(days=ventana_dias)
-        convertidos += int(fechas.map(lambda f: pd.notna(f) and corte < f <= limite).sum())
+        convertidos += _facturan_solos(datos, corte, elegibles, ventana_dias)
         observaciones += len(elegibles)
     return convertidos, observaciones, sorted(cortes)
+
+
+def retorno_por_umbral(
+    datos: Datos, fecha: date, umbrales=range(1, 8), ventana_dias: int = VENTANA_DIAS, cada_dias: int = 15
+) -> pd.DataFrame:
+    """Por qué el umbral de días quieto es el que es: para cada umbral posible, qué parte vuelve sola.
+
+    Con los mismos cortes pasados que `conversion_natural`, cuenta a quienes llevaban al menos N días sin
+    eventos y cuántos emitieron su primera factura solos en la ventana siguiente. También dice a cuántas
+    personas se escribiría hoy con ese umbral.
+    """
+    cortes = _cortes_pasados(datos, fecha, ventana_dias, cada_dias)
+    estados = {corte: calcular_estado(datos, corte) for corte in cortes}
+    hoy = calcular_estado(datos, fecha)
+    filas = []
+    for umbral in umbrales:
+        vuelven = observadas = 0
+        for corte, estado in estados.items():
+            quietas = estado[estado.dias_quieto >= umbral].id_contacto
+            vuelven += _facturan_solos(datos, corte, quietas, ventana_dias)
+            observadas += len(quietas)
+        filas.append(
+            {
+                "umbral_dias": umbral, "observaciones": observadas, "vuelven_solos": vuelven,
+                "pct_vuelven_solos": vuelven / observadas if observadas else 0.0,
+                "personas_hoy": int((hoy.dias_quieto >= umbral).sum()),
+            }
+        )
+    return pd.DataFrame(filas)
 
 
 def efecto_minimo_detectable(

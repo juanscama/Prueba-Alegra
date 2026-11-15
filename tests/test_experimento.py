@@ -88,3 +88,23 @@ def test_acumular_conserva_la_primera_fecha_y_no_borra_a_nadie(datos):
     assert (fechas[previa.id_contacto] == "2026-10-31").all()
     nuevos = set(segunda.id_contacto) - set(previa.id_contacto)
     assert nuevos and (fechas[list(nuevos)] == "2026-11-10").all()
+
+
+def test_retorno_por_umbral_justifica_los_tres_dias():
+    """El umbral sale de los datos: a partir de DIAS_ATASCADO casi nadie vuelve solo, y antes sí."""
+    from datetime import date
+
+    from cuadra.config import DIAS_ATASCADO
+    from cuadra.experimento import conversion_natural, retorno_por_umbral
+    from cuadra.ingesta import cargar
+
+    datos = cargar()
+    tabla = retorno_por_umbral(datos, date(2026, 10, 31)).set_index("umbral_dias")
+    # Con el umbral elegido coincide con la tasa base del experimento.
+    convertidos, observaciones, _ = conversion_natural(datos, date(2026, 10, 31))
+    assert tabla.loc[DIAS_ATASCADO, "vuelven_solos"] == convertidos
+    assert tabla.loc[DIAS_ATASCADO, "observaciones"] == observaciones
+    # Cuanto más se espera, menos gente vuelve sola y a menos personas se escribe.
+    assert tabla.pct_vuelven_solos.is_monotonic_decreasing
+    assert tabla.personas_hoy.is_monotonic_decreasing
+    assert tabla.loc[1, "pct_vuelven_solos"] > 10 * tabla.loc[DIAS_ATASCADO, "pct_vuelven_solos"]

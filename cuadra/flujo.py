@@ -12,7 +12,9 @@ from cuadra.config import DIR_CACHE, DIR_SALIDA, FECHA_CORRIDA, MODELO
 from cuadra.conocimiento import construir_base
 from cuadra.diagnostico import embudo, embudo_por, escribir_diagnostico, tiempos_entre_pasos
 from cuadra.estado import calcular_estado, pagadores_sin_factura
-from cuadra.experimento import acumular, asignar, conversion_natural, efecto_minimo_detectable, equilibrio
+from cuadra.experimento import (
+    acumular, asignar, conversion_natural, efecto_minimo_detectable, equilibrio, retorno_por_umbral,
+)
 from cuadra.ingesta import cargar
 from cuadra.medicion import prueba_aa
 from cuadra.modelo import ErrorModelo, Modelo, Rechazo, SinCache
@@ -81,6 +83,7 @@ def correr(
     n_t = int((asignacion.grupo == "tratamiento").sum())
     n_c = int((asignacion.grupo == "control").sum())
     convertidos, observaciones, cortes = conversion_natural(datos, fecha)
+    _csv(retorno_por_umbral(datos, fecha), dir_salida / "retorno_por_umbral.csv")
     tasa_base = convertidos / observaciones if observaciones else None
     efecto_minimo = efecto_minimo_detectable(n_t, n_c, tasa_base) if tasa_base is not None else None
 

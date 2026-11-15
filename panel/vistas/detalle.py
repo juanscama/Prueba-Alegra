@@ -475,6 +475,56 @@ with pestanas[5]:
 
 # 6 · Experimento (continuación): pruebas de confianza del reparto, del flujo original ----------------------
 with pestanas[5]:
+    umbrales = comun.leer_csv("retorno_por_umbral.csv")
+    flujo_cortes = (comun.leer_json("resumen.json") or {}).get("base_cortes", "varias")
+    if umbrales is not None:
+        st.subheader(f"¿Por qué escribir a los {config.DIAS_ATASCADO} días sin avanzar?")
+        elegido = umbrales[umbrales.umbral_dias == config.DIAS_ATASCADO]
+        if not elegido.empty:
+            fila = elegido.iloc[0]
+            antes = umbrales[umbrales.umbral_dias == 1].iloc[0]
+            comun.bloque(
+                f"""<div class="idea">Se midió, en {flujo_cortes} fechas pasadas, cuánta gente vuelve sola según los días que
+                lleva quieta. Con 1 día vuelve el <b>{comun.pct(antes.pct_vuelven_solos, 2)}</b>; con
+                {config.DIAS_ATASCADO} días, solo el <b>{comun.pct(fila.pct_vuelven_solos, 2)}</b>
+                ({int(fila.vuelven_solos)} de {comun.miles(fila.observaciones)}); con más días, nadie. Escribir antes
+                molestaría a quien iba a avanzar solo; escribir después solo llega más tarde y a menos gente.
+                {config.DIAS_ATASCADO} días es lo más pronto posible sin ese problema.</div>"""
+            )
+        izquierda, derecha = st.columns([3, 2], gap="large")
+        with izquierda:
+            vista = umbrales.copy()
+            vista["Días sin avanzar"] = vista.umbral_dias.map(lambda d: f"{d} día" + ("s" if d != 1 else ""))
+            vista["Umbral"] = vista.umbral_dias.map(lambda d: "Elegido" if d == config.DIAS_ATASCADO else "Otros")
+            vista["etiqueta"] = vista.pct_vuelven_solos.map(lambda x: comun.pct(x, 2))
+            base = alt.Chart(vista).encode(
+                x=alt.X("Días sin avanzar:N", sort=None, title=None, axis=alt.Axis(labelAngle=0)),
+                y=alt.Y("pct_vuelven_solos:Q", title=None, axis=None,
+                        scale=alt.Scale(domain=[0, max(float(vista.pct_vuelven_solos.max()) * 1.25, 0.001)])),
+                tooltip=["Días sin avanzar", alt.Tooltip("pct_vuelven_solos:Q", format=".2%", title="Vuelven solos"),
+                         alt.Tooltip("personas_hoy:Q", title="Personas a escribir hoy")],
+            )
+            st.markdown(f"**Qué parte vuelve sola en {config.VENTANA_DIAS} días, según los días que lleva quieta** "
+                        f"{sello('calculado')}", unsafe_allow_html=True)
+            st.altair_chart(
+                (
+                    base.mark_bar(cornerRadiusEnd=3, size=34).encode(
+                        color=alt.Color("Umbral:N", legend=None,
+                                        scale=alt.Scale(domain=["Elegido", "Otros"], range=[AZUL, GRIS]))
+                    )
+                    + base.mark_text(dy=-8, color=TINTA, fontSize=12).encode(text="etiqueta:N")
+                ).properties(height=240).configure_view(strokeWidth=0),
+                width="stretch",
+            )
+        with derecha:
+            tabla = umbrales.assign(
+                pct_vuelven_solos=umbrales.pct_vuelven_solos.map(lambda x: comun.pct(x, 2)),
+                vuelven=umbrales.vuelven_solos.astype(str) + " de " + umbrales.observaciones.map(comun.miles),
+            )[["umbral_dias", "pct_vuelven_solos", "vuelven", "personas_hoy"]]
+            tabla.columns = ["Días", "Vuelven solos", "Casos", "A escribir hoy"]
+            st.dataframe(tabla, hide_index=True, width="stretch")
+            st.caption("Con datos reales este análisis se repite: el umbral sale de medir, no se fija a mano.")
+        st.divider()
     st.subheader("¿Se puede confiar en la comparación?")
     flujo = comun.leer_json("resumen.json") or {}
     base_natural, minimo = flujo.get("tasa_base_estimada"), flujo.get("efecto_minimo_detectable")
