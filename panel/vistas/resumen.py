@@ -66,8 +66,9 @@ bloque(
     <div class="titulo">correos listos para enviar</div>
     <div class="nota">Uno por persona, según el paso en que se quedó.</div></div>
   <div class="tarjeta"><div class="cifra">{resumen['variantes_aprobadas']} de {total_modelos}</div>
-    <div class="titulo">correos aprobados</div>
-    <div class="nota">Todos pasaron las reglas automáticas y una segunda revisión.</div></div>
+    <div class="titulo">plantillas aprobadas</div>
+    <div class="nota">Con ellas se arman los {miles(resumen['correos_en_bandeja'])} correos: cada plantilla sirve
+    a varias personas. Todas pasaron las revisiones.</div></div>
   <div class="tarjeta"><div class="cifra">{miles(resumen['control'])}</div>
     <div class="titulo">personas de comparación</div>
     <div class="nota">No reciben nada. Sirven para medir si el correo marca la diferencia.</div></div>
@@ -167,9 +168,9 @@ bloque(
     <div class="d">Compara los artículos de ayuda con los cambios recientes del producto. Encontró
     {desactualizados} artículo{'s' if desactualizados != 1 else ''} con pasos que ya no existen.</div>
     <span class="quien ia">LO HACE LA IA</span></div>
-  <div class="paso"><span class="n">3</span><span class="t">Escribe y revisa cada correo</span>
-    <div class="d">Un correo por paso pendiente, oficio y antigüedad. Reglas automáticas y una segunda IA lo
-    revisan; si falla dos veces, lo ve una persona.</div><span class="quien ia">LO HACE LA IA</span></div>
+  <div class="paso"><span class="n">3</span><span class="t">Escribe y revisa las plantillas</span>
+    <div class="d">Una plantilla de correo por paso pendiente, oficio y antigüedad. Reglas automáticas y una segunda IA la
+    revisan; si falla dos veces, la ve una persona.</div><span class="quien ia">LO HACE LA IA</span></div>
   <div class="paso"><span class="n">4</span><span class="t">Reparte y mide</span>
     <div class="d">Sortea quién recibe correo y quién no. A los {config.VENTANA_DIAS} días compara cuántos
     facturaron en cada grupo.</div><span class="quien codigo">LO HACE EL PROGRAMA</span></div>

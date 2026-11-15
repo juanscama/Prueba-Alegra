@@ -34,7 +34,7 @@ PASOS = [
     ("3/8", "Encuentra a los atascados", f"Busca a quien lleva {config.DIAS_ATASCADO} días o más sin avanzar.", "codigo"),
     ("4/8", "Sortea los dos grupos", "Al azar: la mitad recibirá correo y la otra mitad servirá de comparación.", "codigo"),
     ("5/8", "Revisa el Centro de Ayuda", "Compara los artículos de ayuda con los cambios recientes del producto.", "ia"),
-    ("6/8", "Escribe y revisa los correos", "Un correo por paso pendiente, oficio y antigüedad. Otra IA lo revisa.", "ia"),
+    ("6/8", "Escribe y revisa las plantillas", "Una plantilla de correo por paso pendiente, oficio y antigüedad. Otra IA la revisa.", "ia"),
     ("8/8", "Deja la bandeja lista", "Asigna a cada persona del grupo con correo el suyo, con su nombre.", "codigo"),
 ]
 QUIEN = {"ia": '<span class="quien ia">LO HACE LA IA</span>', "codigo": '<span class="quien codigo">LO HACE EL PROGRAMA</span>'}
@@ -91,9 +91,10 @@ def resultado_de(clave: str, carpeta: Path, resumen: dict) -> str:
     if clave == "6/8":
         total = resumen["variantes_aprobadas"] + resumen["variantes_en_revision"]
         revision = resumen["variantes_en_revision"]
-        extra = "ninguno tuvo que pasar a revisión humana." if revision == 0 else f"{revision} esperan revisión humana."
-        return f"{total} correos escritos; {resumen['variantes_aprobadas']} aprobados y {extra}"
-    return f"{miles(resumen['correos_en_bandeja'])} correos listos para enviar, uno por persona."
+        extra = "ninguna tuvo que pasar a revisión humana." if revision == 0 else f"{revision} esperan revisión humana."
+        return f"{total} plantillas escritas; {resumen['variantes_aprobadas']} aprobadas y {extra}"
+    return (f"{miles(resumen['correos_en_bandeja'])} correos listos para enviar, uno por persona: cada uno sale de "
+                "su plantilla, con su nombre.")
 
 
 def linea_de_tiempo(hechos: dict[str, str], actual: str | None = None) -> str:
