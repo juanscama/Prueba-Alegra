@@ -4,6 +4,9 @@ Flujo con IA para el reto técnico Growth con IA. Lee las exportaciones de Cuadr
 encuentra a las personas que se registraron y se quedaron antes de emitir su primera factura, y deja listo
 un correo verificado para cada una, con un grupo de control para saber si el correo sirvió de algo.
 
+**Ver el panel en línea, sin instalar nada:** https://cuadra-alegra.streamlit.app/ (la página «Ver la
+automatización» corre el flujo completo desde un botón).
+
 El enunciado del caso está en [`ENUNCIADO.md`](ENUNCIADO.md).
 
 ![El flujo corriendo en la terminal y un recorrido por el panel](docs/img/demo.gif)
