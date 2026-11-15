@@ -9,7 +9,7 @@ dependencies = [
     "pandas>=2.2",
     "pydantic>=2.7",
     "python-dotenv>=1.0",
-    "streamlit>=1.40",
+    "streamlit>=1.46",
 ]
 
 [project.scripts]

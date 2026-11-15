@@ -4,11 +4,14 @@ Cuatro páginas, de lo simple a lo técnico: el resumen se entiende sin saber de
 corre desde un botón, los correos muestran el producto y el detalle técnico guarda todo el análisis para quien quiera revisarlo.
 """
 
+import sys
 from pathlib import Path
 
 import streamlit as st
 
 AQUI = Path(__file__).resolve().parent
+# En Streamlit Community Cloud el paquete `cuadra` puede no estar instalado: se importa desde la raíz del repo.
+sys.path.insert(0, str(AQUI.parent))
 
 st.set_page_config(page_title="Cuadra · De registrarse a facturar", layout="wide")
 
